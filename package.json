@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack --config webpack.config.js && cp public/_redirects build/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

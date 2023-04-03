@@ -62,11 +62,5 @@ module.exports = {
         ],
       },
     ]
-  },
-  devServer: {
-    contentBase: './public', // Base path for your server
-    historyApiFallback: true, // Fallback to index.html for 404 errors
-    port: 3000, // Port for your development server
-    open: true // Open the browser window automatically when the server starts
   }
 };

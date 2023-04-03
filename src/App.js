@@ -35,24 +35,12 @@ function App() {
     setContent(page);
   };
 
-  const renderContent = () => {
-    switch (content) {
-      case 'Home':
-        return <Home />;
-      case 'Gear':
-        return <Gear />;
-      default:
-        return <Home />;
-    }
-  };
-
   return (
     <div className="App">
       <img src={useBackgroundImage()} className="background-image" width='1920' height='1080'/>
       <Header handleLinkClick={handleLinkClick} content={content}/>
       <main>
         <Routes>
-          {/* {renderContent()} */}
           <Route path='/' element={<Home />}/>
           <Route path='/gear' element={<Gear />}/>
         </Routes>
