@@ -2,8 +2,8 @@
 @import '../style.scss';
 
 /* Import images */
-$title-icon: url('../../images/assets/breadcrumb/scroll_header_icon.png');
-$title-label: url('../../images/assets/breadcrumb/scroll_header_label.png');
+$title-icon: url('../../../build/images/scroll_header_icon.png');
+$title-label: url('../../../build/images//scroll_header_label.png');
 
 /* Style container */
 .title-container {
