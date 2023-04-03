@@ -96,11 +96,15 @@ main {
   left: 50%;
 
   /* Size */
+  width: initial;
   min-width: 100%;
   min-height: 100%;
 
   /* Transform */
   transform: translateX(-50%);
+
+  // Other
+  user-select: none;
 
 }
 
@@ -185,4 +189,25 @@ input[type=radio] {
 input[type='radio']:checked + label {
   background-color: #4CAF50;
   color: white;
+}
+
+
+// Style backgrounds
+*:has(.background) {
+
+  position: relative;
+
+}
+
+.background {
+
+  // Position
+  position: absolute;
+
+  // Size
+  width: 100%;
+
+  // Other
+  user-select: none;
+
 }

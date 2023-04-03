@@ -85,7 +85,7 @@ function Home () {
             value={gearPiece}
             checked={selectedGearPiece === gearPiece}
             onChange={handleGearPieceChange} />
-            <GearPiece name={gearPiece} />
+            <GearPiece name={gearPiece} isOddChild={index % 2 === 0}/>
           </label>
         ))}
       </div>

@@ -50,40 +50,19 @@ header {
   }
 
 
-  /* Style logo */
-  & .logo {
-
-    // Display
-    display: block;
-
+  & a.logo {
+    
     // Size
     width: 50px;
     height: 46.625px;
-  
-    // Background
-    background-image: url('../../images/logo_small.png');
-    background-size: contain;
 
-    // Other
-    transition: none;
-
-
-    // Media Query
     @media (min-width: $large-screen-size) {
-
-      // Display
-      display: block;
-
+    
       // Size
       width: 150px;
       height: 109.95px;
-    
-      // Background
-      background-image: url('../../images/logo_large.png');
-      background-size: contain;
 
     }
-
 
     // Style :hover
     &:hover {
@@ -92,7 +71,42 @@ header {
       transform: none;
 
     }
+
+
+    // Small logo
+    & .logo-small {
   
+      // Display
+      display: block;
+  
+      // Media Query
+      @media (min-width: $large-screen-size) {
+  
+        // Display
+        display: none;
+        
+      }
+    
+    }
+
+
+    // Large logo
+    & .logo-large {
+  
+      // Display
+      display: none;
+  
+      // Media Query
+      @media (min-width: $large-screen-size) {
+  
+        // Display
+        display: block;
+
+      }
+  
+    }
+
+
   }
 
 

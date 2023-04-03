@@ -2,6 +2,9 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import '../css/components/Header.scss';
 
+import logo_small from '../images/logo_small.png';
+import logo_large from '../images/logo_large.png';
+
 function Header(props) {
 
   const disableLinkClick = (event) => {
@@ -10,7 +13,10 @@ function Header(props) {
 
   return (
     <header currentPage={props.content}>
-      <Link to="/" onClick={() => window.scrollTo(0, 0)} className="logo"></Link>
+      <Link to="/" onClick={() => window.scrollTo(0, 0)} className="logo">
+        <img src={logo_small} className='logo-small background'/>
+        <img src={logo_large} className='logo-large background'/>
+      </Link>
       <nav className="menu">
         <ul>
           <li>

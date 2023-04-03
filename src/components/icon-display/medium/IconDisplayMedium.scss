@@ -1,23 +1,20 @@
-@import '../../../css/style.scss';
+$large-screen-size: 1000px;
 
 .icon-display-medium {
 
     // Display
     display: flex;
 
+    // Position
+    position: relative;
+
     // Size
     width: 64px;
     aspect-ratio: 1/1;
 
     // Flexbox
-    flex: 0;
     align-items: center;
     justify-content: center;
-
-    // Background
-    background-image: url(../../../images/assets/breadcrumb/icon_small_variant1_a.png);
-    background-repeat: no-repeat;
-    background-size: contain;
 
     // Other
     image-rendering: pixelated;
@@ -32,22 +29,33 @@
 
 }
 
-:nth-child(2n) > * > .icon-display-medium {
+.icon-display-medium > .background {
 
-    // Background
-    background-image: url(../../../images/assets/breadcrumb/icon_small_variant1_b.png);
+    // Position
+    position: absolute;
+
+    // Size
+    width: 100%;
+    aspect-ratio: 1/1;
 
 }
 
-.icon-display-medium > * {
-
-    // Position
+.icon-display-medium img:not(.background) {
 
     // Size
-    width: 48px;
+    width: 32px;
     aspect-ratio: 1/1;
 
     // Other
+    z-index: 2;
     image-rendering: pixelated;
+
+    // Media Query
+    @media (min-width: $large-screen-size) {
+
+        // Size
+        width: 48px;
+
+    }
 
 }

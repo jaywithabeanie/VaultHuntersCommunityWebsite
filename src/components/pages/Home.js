@@ -3,6 +3,10 @@ import '../../css/components/pages/Home.scss';
 
 // Images
 import vault_rock from '../../images/assets/the_vault/item/vault_rock.png';
+import title_label_background from '../../images/assets/breadcrumb/scroll_header_label.png';
+import title_icon_background from '../../images/assets/breadcrumb/scroll_header_icon.png';
+import icon_variant_1a from '../../images/assets/breadcrumb/icon_small_variant1_a.png';
+import icon_variant_1b from '../../images/assets/breadcrumb/icon_small_variant1_b.png';
 
 
 function Home () {
@@ -11,9 +15,11 @@ function Home () {
         <div className="box-texture"></div>
         <div className="scroll-header">
           <div className='icon'>
-            <img src={vault_rock} className="vault-rock" />
+            <img src={title_icon_background} className="background"/>
+            <img src={vault_rock} className="image" />
           </div>
           <div className='label'>
+            <img src={title_label_background} className="background"/>
             <p>Community Website</p>
           </div>
         </div>
@@ -25,16 +31,19 @@ function Home () {
         <ul>
           <li>
             <a href='https://discord.gg/dr9z3tKjBT' target='_blank' rel='noreferrer' className='icon-small'>
+              <img src={icon_variant_1a} className="background" />
               <i className="fa-brands fa-discord"></i>
             </a>
           </li>
           <li>
             <a href='https://www.reddit.com/r/VaultHuntersMinecraft/' target='_blank' rel='noreferrer' className='icon-small'>
+              <img src={icon_variant_1b} className="background" />
               <i className="fa-brands fa-reddit-alien"></i>
             </a>
           </li>
           <li>
             <a href='https://vaulthunters.gg' target='_blank' rel='noreferrer' className='icon-small'>
+              <img src={icon_variant_1a} className="background" />
               <i className="fa-solid fa-globe"></i>
             </a>
           </li>

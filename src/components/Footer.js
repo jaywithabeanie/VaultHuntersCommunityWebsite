@@ -8,7 +8,9 @@ function Footer () {
     <footer>
 
       <div className="navigation">
-        <img src={logo_small} className='logo'/>
+        <div className="logo">
+          <img src={logo_small} className='background'/>
+        </div>
         <nav className="menu">
           <a href="https://discord.gg/dr9z3tKjBT" target='_blank' rel='noreferrer'>
             <span>Discord</span>

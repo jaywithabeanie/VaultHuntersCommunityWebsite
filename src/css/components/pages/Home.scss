@@ -46,12 +46,6 @@ $large-screen-size: 1000px;
     
 }
 
-.container *:not(.box-texture) {
-
-    z-index: 1;
-
-}
-
 
 .container .box-texture {
 
@@ -64,11 +58,7 @@ $large-screen-size: 1000px;
 
     /* Other */
     opacity: 1;
-
     z-index: 0;
-
-    /* Border */
-    /* border-radius: 10px; */
 
 }
 
@@ -92,17 +82,12 @@ $large-screen-size: 1000px;
     width: 30%;
     aspect-ratio: 107/98;
 
-    /* Background */
-    background-image: url('../../../images/assets/breadcrumb/scroll_header_icon.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-
     /* Other */
     z-index: 2;
 
 }
 
-.container .scroll-header .icon .vault-rock {
+.container .scroll-header .icon .image {
 
     /* Position */
     margin: 20% 25%;
@@ -122,6 +107,7 @@ $large-screen-size: 1000px;
     display: flex;
 
     /* Position */
+    position: relative;
     margin-left: -25px;
     padding-left: 30px;
 
@@ -129,13 +115,15 @@ $large-screen-size: 1000px;
     width: 75%;
     aspect-ratio: 252/50;
 
-    /* Background */
-    background-image: url('../../../images/assets/breadcrumb/scroll_header_label.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-
     /* Flexbox */
     align-items: center;
+
+}
+
+.container .scroll-header .label .background {
+
+    // Position
+    margin-left: -25px;
 
 }
 
@@ -147,6 +135,9 @@ $large-screen-size: 1000px;
     font-weight: bold;
     line-height: 100%;
 
+    // Other
+    z-index: 1;
+
 }
 
 .container > p {
@@ -155,6 +146,9 @@ $large-screen-size: 1000px;
     color: #d8c9bb;
     font-family: var(--font-secondary);
     font-size: 18px;
+
+    // Other
+    z-index: 1;
 
 }
 
@@ -192,26 +186,25 @@ $large-screen-size: 1000px;
     /* Size */
     width: 100%;
     height: 100%;
-    
-    /* Background */
-    background-image: url('../../../images/assets/breadcrumb/icon_small_variant1_a.png');
 
     /* Flexbox */
     align-items: center;
+
+
+    // Style icons
+    & i {
+        
+        // Other
+        z-index: 1;
+
+    }
+
 
 }
 
 .container ul li a:hover {
 
     filter: brightness(1.15);
-
-}
-
-.container ul li:nth-child(2) a {
-
-
-    /* Background */
-    background-image: url('../../../images/assets/breadcrumb/icon_small_variant1_b.png');
 
 }
 
