@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {BrowserRouter, Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {useLocation} from 'react-router-dom';
 import Home from './components/pages/Home';
 import Gear from './components/pages/gear/Gear';
