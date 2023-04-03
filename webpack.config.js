@@ -35,7 +35,7 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[path][name].[ext]',
-              outputPath: 'images/',
+              outputPath: '',
               context: path.resolve(__dirname, 'src')
             }
           }
