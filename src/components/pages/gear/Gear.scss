@@ -1,0 +1,43 @@
+.gear-pieces {
+
+    // Display
+    display: flex;
+
+    // Position
+    margin-top: 15px;
+    margin-inline: 15px;
+
+    // Flexbox
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+:checked + div {
+
+    // Other
+    filter: brightness(1.5);
+
+}
+
+.gear-modifier-group > h3 {
+
+    margin-block: 10px;
+
+}
+
+.content-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+.content-title .slider-container {
+    
+    align-items: flex-end;
+
+}
+

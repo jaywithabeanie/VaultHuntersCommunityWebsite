@@ -1,0 +1,258 @@
+// Initiate variables
+$large-screen-size: 1000px;
+
+/* Style main container */
+.container {
+
+    /* Display */
+    display: flex;
+
+    /* Position */
+    position: relative;
+    margin: 60px auto 0;
+    padding: 20px;
+
+    /* Size */
+    width: 90%;
+    max-width: 550px;
+    height: fit-content;
+
+    /* Background */
+    background-color: var(--background-color-main-75);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    /* Flexbox */
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    /* Border */
+    border: 4px groove var(--background-color-main);
+    outline: 2px solid var(--background-color-main-75);
+    filter: drop-shadow(0px 0px 10px black);
+
+    // Media Query
+    @media (min-width: $large-screen-size) {
+
+        // Position
+        margin: 60px 0 0 calc((100vw - 550px) / 2 + 200px);
+        padding: 30px;
+
+        /* Size */
+        width: 550px;
+
+    }
+    
+}
+
+.container *:not(.box-texture) {
+
+    z-index: 1;
+
+}
+
+
+.container .box-texture {
+
+    /* Position */
+    position: absolute;
+    inset: 0px;
+
+    /* Size */
+    width: calc(100%);
+
+    /* Other */
+    opacity: 1;
+
+    z-index: 0;
+
+    /* Border */
+    /* border-radius: 10px; */
+
+}
+
+.container .scroll-header {
+
+    /* Display */
+    display: flex;
+
+    /* Size */
+    width: 400px;
+    max-width: 100%;
+
+    /* Flexbox */
+    align-items: center;
+
+}
+
+.container .scroll-header .icon {
+
+    /* Size */
+    width: 30%;
+    aspect-ratio: 107/98;
+
+    /* Background */
+    background-image: url(../../../images/assets/breadcrumb/scroll_header_icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Other */
+    z-index: 2;
+
+}
+
+.container .scroll-header .icon .vault-rock {
+
+    /* Position */
+    margin: 20% 25%;
+
+    /* Size */
+    width: 50%;
+
+    /* Other */
+    image-rendering: pixelated;
+    filter: sepia(50%);
+
+}
+
+.container .scroll-header .label {
+
+    /* Display */
+    display: flex;
+
+    /* Position */
+    margin-left: -25px;
+    padding-left: 30px;
+
+    /* Size */
+    width: 75%;
+    aspect-ratio: 252/50;
+
+    /* Background */
+    background-image: url(../../../images/assets/breadcrumb/scroll_header_label.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    /* Flexbox */
+    align-items: center;
+
+}
+
+.container .scroll-header .label p {
+
+    /* Font */
+    color: #272727;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 100%;
+
+}
+
+.container > p {
+
+    /* Font */
+    color: #d8c9bb;
+    font-family: var(--font-secondary);
+    font-size: 18px;
+
+}
+
+.container ul {
+
+    /* Display */
+    display: flex;
+
+    /* Position */
+    margin-top: 20px;
+
+    /* Flexbox */
+    gap: 5px;
+
+}
+
+.container ul li {
+
+    /* Display */
+    display: flex;
+
+    /* Size */
+    width: 48px;
+    aspect-ratio: 1/1;
+
+    z-index: 100;
+
+}
+
+.container ul li a {
+
+    /* Display */
+    display: flex;
+    
+    /* Size */
+    width: 100%;
+    height: 100%;
+    
+    /* Background */
+    background-image: url('../../../images/assets/breadcrumb/icon_small_variant1_a.png');
+
+    /* Flexbox */
+    align-items: center;
+
+}
+
+.container ul li a:hover {
+
+    filter: brightness(1.15);
+
+}
+
+.container ul li:nth-child(2) a {
+
+
+    /* Background */
+    background-image: url('../../../images/assets/breadcrumb/icon_small_variant1_b.png');
+
+}
+
+
+/* Format Logos */
+.container .icon-small [class^='fa'] {
+
+    /* Position */
+    margin: 2px 0px 0px 8px;
+
+    /* Font */
+    font-size: 28px;
+
+    /* Other */
+    image-rendering: pixelated;
+
+}
+
+.container .icon-small .fa-discord {
+
+    /* Font */
+    color: #6060EF;
+
+}
+
+.container .icon-small .fa-reddit-alien {
+
+    /* Position */
+    font-size: 32px;
+
+    /* Font */
+    color: #FF5600;
+
+}
+
+.container .icon-small .fa-globe {
+
+    /* Position */
+    margin-left: 11px;
+
+    /* Font */
+    color: #222;
+
+}

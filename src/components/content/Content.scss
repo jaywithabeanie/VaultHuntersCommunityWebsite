@@ -1,0 +1,34 @@
+/* Style container */
+.content-container {
+
+    /* Display */
+    display: flex;
+
+    /* Position */
+    margin: 30px auto;
+    padding: 30px 30px;
+
+    /* Size */
+    width: min(900px, 90%);
+
+    /* Flexbox */
+    align-items: center;
+
+    /* Background */
+    background-color: rgba(1, 1, 19, 0.24);
+
+    /* Border */
+    outline: 3px solid rgba(1, 1, 19, .5);
+
+    flex-wrap: wrap;
+    gap: 10px;
+
+
+
+}
+
+.content-container > * {
+
+    flex-basis: 100%;
+
+}

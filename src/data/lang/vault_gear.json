@@ -1,0 +1,260 @@
+{
+    "vault_gear": {
+
+        "modifier_groups": {
+
+            "IMPLICIT": "Implicit", 
+            "PREFIX": "Prefix",
+            "SUFFIX": "Suffix",
+            "CRAFTED_PREFIX": "Crafted Prefix",
+            "CRAFTED_SUFFIX": "Crafted Suffix"
+
+        },
+
+        "modifiers": {
+
+            "the_vault:attack_damage": {
+                "name": "Attack Damage",
+                "color": "#C82626"
+            },
+
+            "the_vault:attack_speed": {
+                "name": "Attack Speed",
+                "color": "#FCD767"
+            },
+
+            "the_vault:durability": {
+                "name": "Durability",
+                "color": "#DFD0FE"
+            },
+
+            "the_vault:fatal_strike_damage": {
+                "name": "Fatal Strike Damage",
+                "color": "#BF0D00"
+            },
+
+            "the_vault:on_hit_chain": {
+                "name": "Chaining",
+                "color": "#5D5EB8"
+            },
+
+            "the_vault:on_hit_stun": {
+                "name": "Stun Attack Chance",
+                "color": "#19A6E4"
+            },
+
+            "the_vault:shocking_hit_chance": {
+                "name": "Shocking Hit Chance",
+                "color": "#CFDD5A"
+            },
+
+            "the_vault:sweeping_hit_chance": {
+                "name": "Sweeping Hit Chance",
+                "color": "#E0BA61"
+            },
+
+            "the_vault:damage_increase": {
+                "name": "Increased Damage",
+                "color": "#FF6B00"
+            },
+
+            "the_vault:damage_illagers": {
+                "name": "Spiteful",
+                "color": "#009FB2"
+            },
+
+            "the_vault:damage_spiders": {
+                "name": "Baneful",
+                "color": "#7E5E5E"
+            },
+
+            "the_vault:damage_undead": {
+                "name": "Holy",
+                "color": "#F9F8B0"
+            },
+
+            "the_vault:soulbound": {
+                "name": "Soulbound",
+                "color": "#9664FD"
+            },
+
+            "the_vault:mod_healing_cloud": {
+                "name": "Healing Cloud",
+                "color": "#E500AC"
+            },
+
+            "the_vault:mod_poison_cloud": {
+                "name": "Poison Cloud",
+                "color": "#E500AC"
+            },
+
+            "the_vault:fatal_strike_chance": {
+                "name": "Fatal Strike Chance",
+                "color": "#FC2000"
+            },
+
+            "the_vault:soul_chance": {
+                "name": "Soul Chance",
+                "color": "#4700FC"
+            },
+
+            "the_vault:attack_speed_percent": {
+                "name": "Attack Speed",
+                "color": "#FCD767"
+            },
+
+            "the_vault:on_hit_aoe": {
+                "name": "Cleave Range",
+                "color": "#B86900"
+            },
+
+            "the_vault:armor": {
+                "name": "Armor",
+                "color": "#48BAF8"
+            },
+
+            "the_vault:critical_hit_mitigation": {
+                "name": "Crit Hit Resistance",
+                "color": "#718DFF"
+            },
+
+            "the_vault:health": {
+                "name": "Health",
+                "color": "#22FF25"
+            },
+
+            "the_vault:mana_additive": {
+                "name": "Mana",
+                "color": "#00FFFF"
+            },
+
+            "the_vault:mana_additive_percentile": {
+                "name": "Mana",
+                "color": "#00FFFF"
+            },
+
+            "the_vault:resistance": {
+                "name": "Resistance",
+                "color": "#FFC000"
+            },
+
+            "the_vault:healing_effectiveness": {
+                "name": "Healing Efficiency",
+                "color": "#8EFF22"
+            },
+
+            "the_vault:cooldown_reduction": {
+                "name": "Cooldown Reduction",
+                "color": "#00F8B4"
+            },
+
+            "the_vault:mod_effect_avoidance_poison": {
+                "name": "Poison Avoidance",
+                "color": "#8FE0D6"
+            },
+
+            "the_vault:mod_effect_avoidance_wither": {
+                "name": "Wither Avoidance",
+                "color": "#8FE0D6"
+            },
+
+            "the_vault:mod_effect_avoidance_slowness": {
+                "name": "Slowness Avoidance",
+                "color": "#8FE0D6"
+            },
+
+            "the_vault:thorns_chance": {
+                "name": "Thorns Chance",
+                "color": "#FFC0CB"
+            },
+
+            "the_vault:item_quantity": {
+                "name": "Item Quantity",
+                "color": "#E88A12"
+            },
+
+            "the_vault:item_rarity": {
+                "name": "Item Rarity",
+                "color": "#E5B819"
+            },
+
+            "the_vault:trap_disarming": {
+                "name": "Trap Disarm Chance",
+                "color": "#8143FF"
+            },
+
+            "the_vault:knockback_resistance": {
+                "name": "Knockback Resist",
+                "color": "#FCAE0F"
+            },
+
+            "the_vault:mana_regen": {
+                "name": "Mana Regen",
+                "color": "#48BAF8"
+            },
+
+            "the_vault:block": {
+                "name": "Block Chance",
+                "color": "#F5CF8E"
+            },
+
+            "the_vault:velara_affinity": {
+                "name": "Vault God Affinity",
+                "color": "#FCA800"
+            },
+
+            "the_vault:mod_slowness_cloud": {
+                "name": "Slowness Cloud",
+                "color": "#E500AC"
+            },
+
+            "the_vault:mod_weakness_cloud": {
+                "name": "Weakness Cloud",
+                "color": "#E500AC"
+            },
+
+            "the_vault:effect_immunity": {
+                "name": "Immunity",
+                "color": "#EDE1CC"
+            },
+
+            "the_vault:thorns_damage": {
+                "name": "Thorns Damage",
+                "color": "#EC9EC0"
+            },
+
+            "the_vault:mod_wither_cloud": {
+                "name": "Wither Cloud",
+                "color": "#E500AC"
+            },
+
+            "the_vault:range": {
+                "name": "Range",
+                "color": "#F9B37F"
+            },
+
+            "the_vault:velocity": {
+                "name": "Velocity",
+                "color": "#DEE79F"
+            },
+
+            "the_vault:mining_speed": {
+                "name": "Mining Speed",
+                "color": "#66CCFF"
+            },
+
+            "the_vault:reach": {
+                "name": "Reach",
+                "color": "#84D7FF"
+            },
+
+            "the_vault:copiously": {
+                "name": "Copiously",
+                "color": "#F74780"
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,1277 @@
+{
+  "modifierGroup": {
+    "IMPLICIT": [
+      { "attribute": "the_vault:durability",
+        "group": "BaseDurability",
+        "identifier": "the_vault:base_durability",
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": 41,
+            "weight": 10,
+            "value": {
+              "min": 3000,
+              "max": 4000,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 21,
+            "maxLevel": 62,
+            "weight": 10,
+            "value": {
+              "min": 4001,
+              "max": 6000,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 42,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 6001,
+              "max": 8000,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 63,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 8001,
+              "max": 12000,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 88,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 12001,
+              "max": 16000,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 100,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 16001,
+              "max": 20000,
+              "step": 1
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:range",
+        "group": "BaseRange",
+        "identifier": "the_vault:base_range",
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": 50,
+            "weight": 100,
+            "value": {
+              "min": 3.0,
+              "max": 4.0,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 13,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 4.1,
+              "max": 5.0,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 25,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 5.1,
+              "max": 6.0,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 38,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 6.1,
+              "max": 7.0,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 51,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 8.1,
+              "max": 9.0,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 65,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 10.1,
+              "max": 11.0,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 76,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 11.1,
+              "max": 12.0,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 99,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 13.1,
+              "max": 15.0,
+              "step": 0.1
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:velocity",
+        "group": "BaseVelocity",
+        "identifier": "the_vault:base_velocity",
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.02,
+              "max": 0.04,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 14,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.05,
+              "max": 0.07,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 28,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.08,
+              "max": 0.1,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 38,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.11,
+              "max": 0.13,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 52,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.14,
+              "max": 0.16,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 66,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.17,
+              "max": 0.19,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 85,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.2,
+              "max": 0.25,
+              "step": 0.01
+            }
+          }
+        ]
+      }
+    ],
+    "PREFIX": [
+      { "attribute": "the_vault:mining_speed",
+        "group": "ModMiningSpeed",
+        "identifier": "the_vault:mod_mining_speed",
+        "tags": [
+          "focusMiningSpeed"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 1.0,
+              "max": 1.5,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 9,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 1.6,
+              "max": 2.5,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 19,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 2.6,
+              "max": 3.5,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 28,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 3.6,
+              "max": 4.5,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 45,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 4.6,
+              "max": 5.5,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 56,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 5.6,
+              "max": 6.5,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 70,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 6.6,
+              "max": 7.5,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 81,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 7.6,
+              "max": 8.5,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 8.6,
+              "max": 10.0,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 10.0,
+              "max": 16.0,
+              "step": 0.1
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:range",
+        "group": "ModRange",
+        "identifier": "the_vault:mod_range",
+        "tags": [
+          "focusMagnetRange"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 1.0,
+              "max": 1.5,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 9,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 1.6,
+              "max": 2.5,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 19,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 2.6,
+              "max": 3.5,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 28,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 3.6,
+              "max": 4.5,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 45,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 4.6,
+              "max": 5.5,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 56,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 5.6,
+              "max": 6.5,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 70,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 6.6,
+              "max": 7.5,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 81,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 7.6,
+              "max": 8.5,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 8.6,
+              "max": 10.0,
+              "step": 0.1
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 10.0,
+              "max": 12.0,
+              "step": 0.1
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:velocity",
+        "group": "ModVelocity",
+        "identifier": "the_vault:mod_velocity",
+        "tags": [
+          "focusMagnetVelocity"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.01,
+              "max": 0.03,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 22,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.04,
+              "max": 0.06,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 38,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.07,
+              "max": 0.09,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 57,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.11,
+              "max": 0.13,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 67,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.14,
+              "max": 0.16,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 89,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.17,
+              "max": 0.19,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.2,
+              "max": 0.24,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.25,
+              "max": 0.3,
+              "step": 0.01
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:reach",
+        "group": "ModReach",
+        "identifier": "the_vault:mod_reach",
+        "tags": [
+          "focusReach"
+        ],
+        "tiers": [
+          {
+            "minLevel": 15,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.1,
+              "max": 0.2,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 43,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.21,
+              "max": 0.3,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 79,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.31,
+              "max": 0.4,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.8,
+              "max": 1.0,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 1.0,
+              "max": 1.2,
+              "step": 0.01
+            }
+          }
+        ]
+      }
+    ],
+    "SUFFIX": [
+      { "attribute": "the_vault:damage_increase",
+        "group": "ModDamage",
+        "identifier": "the_vault:mod_damage_increase",
+        "tags": [
+          "focusDamage"
+        ],
+        "tiers": [
+          {
+            "minLevel": 6,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.05,
+              "max": 0.09,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 21,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.1,
+              "max": 0.14,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 44,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.15,
+              "max": 0.21,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 73,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.22,
+              "max": 0.28,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 90,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.29,
+              "max": 0.35,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.36,
+              "max": 0.42,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.43,
+              "max": 0.5,
+              "step": 0.01
+            }
+          }
+          
+          
+        ]
+      },
+      { "attribute": "the_vault:item_quantity",
+        "group": "ModItemQuantity",
+        "identifier": "the_vault:mod_item_quantity",
+        "tags": [
+          "focusItemQuantity"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.03,
+              "max": 0.05,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 22,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.06,
+              "max": 0.08,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 45,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.09,
+              "max": 0.11,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 72,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.12,
+              "max": 0.13,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 93,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.14,
+              "max": 0.15,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.16,
+              "max": 0.17,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.18,
+              "max": 0.2,
+              "step": 0.01
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:item_rarity",
+        "group": "ModItemRarity",
+        "identifier": "the_vault:mod_item_rarity",
+        "tags": [
+          "focusItemRarity"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.05,
+              "max": 0.08,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 25,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.09,
+              "max": 0.13,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 51,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.14,
+              "max": 0.19,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 78,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.20,
+              "max": 0.25,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 95,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.26,
+              "max": 0.30,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.31,
+              "max": 0.36,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.37,
+              "max": 0.45,
+              "step": 0.01
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:durability",
+        "group": "ModDurability",
+        "identifier": "the_vault:mod_durability",
+        "tags": [
+          "focusDurability"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 800,
+              "max": 3000,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 25,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 3001,
+              "max": 4600,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 46,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 4601,
+              "max": 6000,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 70,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 6001,
+              "max": 8000,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 89,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 8001,
+              "max": 10000,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 10001,
+              "max": 12000,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 12001,
+              "max": 14000,
+              "step": 1
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:soulbound",
+        "group": "ModSoulbound",
+        "identifier": "the_vault:mod_soulbound",
+        "tags": [
+          "focusSoulbound"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "flag": true
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:soul_chance",
+        "group": "ModSoulChance",
+        "identifier": "the_vault:mod_soul_chance",
+        "tags": [
+          "focusSoulChance"
+        ],
+        "tiers": [
+          {
+            "minLevel": 22,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.25,
+              "max": 0.5,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 44,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.51,
+              "max": 1.0,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 66,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 1.01,
+              "max": 1.5,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 88,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 1.51,
+              "max": 2.0,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 2.01,
+              "max": 2.5,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 2.51,
+              "max": 3.0,
+              "step": 0.01
+            }
+          }
+          
+          
+        ]
+      },
+      { "attribute": "the_vault:copiously",
+        "group": "ModCopiously",
+        "identifier": "the_vault:copiously",
+        "tags": [
+          "focusCopiously"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.005,
+              "max": 0.01,
+              "step": 0.001
+            }
+          },
+          {
+            "minLevel": 21,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.011,
+              "max": 0.02,
+              "step": 0.001
+            }
+          },
+          {
+            "minLevel": 46,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.021,
+              "max": 0.03,
+              "step": 0.001
+            }
+          },
+          {
+            "minLevel": 72,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.031,
+              "max": 0.04,
+              "step": 0.001
+            }
+          },
+          {
+            "minLevel": 93,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.041,
+              "max": 0.05,
+              "step": 0.001
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.051,
+              "max": 0.06,
+              "step": 0.001
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.061,
+              "max": 0.07,
+              "step": 0.001
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:mana_regen",
+        "group": "ModManaRegen",
+        "identifier": "the_vault:mod_mana_regen",
+        "tags": [
+          "focusManaRegen"
+        ],
+        "tiers": [
+          {
+            "minLevel": 10,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.05,
+              "max": 0.12,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 23,
+            "maxLevel": -1,
+            "weight": 90,
+            "value": {
+              "min": 0.13,
+              "max": 0.2,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 34,
+            "maxLevel": -1,
+            "weight": 80,
+            "value": {
+              "min": 0.21,
+              "max": 0.28,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 46,
+            "maxLevel": -1,
+            "weight": 70,
+            "value": {
+              "min": 0.29,
+              "max": 0.36,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 55,
+            "maxLevel": -1,
+            "weight": 60,
+            "value": {
+              "min": 0.37,
+              "max": 0.46,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 67,
+            "maxLevel": -1,
+            "weight": 60,
+            "value": {
+              "min": 0.47,
+              "max": 0.55,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 81,
+            "maxLevel": -1,
+            "weight": 50,
+            "value": {
+              "min": 0.56,
+              "max": 0.75,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.76,
+              "max": 0.9,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.91,
+              "max": 1.2,
+              "step": 0.01
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:cooldown_reduction",
+      "group": "ModCooldownReduction",
+      "identifier": "the_vault:mod_cooldown_reduction",
+      "tags": [
+        "focusCooldown"
+      ],
+      "tiers": [
+        {
+          "minLevel": 20,
+          "maxLevel": -1,
+          "weight": 100,
+          "value": {
+            "min": 0.03,
+            "max": 0.05,
+            "step": 0.01
+          }
+        },
+        {
+          "minLevel": 39,
+          "maxLevel": -1,
+          "weight": 100,
+          "value": {
+            "min": 0.06,
+            "max": 0.08,
+            "step": 0.01
+          }
+        },
+        {
+          "minLevel": 59,
+          "maxLevel": -1,
+          "weight": 100,
+          "value": {
+            "min": 0.09,
+            "max": 0.11,
+            "step": 0.01
+          }
+        },
+        {
+          "minLevel": 70,
+          "maxLevel": -1,
+          "weight": 100,
+          "value": {
+            "min": 0.12,
+            "max": 0.14,
+            "step": 0.01
+          }
+        },
+        {
+          "minLevel": 85,
+          "maxLevel": -1,
+          "weight": 100,
+          "value": {
+            "min": 0.15,
+            "max": 0.17,
+            "step": 0.01
+          }
+        },
+        {
+          "minLevel": 92,
+          "maxLevel": -1,
+          "weight": 100,
+          "value": {
+            "min": 0.18,
+            "max": 0.2,
+            "step": 0.01
+          }
+        },
+        {
+          "minLevel": 101,
+          "maxLevel": -1,
+          "weight": 100,
+          "value": {
+            "min": 0.21,
+            "max": 0.24,
+            "step": 0.01
+          }
+        },
+        {
+          "minLevel": 102,
+          "maxLevel": -1,
+          "weight": 100,
+          "value": {
+            "min": 0.25,
+            "max": 0.3,
+            "step": 0.01
+          }
+        }
+      ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+.icon-display-small {
+
+    // Display
+    display: flex;
+
+    // Size
+    width: 48px;
+    aspect-ratio: 1/1;
+
+    // Flexbox
+    flex: 0;
+    align-items: center;
+    justify-content: center;
+
+    // Background
+    background-image: url('/images/assets/breadcrumb/icon_small_variant1_a.png');
+
+}
+
+.icon-display-small > * {
+
+    // Position
+
+    // Size
+    width: 32px;
+    aspect-ratio: 1/1;
+
+    // Other
+    image-rendering: pixelated;
+
+}

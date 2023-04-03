@@ -1,0 +1,122 @@
+// Style modifier
+.gear-modifier {
+
+    // Display
+    display: inline-block;
+
+    // Size
+    width: 100%;
+
+}
+
+.gear-modifier:not(:first-child) h3 {
+
+    margin-top: -2px;
+
+}
+
+.gear-modifier > * {
+
+    // Border
+    border: 2px solid rgba(0, 0, 0, 0.65);
+
+}
+
+.gear-modifier > *:not(:first-child) {
+
+    margin-top: -2px;
+
+}
+
+.gear-modifier h3 {
+
+    // Display
+    display: flex;
+
+    // Position
+    padding: 10px;
+
+    // Flexbox
+    justify-content: space-between;
+
+    // Color
+    color:rgb(255, 255, 255);
+
+    // Background
+    background-color: rgba(0, 0, 7, 0.5);
+
+    // Other
+    cursor: pointer;
+
+}
+
+.gear-modifier h3 > span {
+
+    // Display
+    display: flex;
+
+    // Flexbox
+    gap: 7px;
+
+    // Font
+    font-weight: normal;
+
+    & span {
+
+        // Font
+        font-weight: bold;
+
+    }
+
+}
+
+.gear-modifier div {
+
+    // Position
+    padding: 10px;
+
+    // Color
+    background-color: rgba(20, 15, 10, 0.25);
+
+}
+
+.gear-modifier:not(.expanded) div {
+
+    display: none;
+
+}
+
+.gear-modifier .gear-modifier-data .gear-modifier-values {
+
+    // Display
+    display: flex;
+
+    // Flexbox
+    gap: 5px;
+
+    // Font
+    color: white;
+
+}
+
+.gear-modifier .gear-modifier-data .gear-modifier-values .modifier-display-for-tier {
+
+    // Font
+    font-weight: bold;
+
+}
+
+.gear-modifier .gear-modifier-data .gear-modifier-levels {
+
+    // Font
+    color: white;
+
+}
+
+.gear-modifier .gear-modifier-data {
+
+    display: flex;
+
+    justify-content: space-between;
+
+}

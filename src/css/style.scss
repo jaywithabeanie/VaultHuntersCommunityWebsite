@@ -1,0 +1,188 @@
+/* Import Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Pacifico&family=Permanent+Marker&display=swap');
+
+
+/* Reset all styles */
+* {
+
+  /* Position */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+// Root variables
+$large-screen-size: 1000px;
+
+/* Set global variables */
+:root {
+
+  /* Colors */
+  --color-main: rgb(255, 168, 0);
+  --color-main-50: rgba(255, 170, 0, 0.5);
+  --color-secondary: #FFE0A4;
+  --color-monotone-7: #777777;
+  --color-text-main: #f0e8d9;
+  --color-text-secondary: #08121F;
+
+  /* Background Colors */
+  --background-color-main: #050e1b;
+  --background-color-main-90: rgba(13, 26, 41, 0.90);
+  --background-color-main-75: rgba(13, 26, 41, 0.75);
+  --background-color-main-50: rgba(13, 26, 41, 0.5);
+  --background-color-secondary: #08121F;
+  --background-color-secondary-90: rgba(8, 18, 31, 0.90);
+
+  /* Fonts */
+  --font-main: 'Lato', sans-serif;
+  --font-secondary: 'Boogaloo', sans-serif;
+  --font-title: 'Permanent Marker', sans-serif;
+
+  // Screen resolutions
+  --large-screen-size: 1000px;
+
+}
+  
+
+/* Style body */
+body {
+
+  /* Size */
+  min-height: 100%;
+
+  /* Font */
+  font-family: var(--font-main);
+  font-size: 16px;
+  color: var(--color-main);
+
+}
+
+
+/* Style main */
+main {
+
+  /* Display */
+  display: flex;
+
+  /* Size */
+  min-height: calc(100vh - 75px - 50px);
+
+  /* Flexbox */
+  flex-direction: column;
+
+  @media (min-width: $large-screen-size) {
+
+    // Size
+    min-height: calc(100vh - 150px - 50px);
+
+  }
+
+}
+
+
+/* Style background image */
+.background-image {
+
+  /* Position */
+  position: fixed;
+  z-index: -100;
+  left: 50%;
+
+  /* Size */
+  min-width: 100%;
+  min-height: 100%;
+
+  /* Transform */
+  transform: translateX(-50%);
+
+}
+
+
+/* Style unordered lists */
+ul {
+
+  /* Decoration */
+  list-style-type: none;
+
+}
+
+
+/* Style links */
+a, button, label {
+
+  /* Font */
+  color: var(--color-main);
+
+  /* Decoration */
+  text-decoration: none;
+
+  /* Transform */
+  transition: 1s;
+
+}
+
+
+a:hover:not([disabled]), button:hover:not([disabled]), label:hover[hoverable="true"] {
+
+  /* Font */
+  color: var(--color-secondary);
+
+  /* Transform */
+  transition: 0.3s;
+  transform: translateY(-2px);
+
+  /* Other */
+  filter: brightness(1.15);
+  cursor: pointer;
+
+}
+
+
+a[disabled] {
+
+  /* Font */
+  color: var(--color-monotone-7);
+
+  /* Other */
+  cursor: default;
+
+}
+
+
+/* Style buttons */
+button {
+
+  /* Font */
+  font: inherit;
+  color: inherit;
+
+  /* Background */
+  background-color: transparent;
+  
+  /* Border */
+  border: none;
+
+  /* Other */
+  cursor: pointer;
+
+}
+
+
+/* Style inputs */
+input[type=radio] {
+
+  display: none;
+
+}
+
+input[type='radio']:checked + label {
+  background-color: #4CAF50;
+  color: white;
+}
