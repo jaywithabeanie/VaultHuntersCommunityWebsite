@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect}from 'react';
 import './GearPiece.scss';
 
 // Components
@@ -21,12 +21,20 @@ function GearPiece(props) {
         isOddChild
     } = props
 
-    const imageURL = import(`../../../../images/assets/the_vault/item/gear/${props.name}.png`);
+    const [imageSrc, setImageSrc] = useState(null);
+
+    useEffect(() => {
+        async function loadImage() {
+        const { default: src } = await import(`../../../../images/assets/the_vault/item/gear/${props.name}.png`);
+        setImageSrc(src);
+        }
+        loadImage();
+    }, [props.name]);
 
     return (
         <div className='gear-piece'>
             <IconDisplayMedium variant = {props.isOddChild === true ? '1a' : '1b'}>
-                <img src={imageURL} key={props.name} />
+                <img src={imageSrc} key={props.name} />
             </IconDisplayMedium>
         </div>
     );
