@@ -2,8 +2,8 @@
 @import '../style.scss';
 
 /* Import images */
-$title-icon: url('../../../build/images/scroll_header_icon.png');
-$title-label: url('../../../build/images//scroll_header_label.png');
+// $title-icon: url('/build/images/scroll_header_icon.png');
+// $title-label: url('/build/images/scroll_header_label.png');
 
 /* Style container */
 .title-container {
@@ -42,7 +42,7 @@ $title-label: url('../../../build/images//scroll_header_label.png');
     aspect-ratio: 107/98;
 
     /* Background */
-    background-image: $title-icon;
+    // background-image: $title-icon;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -85,7 +85,7 @@ $title-label: url('../../../build/images//scroll_header_label.png');
     /* aspect-ratio: 262/50; */
 
     /* Background */
-    background-image: $title-label;
+    // background-image: $title-label;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -100px 0px;
