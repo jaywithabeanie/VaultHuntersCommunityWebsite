@@ -36,8 +36,7 @@ module.exports = {
             options: {
               name: '[name].[ext]',
               outputPath: 'images',
-              publicPath: '/images',
-              context: path.resolve(__dirname, 'src')
+              publicPath: './images'
             }
           }
         ]
