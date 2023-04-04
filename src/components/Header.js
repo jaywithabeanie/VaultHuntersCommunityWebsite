@@ -13,7 +13,7 @@ function Header(props) {
 
   return (
     <header currentPage={props.content}>
-      <Link to="/" onClick={() => window.scrollTo(0, 0)} className="logo">
+      <Link to="/" onClick={() => window.scrollTo(0, 0)} className="logo background-parent">
         <img src={logo_small} className='logo-small background'/>
         <img src={logo_large} className='logo-large background'/>
       </Link>

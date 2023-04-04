@@ -14,11 +14,11 @@ function Home () {
     <div className="container">
         <div className="box-texture"></div>
         <div className="scroll-header">
-          <div className='icon'>
+          <div className='icon background-parent'>
             <img src={title_icon_background} className="background"/>
             <img src={vault_rock} className="image" />
           </div>
-          <div className='label'>
+          <div className='label background-parent'>
             <img src={title_label_background} className="background"/>
             <p>Community Website</p>
           </div>
@@ -30,19 +30,19 @@ function Home () {
         </p>
         <ul>
           <li>
-            <a href='https://discord.gg/dr9z3tKjBT' target='_blank' rel='noreferrer' className='icon-small'>
+            <a href='https://discord.gg/dr9z3tKjBT' target='_blank' rel='noreferrer' className='icon-small background-parent'>
               <img src={icon_variant_1a} className="background" />
               <i className="fa-brands fa-discord"></i>
             </a>
           </li>
           <li>
-            <a href='https://www.reddit.com/r/VaultHuntersMinecraft/' target='_blank' rel='noreferrer' className='icon-small'>
+            <a href='https://www.reddit.com/r/VaultHuntersMinecraft/' target='_blank' rel='noreferrer' className='icon-small background-parent'>
               <img src={icon_variant_1b} className="background" />
               <i className="fa-brands fa-reddit-alien"></i>
             </a>
           </li>
           <li>
-            <a href='https://vaulthunters.gg' target='_blank' rel='noreferrer' className='icon-small'>
+            <a href='https://vaulthunters.gg' target='_blank' rel='noreferrer' className='icon-small background-parent'>
               <img src={icon_variant_1a} className="background" />
               <i className="fa-solid fa-globe"></i>
             </a>

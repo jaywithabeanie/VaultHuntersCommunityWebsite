@@ -193,13 +193,13 @@ input[type='radio']:checked + label {
 
 
 // Style backgrounds
-*:has(.background) {
+.background-parent {
 
   position: relative;
 
 }
 
-.background {
+.background-parent .background {
 
   // Position
   position: absolute;

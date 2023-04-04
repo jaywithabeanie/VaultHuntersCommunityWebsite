@@ -8,7 +8,7 @@ function Footer () {
     <footer>
 
       <div className="navigation">
-        <div className="logo">
+        <div className="logo background-parent">
           <img src={logo_small} className='background'/>
         </div>
         <nav className="menu">

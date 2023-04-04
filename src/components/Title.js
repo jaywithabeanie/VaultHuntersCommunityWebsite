@@ -18,11 +18,11 @@ function Title(props) {
 
     return (
         <div className="title-container">
-            <div className='icon'>
+            <div className='icon background-parent'>
                 <img src={title_icon_background} className='background' />
                 <img src={icon_url} className='image'/>
             </div>
-            <div className='title'>
+            <div className='title background-parent'>
                 <img src={title_label_background} className='background' />
                 <p>{title}</p>
             </div>
