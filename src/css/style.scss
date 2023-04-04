@@ -211,3 +211,37 @@ input[type='radio']:checked + label {
   user-select: none;
 
 }
+
+
+// Style tooltips
+*:has(.tooltip) {
+
+  position: relative;
+
+}
+
+*:hover > .tooltip {
+
+  visibility: visible;
+  transition: visibility 0s linear 1s;
+
+}
+
+.tooltip {
+
+  // Position
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  padding: 4px;
+
+  z-index: 1;
+  visibility: hidden;
+  background-color: var(--background-color-main);
+  border: 1px solid var(--background-color-secondary);
+  font-size: 12px;
+  color: white;
+  white-space: nowrap;
+  transition: visibility 0s;
+
+}

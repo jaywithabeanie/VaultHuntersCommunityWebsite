@@ -68,6 +68,27 @@
 
     }
 
+    & .gear-modifier-expanded {
+
+        // Size
+        width: 10px;
+
+        // Font
+        text-align: right;
+
+    }
+
+    & .gear-modifier-odds {
+
+        // Position
+        margin-right: 20px;
+
+        // Font
+        font-size: 17px;
+        font-weight: normal;
+
+    }
+
 }
 
 .gear-modifier div {
@@ -97,6 +118,15 @@
     // Font
     color: white;
 
+
+    & .gear-modifier-values-new {
+
+        // Font
+        color: #9664fd;
+        font-weight: bold;
+
+    }
+
 }
 
 .gear-modifier .gear-modifier-data .gear-modifier-values .modifier-display-for-tier {
@@ -118,5 +148,39 @@
     display: flex;
 
     justify-content: space-between;
+
+
+    &:not(:first-of-type) {
+
+        border-top: none;
+
+    }
+
+    &:not(:last-of-type) {
+
+        border-bottom: none;
+
+    }
+
+}
+
+.gear-modifier .gear-modifier-excluding p {
+
+    display: flex;
+    
+    gap: 5px;
+
+}
+
+.gear-modifier .gear-modifier-excluding p :first-child {
+
+    color: white;
+
+}
+
+.gear-modifier .gear-modifier-excluding p :nth-child(2) {
+
+    color: rgb(255, 35, 35);
+    font-weight: bold;
 
 }

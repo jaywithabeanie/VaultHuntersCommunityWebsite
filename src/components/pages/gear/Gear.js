@@ -13,7 +13,7 @@ import chestplate from '../../../images/assets/the_vault/item/gear/chestplate.pn
 // Import lang file
 import lang from '../../../data/lang/vault_gear.json';
 
-const gearPieces = ['sword', 'axe', 'helmet', 'chestplate', 'leggings', 'boots', 'idol', 'shield', 'magnet'];
+const gearPieces = ['sword', 'axe', 'helmet', 'chestplate', 'leggings', 'boots', 'idol', 'shield', 'magnet', 'jewel'];
 
 function Home () {
 
@@ -27,6 +27,43 @@ function Home () {
   const handleLevelSliderChange = (level) => {
     setLevel(level);
   };
+
+  function getTotalWeight(modifierGroup, modifiers) {
+    
+    // Initiate variables
+    var totalWeight = 0;
+
+    // Guard clause
+    if (!['PREFIX', 'SUFFIX'].includes(modifierGroup)) {
+      return totalWeight;
+    }
+
+    // Map modifiers
+    modifiers.map((modifier) => {
+
+      // Guard clauses
+      if (modifier.tiers.length > 0
+        && modifier.tiers.some((tier) => (tier.minLevel <= level && level <= (tier.maxLevel < 0 ? 100 : tier.maxLevel)))) {
+
+          // Initiate variables
+          const availableTiers = modifier.tiers.filter(tier => tier.minLevel <= level && (tier.maxLevel === -1 || tier.maxLevel >= level));
+
+          // Loop through tiers
+          availableTiers.map((tier) => {
+            
+            // Increase weight
+            totalWeight += tier.weight;
+    
+          })
+
+      }
+
+
+    })
+
+    return totalWeight;
+
+  }
 
   function getGearPieceModifierData() {
 
@@ -93,7 +130,10 @@ function Home () {
       <Content>
 
         <div className="content-title">
-          <h2>{`Vault ${selectedGearPiece.charAt(0).toUpperCase() + selectedGearPiece.slice(1)}`}</h2>
+          <h2>{`
+            ${!['jewel', 'magnet'].includes(selectedGearPiece) ? 'Vault ' : ''}
+            ${selectedGearPiece.charAt(0).toUpperCase() + selectedGearPiece.slice(1)}
+          `}</h2>
           <Slider onChange={handleLevelSliderChange}/>
         </div>
 
@@ -107,13 +147,21 @@ function Home () {
               <h3>{getModifierGroupDisplayName(modifierGroup)}</h3>
               {modifiers.map((modifier) => (
                 <>
-                  {modifier.tiers.length > 0 && modifier.tiers.some((tier) => (tier.minLevel <= level && level <= (tier.maxLevel < 0 ? 100 : tier.maxLevel))) && (
+                  {modifier.tiers.length > 0
+                    && modifier.tiers.some((tier) => (tier.minLevel <= level && level <= (tier.maxLevel < 0 ? 100 : tier.maxLevel) && tier.weight > 0)) && (
                     <Modifier 
-                      key={modifier.attribute}
+                      key={modifier.identifier}
+                      gearPiece={selectedGearPiece}
                       modifierGroup={modifierGroup}
                       modifier={modifier}
                       langData={getModifierData(modifier)}
                       level={level}
+                      excludingModifiers={
+                        modifiers
+                          .filter((otherModifier) => otherModifier.group === modifier.group && otherModifier != modifier)
+                          .map(otherModifier => getModifierData(otherModifier).name)
+                      }
+                      totalWeight={getTotalWeight(modifierGroup, modifiers)}
                     />
                   )}
                 </>

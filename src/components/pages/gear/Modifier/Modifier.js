@@ -5,10 +5,13 @@ import './Modifier.scss';
 function Modifier (props) {
 
   const {
+    gearPiece,
     modifierGroup,
     modifier,
     langData,
-    level
+    level,
+    excludingModifiers,
+    totalWeight
   } = props
 
   const [expanded, setExpanded] = useState(false);
@@ -27,6 +30,11 @@ function Modifier (props) {
       .filter((tier, index) => index > modifier.tiers.indexOf(highestTier) && index <= modifier.tiers.indexOf(highestTier) + 2)
       .sort((a, b) => a.minLevel - b.minLevel)
     : []
+
+  function getModifierWeight() {
+    const modifierWeight = availableTiers.reduce((sum, tier) => sum + tier.weight, 0);
+    return modifierWeight.toFixed(2);
+  }
 
   function getTierDisplayForModifier(modifier, tier) {
 
@@ -74,8 +82,9 @@ function Modifier (props) {
           tierDisplay = `${(tier.value.min * 100).toFixed(0)} - ${(tier.value.max * 100).toFixed(0)}`
         }
 
-        // Modifier is "Copiously"
-        else if (modifier.attribute === "the_vault:copiously") {
+        // Modifier is "Copiously" or ("Item Quantity" or "Item Rarity" for Jewels)
+        else if (modifier.attribute === "the_vault:copiously"
+          || ((modifier.attribute === "the_vault:item_quantity" || modifier.attribute === "the_vault:item_rarity") && gearPiece === 'jewel')) {
           tierDisplay = `${(tier.value.min * 100).toFixed(1) + '%'} - ${(tier.value.max * 100).toFixed(0) + '%'}`;
         }
 
@@ -130,7 +139,7 @@ function Modifier (props) {
   }
 
   return (
-    <div key={modifier.identifier} class={`gear-modifier ${expanded ? 'expanded' : ''}`}>
+    <div key={modifier.identifier} className={`gear-modifier ${expanded ? 'expanded' : ''}`}>
       <h3 onClick={handleToggle}>
         <span>
           {`
@@ -139,11 +148,14 @@ function Modifier (props) {
               ? 
                 `
                   ${getTierDisplayForModifier(modifier, lowestTier).split(" - ")[0]}
-                  - 
-                  ${
-                    getTierDisplayForModifier(modifier, highestTier).split(" - ")[1] !== undefined
-                    ? getTierDisplayForModifier(modifier, highestTier).split(" - ")[1]
-                    : getTierDisplayForModifier(modifier, highestTier).split(" - ")[0]
+                  ${lowestTier.value.min === highestTier.value.max
+                    ? ''
+                    : ` - 
+                      ${
+                        getTierDisplayForModifier(modifier, highestTier).split(" - ")[1] !== undefined
+                        ? getTierDisplayForModifier(modifier, highestTier).split(" - ")[1]
+                        : getTierDisplayForModifier(modifier, highestTier).split(" - ")[0]
+                      }`
                   }
                 `
               : ""
@@ -151,9 +163,19 @@ function Modifier (props) {
           `}
           <span style={{color: langData.color}}>
             {langData.name}
+            {langData.description !== undefined &&
+              <span className='tooltip'>{langData.description}</span>
+            }
           </span>
         </span>
-        <span>{expanded ? '-' : '+'}
+        <span>
+          {(totalWeight === 0
+            ? ''
+            : <span className='gear-modifier-odds'>{`${(getModifierWeight() / totalWeight * 100).toFixed(2)} %`}</span>
+          )}
+          <span className='gear-modifier-expanded'>
+            {expanded ? '-' : '+'}
+          </span>
         </span>
       </h3>
       {([...availableTiers, ...availableLegendaryTiers]).map((tier) => (
@@ -164,16 +186,30 @@ function Modifier (props) {
               : <span>{getTierDisplayForModifier(modifier, tier)}</span>
             )}
             <span className="modifier-display-for-tier" style={{color: langData.color}}>{getModifierDisplayForTier(tier)}</span>
+            {level - tier.minLevel <= 3 && tier.minLevel <= level &&
+              <span className="gear-modifier-values-new">(New)</span>
+            }
           </p>
           <p className="gear-modifier-levels">
             {
               !availableLegendaryTiers.includes(tier)
                 ? `${`Lvl ${tier.minLevel}${tier.maxLevel === -1 ? ' +' :  ` - ${tier.maxLevel}`}`}`
-                : <span style={{"font-size": "14px","color": "gold"}}>◆</span>
+                : <span>
+                    <span style={{"font-size": "14px","color": "gold"}}>◆</span>
+                    <span className='tooltip'>Legendary Modifier</span>
+                  </span>
             }
           </p>
         </div>
       ))}
+      {excludingModifiers.length > 0 && (
+        <div className='gear-modifier-excluding'>
+          <p>
+            <span>{`Can not roll alongside:`}</span>
+            <span>{excludingModifiers.map((excludingModifier, index) => `${excludingModifier}${index != excludingModifiers.length - 1 ? ', ' : ''}`)}</span>
+          </p>
+        </div>
+      )}
     </div>
   );
 
