@@ -167,6 +167,11 @@ function Modifier (props) {
               <span className='tooltip'>{langData.description}</span>
             }
           </span>
+          <span>
+            {modifier.tiers.some((tier) => level - tier.minLevel <= 3 && tier.minLevel <= level) &&
+              <span className="gear-modifier-new">(New)</span>
+            }
+          </span>
         </span>
         <span>
           {(totalWeight === 0
@@ -181,6 +186,14 @@ function Modifier (props) {
       {([...availableTiers, ...availableLegendaryTiers]).map((tier) => (
         <div key={tier.minLevel} className="gear-modifier-data">
           <p className="gear-modifier-values">
+            {
+              availableLegendaryTiers.includes(tier)
+                ? <span>
+                    <span style={{"font-size": "14px","color": "gold"}}>◆</span>
+                    <span className='tooltip'>Legendary Modifier</span>
+                  </span>
+                : ''
+            }
             {(getTierDisplayForModifier(modifier, tier) === ""
               ? ''
               : <span>{getTierDisplayForModifier(modifier, tier)}</span>
@@ -192,12 +205,9 @@ function Modifier (props) {
           </p>
           <p className="gear-modifier-levels">
             {
-              !availableLegendaryTiers.includes(tier)
-                ? `${`Lvl ${tier.minLevel}${tier.maxLevel === -1 ? ' +' :  ` - ${tier.maxLevel}`}`}`
-                : <span>
-                    <span style={{"font-size": "14px","color": "gold"}}>◆</span>
-                    <span className='tooltip'>Legendary Modifier</span>
-                  </span>
+              tier.minLevel <= 100
+                ? `${`Lvl ${tier.minLevel <= 100 ? tier.minLevel : '-'}${tier.maxLevel === -1 ? ' +' : ` - ${tier.maxLevel}`}`}`
+                : '-'
             }
           </p>
         </div>

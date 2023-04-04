@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {useLocation} from 'react-router-dom';
 import Home from './components/pages/Home';
@@ -15,14 +15,19 @@ import untexturedBackgroundImage from './images/assets/the_vault/background_unte
 
 function useBackgroundImage() {
 
+  const [backgroundImage, setBackgroundImage] = useState(null);
   const location = useLocation().pathname;;
     
-  switch (location) {
-    case '/':
-      return texturedBackgroundImage;
-    default:
-      return untexturedBackgroundImage;
-  }
+  useEffect(() => {
+    const image = new Image();
+    image.src = location === '/' ? texturedBackgroundImage : untexturedBackgroundImage;
+
+    image.onload = () => {
+      setBackgroundImage(image.src);
+    }
+  }, [location]);
+
+  return backgroundImage;
 
 }
 
