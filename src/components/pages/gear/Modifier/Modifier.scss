@@ -7,6 +7,25 @@
     // Size
     width: 100%;
 
+
+    & .gear-modifier-new {
+
+        // Display
+        display: none;
+
+        // Font
+        color: #9664fd;
+        font-weight: bold;
+
+        @media (min-width: 720px) {
+
+            // Display
+            display: block;
+
+        }
+
+    }
+
 }
 
 .gear-modifier:not(:first-child) h3 {
@@ -49,12 +68,28 @@
     cursor: pointer;
 
 
-    & .gear-modifier-new {
+    & .gear-modifier-header-name {
 
-        // Font
-        color: #9664fd;
-        font-weight: bold;
+        order: -1;
 
+        @media (min-width: 720px) {
+
+            order: 0;
+
+        }
+
+    }
+
+    & .gear-modifier-header-values {
+
+        font-weight: normal;
+
+    }
+
+    & .gear-modifier-odds {
+
+        font-weight: normal;
+        
     }
 
 
@@ -67,14 +102,30 @@
 
     // Flexbox
     gap: 7px;
+    flex-direction: column;
 
     // Font
     font-weight: normal;
+
+
+    @media (min-width: 720px) {
+
+        // Flexbox
+        flex-direction: row;
+
+    }
+
 
     & span {
 
         // Font
         font-weight: bold;
+
+    }
+
+    &.gear-modifier-header-right {
+
+        align-items: flex-end;
 
     }
 
@@ -91,11 +142,10 @@
     & .gear-modifier-odds {
 
         // Position
-        margin-right: 20px;
+        // margin-right: 20px;
 
         // Font
         font-size: 17px;
-        font-weight: normal;
 
     }
 
@@ -128,21 +178,22 @@
     // Font
     color: white;
 
-
-    & .gear-modifier-values-new {
-
-        // Font
-        color: #9664fd;
-        font-weight: bold;
-
-    }
-
 }
 
 .gear-modifier .gear-modifier-data .gear-modifier-values .modifier-display-for-tier {
 
+    // Display
+    display: none;
+
     // Font
     font-weight: bold;
+
+    @media (min-width: 720px) {
+
+        // Display
+        display: block;
+
+    }
 
 }
 

@@ -1,0 +1,121 @@
+{
+
+    "guides": [
+
+        {
+
+            "icon":   "vault_crystal.png",
+            "url":    "getting-started",
+            "title":  "Getting Started",
+
+            "pages": [
+        
+                {
+        
+                    "icon": "writable_book.png",
+                    "url":  "",
+        
+                    "text": [
+                
+                        "<h3>A simple story...</h3><p>In a world filled with mysterious dungeons, four Gods seek the adventurer with the greatest spirit. Idona, Tenos, Velara and Wendarr put each hunter through a series of those dungeons, better known as vaults. Filled with loot and hostility, these vaults all have a limited time for exploration.</p><p>Do you have what it takes to fight for your life and regroup ancient artifacts before taking on the final vault ?</p>"
+                        ,
+            
+                        "<h3>...before a great adventure!</h3><p>Scared? Rest assured, the Vault Gods are here to help you! They will enhance your abilities through skills and talents that you can develop and master as your own. Learn how to move faster, focus your inner rampage and dash as fast as a bullet. Explore the vaults and seek for chests and mobs to build your experience as a hunter!</p><p>However, you can't enter a vault without proving your worth. Hence, the Vault Gods require sacrifices before every vault. You will need to offer various items to each Vault God, sometimes in astonishing quantities! As you progress, you will find rare gear and resources, so treasure them well!. Armors will protect you from the dangerous mobs, while swords and axes will make you able to defeat them... before the Vault ends.</p>"
+                    ]
+        
+                },
+            
+                {
+            
+                    "icon": "chromatic_iron_ingot.png",
+                    "url":  "overworld-mining",
+            
+                    "text": [
+
+                        "<BookItemDisplay icon='chromatic_iron_ingot.png' title='Chromatic Iron'></BookItemDisplay><p>Deep within the caverns of the overworld, a hunter can find the precious metal Chromatic Iron in ore form. It spawns in plentiful quantities, sometimes exposed naturally, below Y: -30.</p><p>This important resource is a key ingredient in many recipes, within all stages of the game. These can, however, be found within vaults, so they are not required to be mined continuously.</p>"
+                        ,
+                        
+                        "<BookItemDisplay icon='chipped_vault_rock.png' title='Chipped Vault Rock'></BookItemDisplay><p>Within these same caverns lays a crucial stone, used by every adventurer. At Y: -32, large veins of these stones can be found. They have a fortunate chance to contain Chipped Vault Rocks upon being mined.</p><p>The sole purpose of those Chipped Vault Rocks is to be crafted into Vault Rocks. Vault Stone can be found within vaults as well, so only a slim amount is needed to explore the first vaults.</p><BookCraftDisplay ingredients=',chipped_vault_rock.png,,chipped_vault_rock.png,chromatic_iron_ingot.png,chipped_vault_rock.png,,chipped_vault_rock.png,' result='vault_rock.png'></BookCraftDisplay>"
+                    ]
+            
+                },
+            
+                {
+            
+                    "icon": "vault_crystal.png",
+                    "url":  "introductionss",
+            
+                    "text": [
+
+                        "<BookItemDisplay icon='vault_altar.png' title='Vault Altar' quality='high'></BookItemDisplay><p>Upon gathering the required resources, a Vault Altar can be crafted. This altar can transform Vault Rocks into Vault Crystals.</p><BookCraftDisplay ingredients='chromatic_iron_ingot.png, diamond.png, chromatic_iron_ingot.png, obsidian.png:high, stone_bricks.png:high, obsidian.png:high, stone_bricks.png:high, stone_bricks.png:high, stone_bricks.png:high' result='vault_altar.png:high'></BookCraftDisplay>"
+                        ,
+                        
+                        "<BookItemDisplay icon='vault_crystal.png' title='Vault Crystal'></BookItemDisplay><p>When interacting with the Vault Altar with a Vault Rock in hand, the glimmering rock gets consumed and ingredients are required to be sacraficed to the Vault Gods. Once these items are all dropped onto the altar, it can be powered through Redstone to forge a Vault Crystal.</p><p>Every Vault Crystal has important information on the vault that comes with it. To each crystal, there is a level, objective, theme and layout tied to it. The higher the level, the higher the loot quality, but that comes at the cost of a higher difficulty.</p><p>When forged, the level of the crystal is set to the level of the hunter. The objective, theme and layout are also randomized by default.</p>"
+                    ]
+            
+                },
+            
+                {
+            
+                    "icon": "diamond_sword.png",
+                    "url":  "introductionsss",
+            
+                    "text": [
+
+                        "<BookItemDisplay icon='vault_stone.png' title='Vault Portal' quality='high'></BookItemDisplay><p>Once the Vault Crystal has been forged, it requires a frame to open the gateway to its vault. Only variants of Vault Stone are capable to support its energy. When placing Vault Stone in the formation of a Nether Portal, the entrance to the vault can be opened with a crystal.</p><p>Before entering, make sure to gear up. The first vault is an important task for every hunter, as it's the first step in proving their strengths.</p>"
+                        ,
+                        
+                        "<BookItemDisplay icon='diamond_sword.png' title='And.. Once Inside?'></BookItemDisplay><p>The moment a challenger enters a vault, the test of strength and resistance begins. Throughout the vault, various obstacles will present themselves before the hunter.</p><p>The most crucial obstacle, though, is that of time. Every vault has a base time of 25 minutes, which initiate the moment the vault is entered. The exit closes the moment the time runs out, and all remaining hunters are unalived.</p><p>There are more special rooms, but the most common rooms contain various points of interest, better known as POIs. These each have a Spawner guarding valuable chests, coins and ores.</p><a href=''>More information on what to expect within vaults will follow.</a>"
+                    ]
+            
+                }
+
+            ]
+
+        },
+
+        {
+
+            "icon":   "book.png",
+            "url":    "essential-tools",
+            "title":  "Essential Tools",
+
+            "pages": [
+        
+                {
+        
+                    "icon": "book.png",
+        
+                    "text": [
+                        
+                        "<h3>Official Discord</h3><p>If you have questions about anything, whether it's about setting up a server or how a feature works, you may be interested in joining the <a href='https://www.discord.gg/vaulthunters' target='_blank'>official Discord server</a>!</p><p>There are several text channels for asking any questions you may have about the modpack. It also offers a space to chat with other players and report bugs you may come across that are specific to the modpack.</p>"
+                        ,
+                        
+                        "<h3>The Guidebook</h3><p>Vault Hunters comes with many mechanics to learn. If you're trying to find information on Vault-related topics, look no further than the in-game guidebook!</p><p>This book is given upon loading into the world. If you need a new one, however, you can simply craft it with one book and one cobblestone. It's a work in progress, so it may be missing entries on some features for the time being!</p>"
+            
+                    ]
+        
+                },
+            
+                {
+            
+                    "icon": "chromatic_iron_ingot.png",
+            
+                    "text": [
+
+                        "<h3>Chromatic Iron</h3><p>Deep in the Caverns of the Overworld a miner may discover a precious material named Chromatic Iron, which spawns in plentiful amounts deep underground below Y: -30. This delicate metal is used in many recipes, two of these uses are the Vault altar, which is an important step in your Vault Adventures, aswell as the Vault rock, which its usecase is activating the Vault Altar.</p>"
+                        
+                        ,
+                        
+                        "Test"
+                    ]
+            
+                }
+
+            ]
+
+        }
+
+    ]
+
+}

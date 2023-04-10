@@ -1,18 +1,24 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import '../css/components/Header.scss';
+import './Header.scss';
+
+import setCurrentGuide from './pages/guides/Guides.js';
 
 import logo_small from '../images/logo_small.png';
 import logo_large from '../images/logo_large.png';
 
 function Header(props) {
 
+  const {
+    resetCurrentPage
+  } = props
+
   const disableLinkClick = (event) => {
     event.preventDefault();
   }
 
   return (
-    <header currentPage={props.content}>
+    <header className='header-container'>
       <Link to="/" onClick={() => window.scrollTo(0, 0)} className="logo background-parent">
         <img src={logo_small} className='logo-small background'/>
         <img src={logo_large} className='logo-large background'/>
@@ -29,16 +35,11 @@ function Header(props) {
               Gear
             </Link>
           </li>
-          {/* <li>
-            <Link href="/" onClick={disableLinkClick} disabled={true}>
-              Skills
+          <li>
+            <Link to="/guides" onClick={() => {window.scrollTo(0, 0); resetCurrentPage()}}>
+              Guides
             </Link>
           </li>
-          <li>
-            <Link href="/" onClick={disableLinkClick} disabled={true}>
-              Patch Notes
-            </Link>
-          </li> */}
         </ul>
       </nav>
     </header>

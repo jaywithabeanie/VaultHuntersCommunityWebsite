@@ -1,16 +1,19 @@
-/* Import Font Awesome */
+// Font Awesome
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
-/* Import fonts from Google Fonts */
+// Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Pacifico&family=Permanent+Marker&display=swap');
 
 
-/* Reset all styles */
+/// ╻━━━━━━━━━━━━━━╻
+/// ┃ Reset Styles ┃
+/// ╹━━━━━━━━━━━━━━╹
+
 * {
 
-  /* Position */
+  // Position
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,13 +21,23 @@
 }
 
 
-// Root variables
+/// ╻━━━━━━━━━━━━━━━━━━╻
+/// ┃ Global Variables ┃
+/// ╹━━━━━━━━━━━━━━━━━━╹
+
+$small-screen-size: 480px;
+$medium-screen-size: 720px;
 $large-screen-size: 1000px;
 
-/* Set global variables */
+
+
+/// ╻━━━━━━╻
+/// ┃ Root ┃
+/// ╹━━━━━━╹
+
 :root {
 
-  /* Colors */
+  // Colors
   --color-main: rgb(255, 168, 0);
   --color-main-50: rgba(255, 170, 0, 0.5);
   --color-secondary: #FFE0A4;
@@ -32,7 +45,7 @@ $large-screen-size: 1000px;
   --color-text-main: #f0e8d9;
   --color-text-secondary: #08121F;
 
-  /* Background Colors */
+  // Background Colors
   --background-color-main: #050e1b;
   --background-color-main-90: rgba(13, 26, 41, 0.90);
   --background-color-main-75: rgba(13, 26, 41, 0.75);
@@ -40,7 +53,7 @@ $large-screen-size: 1000px;
   --background-color-secondary: #08121F;
   --background-color-secondary-90: rgba(8, 18, 31, 0.90);
 
-  /* Fonts */
+  // Fonts
   --font-main: 'Lato', sans-serif;
   --font-secondary: 'Boogaloo', sans-serif;
   --font-title: 'Permanent Marker', sans-serif;
@@ -51,13 +64,16 @@ $large-screen-size: 1000px;
 }
   
 
-/* Style body */
+/// ╻━━━━━━╻
+/// ┃ Body ┃
+/// ╹━━━━━━╹
+
 body {
 
-  /* Size */
+  // Size
   min-height: 100%;
 
-  /* Font */
+  // Font
   font-family: var(--font-main);
   font-size: 16px;
   color: var(--color-main);
@@ -65,18 +81,23 @@ body {
 }
 
 
-/* Style main */
+
+/// ╻━━━━━━╻
+/// ┃ Main ┃
+/// ╹━━━━━━╹
+
 main {
 
-  /* Display */
+  // Display
   display: flex;
 
-  /* Size */
+  // Size
   min-height: calc(100vh - 75px - 50px);
 
-  /* Flexbox */
+  // Flexbox
   flex-direction: column;
 
+  // Media Query - Large Screen
   @media (min-width: $large-screen-size) {
 
     // Size
@@ -87,114 +108,114 @@ main {
 }
 
 
-/* Style background image */
-.background-image {
 
-  /* Position */
-  position: fixed;
-  z-index: -100;
-  left: 50%;
+/// ╻━━━━━━━╻
+/// ┃ Lists ┃
+/// ╹━━━━━━━╹
 
-  /* Size */
-  width: initial;
-  min-width: 100%;
-  min-height: 100%;
-
-  /* Transform */
-  transform: translateX(-50%);
-
-  // Other
-  user-select: none;
-
-}
-
-
-/* Style unordered lists */
 ul {
 
-  /* Decoration */
+  // Other
   list-style-type: none;
 
 }
 
 
-/* Style links */
+/// ╻━━━━━━━╻
+/// ┃ Links ┃
+/// ╹━━━━━━━╹
+
 a, button, label {
 
-  /* Font */
+  // Font
   color: var(--color-main);
-
-  /* Decoration */
   text-decoration: none;
 
-  /* Transform */
+  // Transform
   transition: 1s;
 
 }
 
-
 a:hover:not([disabled]), button:hover:not([disabled]), label:hover[hoverable="true"] {
 
-  /* Font */
+  // Font
   color: var(--color-secondary);
 
-  /* Transform */
-  transition: 0.3s;
+  // Transform
   transform: translateY(-2px);
+  transition: 0.3s;
 
-  /* Other */
+  // Other
   filter: brightness(1.15);
   cursor: pointer;
 
 }
 
-
 a[disabled] {
 
-  /* Font */
+  // Font
   color: var(--color-monotone-7);
 
-  /* Other */
+  // Other
   cursor: default;
 
 }
 
 
-/* Style buttons */
+
+/// ╻━━━━━━━━━╻
+/// ┃ Buttons ┃
+/// ╹━━━━━━━━━╹
+
 button {
 
-  /* Font */
+  // Font
   font: inherit;
   color: inherit;
 
-  /* Background */
+  // Background
   background-color: transparent;
   
-  /* Border */
+  // Border
   border: none;
 
-  /* Other */
+  // Other
   cursor: pointer;
 
 }
 
 
-/* Style inputs */
+
+/// ╻━━━━━━━━╻
+/// ┃ Inputs ┃
+/// ╹━━━━━━━━╹
+
 input[type=radio] {
 
+  // Display
   display: none;
 
 }
 
 input[type='radio']:checked + label {
-  background-color: #4CAF50;
+
+  // Font
   color: white;
+
+  // Background
+  background-color: #4CAF50;
+
 }
 
 
-// Style backgrounds
+
+/// ╻━━━━━━━━━━━━━╻
+/// ┃ Backgrounds ┃
+/// ╹━━━━━━━━━━━━━╹
+
 .background-parent {
 
+  // Position
   position: relative;
 
 }
@@ -213,17 +234,51 @@ input[type='radio']:checked + label {
 }
 
 
-// Style tooltips
-*:has(.tooltip) {
 
+/// ╻━━━━━━━━━━━━━━━━━━━╻
+/// ┃ Background Images ┃
+/// ╹━━━━━━━━━━━━━━━━━━━╹
+
+.background-image {
+
+  // Position
+  position: fixed;
+  left: 50vw;
+  z-index: -100;
+
+  // Size
+  width: initial;
+  min-width: 100%;
+  min-height: 100%;
+
+  // Transform
+  transform: translateX(-50%);
+
+  // Other
+  user-select: none;
+
+}
+
+
+
+/// ╻━━━━━━━━━━╻
+/// ┃ Tooltips ┃
+/// ╹━━━━━━━━━━╹
+
+.tooltip-parent {
+
+  // Position
   position: relative;
 
 }
 
-*:hover > .tooltip {
+.tooltip-parent:hover > .tooltip {
 
-  visibility: visible;
+  // Transform
   transition: visibility 0s linear 1s;
+
+  // Other
+  visibility: visible;
 
 }
 
@@ -234,14 +289,23 @@ input[type='radio']:checked + label {
   top: -30px;
   left: 10px;
   padding: 4px;
-
   z-index: 1;
-  visibility: hidden;
-  background-color: var(--background-color-main);
-  border: 1px solid var(--background-color-secondary);
+
+  // Font
   font-size: 12px;
   color: white;
-  white-space: nowrap;
+
+  // Background
+  background-color: var(--background-color-main);
+
+  // Border
+  border: 1px solid var(--background-color-secondary);
+
+  // Transform
   transition: visibility 0s;
+
+  // Other
+  visibility: hidden;
+  white-space: nowrap;
 
 }

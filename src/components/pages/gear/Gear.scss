@@ -5,12 +5,15 @@
 
     // Position
     margin-top: 15px;
-    margin-inline: 15px;
+    margin-left: 50vw;
 
     // Flexbox
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
+    
+    // Transform
+    transform: translateX(-50%);
 
 }
 
@@ -24,6 +27,16 @@
 .gear-modifier-group > h3 {
 
     margin-block: 10px;
+
+}
+
+.gear-modifier-group > p {
+
+    // Position
+    margin-bottom: 10px;
+
+    // Color
+    color: var(--color-text-main);
 
 }
 

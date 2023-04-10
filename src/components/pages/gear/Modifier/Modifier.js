@@ -32,7 +32,7 @@ function Modifier (props) {
     : []
 
   function getModifierWeight() {
-    const modifierWeight = availableTiers.reduce((sum, tier) => sum + tier.weight, 0);
+    var modifierWeight = availableTiers.reduce((sum, tier) => sum + tier.weight, 0);
     return modifierWeight.toFixed(2);
   }
 
@@ -107,6 +107,77 @@ function Modifier (props) {
 
   }
 
+  function getTierDisplayForModifiers(modifier, lowestTier, highestTier) {
+
+    // Initiate variables
+    var tierDisplay = "";
+
+    // Tier doesn't have values
+    if (lowestTier.value.min === undefined && lowestTier.value.minChance === undefined) {
+
+    }
+
+    // Tier has values
+    else {
+
+      // Tier values are integers
+      if ((Number.isInteger(lowestTier.value.min) && Number.isInteger(highestTier.value.max)) || (Number.isInteger(lowestTier.value.minChance) && Number.isInteger(highestTier.value.maxChance))) {
+
+        // Minimum and maximum values are the same
+        if (lowestTier.value.min === highestTier.value.max) {
+          tierDisplay = `${lowestTier.value.min}`;
+        }
+
+        // Minimum and maximum values are different
+        else {
+          tierDisplay = `${lowestTier.value.min} - ${highestTier.value.max}`;
+        }
+  
+      }
+  
+      // Tier values are floats
+      else {
+  
+        // Modifier is implicit 'Attack Speed'
+        if (modifier.identifier === "the_vault:base_attack_speed") {
+          tierDisplay = `${(4.0 + lowestTier.value.min).toFixed(1)} - ${(4.0 + highestTier.value.max).toFixed(1)}`;
+        }
+
+        // Modifier is "Reach", "Range" or "Speed"
+        else if (modifier.attribute === "the_vault:reach" || modifier.attribute === "the_vault:range" || modifier.attribute === "the_vault:mining_speed") {
+          tierDisplay = `${lowestTier.value.min} - ${highestTier.value.max}`;
+        }
+
+        // Modifier is "Velocity"
+        else if (modifier.attribute === "the_vault:velocity") {
+          tierDisplay = `${(lowestTier.value.min * 100).toFixed(0)} - ${(highestTier.value.max * 100).toFixed(0)}`
+        }
+
+        // Modifier is "Copiously" or ("Item Quantity" or "Item Rarity" for Jewels)
+        else if (modifier.attribute === "the_vault:copiously"
+          || ((modifier.attribute === "the_vault:item_quantity" || modifier.attribute === "the_vault:item_rarity") && gearPiece === 'jewel')) {
+          tierDisplay = `${(lowestTier.value.min * 100).toFixed(1) + '%'} - ${(highestTier.value.max * 100).toFixed(0) + '%'}`;
+        }
+
+        // Modifier is "x Avoidance"
+        else if (modifier.attribute.endsWith("avoidance")) {
+          tierDisplay = `${(lowestTier.value.minChance * 100).toFixed(0) + '%'} - ${(highestTier.value.maxChance * 100).toFixed(0) + '%'}`;
+        }
+
+        // Default modifier
+        else {
+          tierDisplay = `${(lowestTier.value.min * 100).toFixed(0) + '%'} - ${(highestTier.value.max * 100).toFixed(0) + '%'}`;
+        }
+  
+      }
+
+    }
+
+    // Return displayed data
+    return tierDisplay;
+
+  }
+
   function getModifierDisplayForTier(tier) {
 
     // Initiate variables
@@ -142,26 +213,12 @@ function Modifier (props) {
     <div key={modifier.identifier} className={`gear-modifier ${expanded ? 'expanded' : ''}`}>
       <h3 onClick={handleToggle}>
         <span>
-          {`
-            ${
-              getTierDisplayForModifier(modifier, lowestTier).split(" - ")[0] !== ""
-              ? 
-                `
-                  ${getTierDisplayForModifier(modifier, lowestTier).split(" - ")[0]}
-                  ${lowestTier.value.min === highestTier.value.max
-                    ? ''
-                    : ` - 
-                      ${
-                        getTierDisplayForModifier(modifier, highestTier).split(" - ")[1] !== undefined
-                        ? getTierDisplayForModifier(modifier, highestTier).split(" - ")[1]
-                        : getTierDisplayForModifier(modifier, highestTier).split(" - ")[0]
-                      }`
-                  }
-                `
-              : ""
-            }
-          `}
-          <span style={{color: langData.color}}>
+          {getTierDisplayForModifiers(modifier, lowestTier, highestTier) !== '' &&
+            <span className='gear-modifier-header-values'>
+              {getTierDisplayForModifiers(modifier, lowestTier, highestTier)}
+            </span>
+          }
+          <span style={{color: langData.color}} className='gear-modifier-header-name tooltip-parent'>
             {langData.name}
             {langData.description !== undefined &&
               <span className='tooltip'>{langData.description}</span>
@@ -173,7 +230,7 @@ function Modifier (props) {
             }
           </span>
         </span>
-        <span>
+        <span className='gear-modifier-header-right'>
           {(totalWeight === 0
             ? ''
             : <span className='gear-modifier-odds'>{`${(getModifierWeight() / totalWeight * 100).toFixed(2)} %`}</span>
@@ -188,7 +245,7 @@ function Modifier (props) {
           <p className="gear-modifier-values">
             {
               availableLegendaryTiers.includes(tier)
-                ? <span>
+                ? <span className='tooltip-parent'>
                     <span style={{"font-size": "14px","color": "gold"}}>◆</span>
                     <span className='tooltip'>Legendary Modifier</span>
                   </span>
@@ -200,7 +257,7 @@ function Modifier (props) {
             )}
             <span className="modifier-display-for-tier" style={{color: langData.color}}>{getModifierDisplayForTier(tier)}</span>
             {level - tier.minLevel <= 3 && tier.minLevel <= level &&
-              <span className="gear-modifier-values-new">(New)</span>
+              <span className="gear-modifier-new">(New)</span>
             }
           </p>
           <p className="gear-modifier-levels">

@@ -110,7 +110,7 @@ function Home () {
 
   return (
     <>
-      <Title icon_url={chestplate} title='Vault Gear'/>
+      <Title icon={chestplate} title='Vault Gear'/>
 
       <div className='gear-pieces'>
         {gearPieces.map((gearPiece, index) => (
@@ -145,6 +145,9 @@ function Home () {
               && (
             <div key={modifierGroup} className='gear-modifier-group'>
               <h3>{getModifierGroupDisplayName(modifierGroup)}</h3>
+              {['PREFIX', 'SUFFIX'].includes(modifierGroup) && 
+                <p>A gear piece with an odd amount of modifier slots has a 50% chance at rolling either a prefix or suffix.</p>
+              }
               {modifiers.map((modifier) => (
                 <>
                   {modifier.tiers.length > 0

@@ -1,0 +1,61 @@
+.container-book .book-item-display {
+
+    // Display
+    display: flex;
+
+    // Size
+    width: 100%;
+
+    // Flexbox
+    align-items: center;
+
+}
+
+.container-book .book-item-display > .icon {
+
+    // Display
+    display: flex;
+
+    // Size
+    width: 64px;
+    height: 64px;
+
+    // Other
+    image-rendering: pixelated;
+
+    justify-content: center;
+    align-items: center;
+
+
+    & .background {
+
+        // Position
+        z-index: -1;
+
+    }
+
+
+    & .icon {
+
+        // Size
+        width: 48px;
+        // height: 48px;
+
+
+        // &.high {
+
+        //     // Other
+        //     image-rendering: auto;
+
+        // }
+
+    }
+
+}
+
+.container-book .book-item-display h3 {
+    
+    // Position
+    margin-left: 10px;
+
+}

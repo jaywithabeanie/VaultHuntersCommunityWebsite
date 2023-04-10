@@ -1,0 +1,168 @@
+// Stylesheets
+@import '../style.scss';
+
+
+
+/// ╻━━━━━━━━━━━━━━━━━━╻
+/// ┃ Header Container ┃
+/// ╹━━━━━━━━━━━━━━━━━━╹
+
+.header-container {
+
+  // Display
+  display: flex;
+
+  // Position
+  padding-inline: 10px;
+
+  // Size
+  height: 75px;
+
+  // Font
+  font-family: var(--font-secondary);
+  color: var(--color-main);
+
+  // Background
+  background-color: var(--background-color-main);
+
+  // Flexbox
+  justify-content: space-between;
+  align-items: center;
+
+  // Media Query - Large Screen
+  @media (min-width: $large-screen-size) {
+
+    // Position
+    padding-inline: 30px;
+  
+    // Size
+    height: 150px;
+
+    // Background
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100px, 230px 100px, 190px 150px, 0% 150px);
+
+  }
+
+}
+
+
+
+/// ╻━━━━━━━━━━━━━╻
+/// ┃ Header Logo ┃
+/// ╹━━━━━━━━━━━━━╹
+
+.header-container .logo {
+    
+  // Size
+  width: 50px;
+  height: 46.625px;
+
+  // Media Query - Large Screen
+  @media (min-width: $large-screen-size) {
+  
+    // Size
+    width: 150px;
+    height: 109.95px;
+
+  }
+
+
+  &:hover {
+
+    // Transform
+    transform: none;
+
+  }
+
+
+  & .logo-small {
+
+    // Display
+    display: block;
+
+    // Media Query - Large Screen
+    @media (min-width: $large-screen-size) {
+
+      // Display
+      display: none;
+      
+    }
+  
+  }
+
+
+  & .logo-large {
+
+    // Display
+    display: none;
+
+    // Media Query - Large Screen
+    @media (min-width: $large-screen-size) {
+
+      // Display
+      display: block;
+
+    }
+
+  }
+
+}
+
+
+
+/// ╻━━━━━━━━━━━━━━━━━━━╻
+/// ┃ Header Navigation ┃
+/// ╹━━━━━━━━━━━━━━━━━━━╹
+
+// Style navigation menu
+.header-container .menu {
+
+  // Media Query - Large Screen
+  @media (min-width: $large-screen-size) {
+
+    // Position
+    margin-top: -50px;
+
+  }
+
+
+  & ul {
+
+    // Display
+    display: flex;
+
+    // Flexbox
+    gap: 20px;
+
+    // Media Query - Large Screen
+    @media (min-width: $large-screen-size) {
+  
+      /* Flexbox */
+      gap: 50px;
+
+    }
+
+
+    & li a {
+
+      // Display
+      display: inline-block;
+      
+      // Font
+      font-size: 24px;
+      text-transform: uppercase;
+      text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+
+      // Media Query - Large Screen
+      @media (min-width: $large-screen-size) {
+
+        // Font
+        font-size: 28px;
+
+      }
+    
+    }
+
+  }
+  
+}

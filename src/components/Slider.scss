@@ -54,6 +54,14 @@
         background: transparent;
         outline: none;
 
+        display: none;
+
+        @media (min-width: 720px) {
+
+          display: block;
+
+        }
+
         &::-webkit-slider-thumb {
           @include slider-thumb;
         }

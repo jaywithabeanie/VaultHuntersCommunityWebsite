@@ -1,0 +1,298 @@
+// Stylesheets
+@import '../../../style.scss';
+
+
+/// ╻━━━━━━━━━━━━━━━━╻
+/// ┃ Book Container ┃
+/// ╹━━━━━━━━━━━━━━━━╹
+
+.container-book {
+
+    // Position
+    margin: 30px auto;
+
+    // Size
+    width: 90%;
+    max-width: 850px;
+    aspect-ratio: 278/176;
+
+
+    & .background {
+
+        // Other
+        image-rendering: pixelated;
+
+    }
+
+
+    & .arrow-back {
+
+        display: flex;
+
+        position: absolute;
+        
+        left: 4.5%;
+        bottom: 3%;
+
+        width: 32px;
+        aspect-ratio: 1/1;
+
+        image-rendering: pixelated;
+
+    }
+
+
+    & .content {
+
+        // Display
+        display: flex;
+
+        // Position
+        padding: 4.5% 6%;
+
+        // Size
+        width: 100%;
+        height: calc(100% - 12%);
+
+        // Flexbox
+        gap: 8%;
+
+        // Font
+        font-family: var(--font-secondary);
+        color: var(--color-text-secondary);
+
+        
+        & .page-1,
+        & .page-2 {
+
+            // Display
+            display: flex;
+
+            // Position
+            z-index: 0;
+
+            // Size
+            width: 46%;
+            height: 100%;
+
+            // Flexbox
+            flex-wrap: wrap;
+            align-items: flex-start;
+            align-content: flex-start;
+            justify-content: flex-start;
+            justify-items: flex-start;
+            gap: 10px;
+
+            // Transform
+            transform-style: preserve-3d;
+
+        }
+
+    }
+
+}
+
+
+
+/// ╻━━━━━━━━━━━━╻
+/// ┃ Book Title ┃
+/// ╹━━━━━━━━━━━━╹
+
+.container-book .content [class^='link'] {
+
+    // Display
+    display: flex;
+
+    // Size
+    width: 100%;
+    height: calc((100% - 40px) / 4);
+
+    // Flexbox
+    align-items: center;
+
+    // Transform
+    transform-style: preserve-3d;
+
+
+    & > :first-child {
+
+        // Display
+        display: inline-block;
+
+        // Position
+        z-index: 1;
+
+        // Size
+        height: 100%;
+        aspect-ratio: 1/1;
+
+        // Other
+        filter: none;
+
+        // Hover
+        &a:hover {
+
+            & .icon {
+
+                // Transform
+                transition: 0.3s;
+
+                // Other
+                filter: brightness(125%);
+
+            }
+
+        }
+        
+
+        & .background {
+
+            // Position
+            inset: 0;
+
+        }
+
+
+        & .icon {
+
+            // Position
+            position: relative;
+            margin: 15%;
+            z-index: 1;
+
+            // Width
+            width: 70%;
+            aspect-ratio: 1/1;
+
+            // Other
+            image-rendering: pixelated;
+
+        }
+
+    }
+
+
+    & .label {
+
+        // Display
+        display: flex;
+
+        // Position
+        margin-left: -3%;
+        aspect-ratio: 79/26;
+
+        // Flexbox
+        align-items: center;
+        flex-grow: 1;
+
+        // Other
+        image-rendering: pixelated;
+
+
+        & p {
+
+            // Position
+            position: relative;
+            margin-left: calc(6%);
+            z-index: 100;
+
+            // Font
+            font-family: var(--font-title);
+            font-size: 24px;
+            color: #272727;
+
+        }
+
+    }
+
+}
+
+
+
+/// ╻━━━━━━━━━━━╻
+/// ┃ Book Text ┃
+/// ╹━━━━━━━━━━━╹
+
+.container-book .content [class^='page'] .text {
+
+    // Display
+    display: flex;
+
+    // Font
+    font-size: 20px;
+    text-align: justify;
+
+    // Flexbox
+    flex-direction: column;
+    gap: 9px;
+
+    & a:hover {
+
+        filter: brightness(0.7);
+        color: var(--color-main);
+
+    }
+
+}
+
+
+
+/// ╻━━━━━━━━━━━━━━━╻
+/// ┃ Book Subtitle ┃
+/// ╹━━━━━━━━━━━━━━━╹
+
+.container-book .content [class^='page'] .tabs {
+
+    // Display
+    display: flex;
+
+    // Size
+    width: 100%;
+
+    // Flexbox
+    gap: 3px;
+
+    // Transform
+    transform-style: preserve-3d;
+
+
+    & .tab {
+
+        // Size
+        width: 48px;
+        aspect-ratio: 1/1;
+
+
+        & a {
+
+            // Display
+            display: flex;
+    
+            // Size
+            height: 100%;
+            aspect-ratio: 1/1;
+
+            filter: none;
+
+            transform-style: preserve-3d;
+
+
+            & .icon {
+
+                position: relative;
+                z-index: 1;
+
+                margin: 8px;
+
+                width: 32px;
+                aspect-ratio: 1/1;
+
+                image-rendering: pixelated;
+
+            }
+
+        }
+
+    }
+
+}

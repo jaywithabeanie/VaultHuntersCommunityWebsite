@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/components/Title.scss';
+import './Title.scss';
 
 import PropTypes from 'prop-types';
 
@@ -12,7 +12,7 @@ import title_label_background from '../images/assets/breadcrumb/scroll_header_la
 function Title(props) {
 
     const {
-        icon_url, // Test
+        icon, // Test
         title
     } = props;
 
@@ -20,7 +20,7 @@ function Title(props) {
         <div className="title-container">
             <div className='icon background-parent'>
                 <img src={title_icon_background} className='background' />
-                <img src={icon_url} className='image'/>
+                <img src={icon} className='image'/>
             </div>
             <div className='title background-parent'>
                 <img src={title_label_background} className='background' />

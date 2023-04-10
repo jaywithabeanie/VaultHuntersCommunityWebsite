@@ -1,0 +1,60 @@
+.container-book .book-craft-display {
+
+    // Display
+    display: flex;
+
+    // Flexbox
+    gap: 10px;
+
+    // Flexbox
+    align-items: center;
+
+    // Other
+    image-rendering: pixelated;
+
+
+    & .arrow-right {
+
+        // Size
+        width: 40px;
+        height: 40px;
+
+    }
+
+
+    & .book-item-display > .icon {
+
+        // Size
+        width: 48px;
+        height: 48px;
+    
+    
+        & .icon {
+    
+            // Size
+            width: 32px;
+            height: 32px;
+
+
+            &.high {
+
+                image-rendering: pixelated;
+
+            }
+    
+        }
+
+    }
+
+}
+
+.container-book .book-craft-display .ingredients {
+
+    // Display
+    display: grid;
+
+    // Grid
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}

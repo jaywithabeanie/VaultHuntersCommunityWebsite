@@ -130,8 +130,9 @@ $large-screen-size: 1000px;
 .container .scroll-header .label p {
 
     /* Font */
+    font-family: var(--font-title);
     color: #272727;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     line-height: 100%;
 
@@ -213,7 +214,7 @@ $large-screen-size: 1000px;
 .container .icon-small [class^='fa'] {
 
     /* Position */
-    margin: 2px 0px 0px 8px;
+    margin: auto;
 
     /* Font */
     font-size: 28px;
