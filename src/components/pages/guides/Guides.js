@@ -26,7 +26,7 @@ function importAll(r) {
   return images;
 }
 
-const images = importAll(require.context('/images/guides', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('/src/images/guides', false, /\.(png|jpe?g|svg)$/));
 
 
 /**
