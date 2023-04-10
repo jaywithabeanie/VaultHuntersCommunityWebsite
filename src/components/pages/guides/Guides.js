@@ -19,11 +19,14 @@ import image_book from '../../../images/assets/minecraft/item/book.png';
 
 function importAll(r) {
   let images = {};
-  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+  r.keys().forEach((path) => {
+    const imageName = path.replace(/^.*[\\/]/, '');
+    images[imageName] = r(path);
+  });
   return images;
 }
 
-const images = importAll(require.context('/src/images/guides', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('/images/guides', false, /\.(png|jpe?g|svg)$/));
 
 
 /**
