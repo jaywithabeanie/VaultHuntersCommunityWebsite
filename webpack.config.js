@@ -29,14 +29,15 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|jpe?g|gif|svg)$/i,
         use: [
           {
-            loader: 'file-loader',
+            loader: 'url-loader',
             options: {
-              name: '[name].[ext]',
+              limit: 8192, // Convert images < 8kb to base64 strings
+              fallback: 'file-loader',
               outputPath: 'images',
-              publicPath: './images'
+              publicPath: '/images'
             }
           }
         ]
