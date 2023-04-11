@@ -1,6 +1,6 @@
 {
   "name": "vault-hunters",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "homepage": "./",
   "private": true,
   "dependencies": {

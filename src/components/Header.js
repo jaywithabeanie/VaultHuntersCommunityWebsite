@@ -35,11 +35,11 @@ function Header(props) {
               Gear
             </Link>
           </li>
-          {/* <li>
+          <li>
             <Link to="/guides" onClick={() => {window.scrollTo(0, 0); resetCurrentPage()}}>
               Guides
             </Link>
-          </li> */}
+          </li>
         </ul>
       </nav>
     </header>
