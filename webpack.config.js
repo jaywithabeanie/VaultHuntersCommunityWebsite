@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -15,11 +14,6 @@ module.exports = {
       template: './public/index.html',
       filename: 'index.html', // specify the output file name
       path: path.resolve(__dirname, 'build'), // specify the output directory
-    }),
-    new CopyWebpackPlugin({
-      patterns: [
-        { from: 'src/images', to: 'src/images' },
-      ],
     }),
   ],
   module: {
