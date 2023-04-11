@@ -43,7 +43,8 @@ module.exports = {
               limit: 8192, // Convert images < 8kb to base64 strings
               fallback: 'file-loader',
               outputPath: 'images',
-              publicPath: '/images'
+              publicPath: '/images',
+              esModule: false
             }
           }
         ]
