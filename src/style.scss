@@ -25,6 +25,7 @@
 /// ┃ Global Variables ┃
 /// ╹━━━━━━━━━━━━━━━━━━╹
 
+$extra-small-screen-size: 400px;
 $small-screen-size: 480px;
 $medium-screen-size: 720px;
 $large-screen-size: 1000px;
@@ -92,10 +93,18 @@ main {
   display: flex;
 
   // Size
-  min-height: calc(100vh - 75px - 50px);
+  min-height: calc(100vh - 75px - 100px);
 
   // Flexbox
   flex-direction: column;
+
+  // Media Query - Medium Screen
+  @media (min-width: $medium-screen-size) {
+
+    // Size
+    min-height: calc(100vh - 75px - 50px);
+
+  }
 
   // Media Query - Large Screen
   @media (min-width: $large-screen-size) {
@@ -284,6 +293,9 @@ input[type='radio']:checked + label {
 
 .tooltip {
 
+  // Display
+  display: none;
+
   // Position
   position: absolute;
   top: -30px;
@@ -307,5 +319,11 @@ input[type='radio']:checked + label {
   // Other
   visibility: hidden;
   white-space: nowrap;
+
+  @media (min-width: $medium-screen-size) {
+
+    display: block;
+
+  }
 
 }

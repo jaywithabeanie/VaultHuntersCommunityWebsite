@@ -1,3 +1,8 @@
+// Stylesheets
+@import '../../../../style.scss';
+
+
+
 // Style modifier
 .gear-modifier {
 
@@ -54,6 +59,9 @@
 
     // Position
     padding: 10px;
+
+    // Size
+    width: 100%;
 
     // Flexbox
     justify-content: space-between;
@@ -141,11 +149,18 @@
 
     & .gear-modifier-odds {
 
-        // Position
-        // margin-right: 20px;
+        // Display
+        display: none;
 
         // Font
         font-size: 17px;
+
+        @media (min-width: 720px) {
+    
+            // Display
+            display: block;
+    
+        }
 
     }
 
@@ -173,25 +188,33 @@
     display: flex;
 
     // Flexbox
+    flex-direction: column;
     gap: 5px;
 
     // Font
     color: white;
 
+    @media (min-width: $small-screen-size) {
+
+        // Flexbox
+        flex-direction: row;
+
+    }
+
 }
 
 .gear-modifier .gear-modifier-data .gear-modifier-values .modifier-display-for-tier {
 
-    // Display
-    display: none;
-
     // Font
     font-weight: bold;
 
-    @media (min-width: 720px) {
+    // Flexbox
+    order: -1;
 
-        // Display
-        display: block;
+    @media (min-width: $small-screen-size) {
+
+        // Flexbox
+        order: 0;
 
     }
 
@@ -209,6 +232,15 @@
     display: flex;
 
     justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+
+    // Media Query - Small Screen
+    @media (min-width: $small-screen-size) {
+
+        flex-direction: row;
+
+    }
 
 
     &:not(:first-of-type) {
@@ -229,7 +261,15 @@
 
     display: flex;
     
+    flex-direction: column;
     gap: 5px;
+
+    @media (min-width: $medium-screen-size) {
+
+        // Flexbox
+        flex-direction: row;
+
+    }
 
 }
 

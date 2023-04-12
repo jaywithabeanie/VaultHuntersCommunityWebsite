@@ -73,76 +73,78 @@ function Book (props) {
 
     // Return component
     return (
-        <div className='container-book background-parent'>
-            <img src={book_background} className='background'/>
-            { currentPage !== undefined &&
-                <Link to="/guides" onClick={() => window.scrollTo(0, 0)} className='arrow-back'>
-                    <img src={arrow_back}/>
-                </Link>
-            }
-            <div className='content'>
-
-                {currentPage !== undefined &&
-                    <>
-                        {currentPage.pages[currentTab].text.map((page, index) => (
-                            <div className={`page-${index + 1}`}>
-                                { index === 0 && (
-                                    <>
-                                        <div className='link-0'>
-                                            <div to='#' className='background-parent'>
-                                                <img src={title_icon_background} className='background' />
-                                                <img src={images[currentPage.icon]} className='icon'/>
-                                            </div>
-                                            <div className='label background-parent'>
-                                                <img src={title_label_background} className='background' />
-                                                <p>{currentPage.title}</p>
-                                            </div>
-                                            <img src={title_icon} className='icon' />
-                                        </div>
-                                        <div className='tabs'>
-                                            {currentPage.pages.map((tab, tabIndex) => (
-                                                <div className='tab'>
-                                                    <a className='background-parent' onClick={() => {setCurrentTab(tabIndex)}}>
-                                                        <img src={currentTab === tabIndex ? title_icon_background_selected : title_icon_background} className='background' />
-                                                        <img src={images[tab.icon]} className='icon'/>
-                                                    </a>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </>
-                                )}
-                                <div className='text'>
-                                    {parse(page, { replace : renderElement })}
-                                </div>
-                            </div>
-                        ))}
-                    </>
+        <div className='content-container no-large'>
+            <div className='container-book background-parent'>
+                <img src={book_background} className='background'/>
+                { currentPage !== undefined &&
+                    <Link to="/guides" onClick={() => window.scrollTo(0, 0)} className='arrow-back'>
+                        <img src={arrow_back}/>
+                    </Link>
                 }
+                <div className='content'>
 
-                {currentPage === undefined &&
-                    <div className='page-1'>
-                        {
-                            content_links !== undefined && 
-                            currentPage === undefined &&
-                            content_links.map((link, index) => (
-                                <div className={`link-${index + 1}`} key={index}>
-                                    <Link to={link.url} onClick={() => {window.scrollTo(0, 0); props.onLinkClick(link.url); setCurrentTab(0);}} className="background-parent">
-                                            <img src={title_icon_background} className='background'/>
-                                            <img src={images[link.icon]} className='icon'/>
-                                    </Link>
-                                    <div className='label background-parent'>
-                                        <img src={title_label_background} className='background' />
-                                        <p>{link.title}</p>
+                    {currentPage !== undefined &&
+                        <>
+                            {currentPage.pages[currentTab].text.map((page, index) => (
+                                <div className={`page-${index + 1}`}>
+                                    { index === 0 && (
+                                        <>
+                                            <div className='link-0'>
+                                                <div to='#' className='background-parent'>
+                                                    <img src={title_icon_background} className='background' />
+                                                    <img src={images[currentPage.icon]} className='icon'/>
+                                                </div>
+                                                <div className='label background-parent'>
+                                                    <img src={title_label_background} className='background' />
+                                                    <p>{currentPage.title}</p>
+                                                </div>
+                                                <img src={title_icon} className='icon' />
+                                            </div>
+                                            <div className='tabs'>
+                                                {currentPage.pages.map((tab, tabIndex) => (
+                                                    <div className='tab'>
+                                                        <a className='background-parent' onClick={() => {setCurrentTab(tabIndex)}}>
+                                                            <img src={currentTab === tabIndex ? title_icon_background_selected : title_icon_background} className='background' />
+                                                            <img src={images[tab.icon]} className='icon'/>
+                                                        </a>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </>
+                                    )}
+                                    <div className='text'>
+                                        {parse(page, { replace : renderElement })}
                                     </div>
                                 </div>
-                            ))
-                        }
-                        {props.children}
-                    </div>
-                }
-                {/* <div className='page-2'>
+                            ))}
+                        </>
+                    }
 
-                </div> */}
+                    {currentPage === undefined &&
+                        <div className='page-1'>
+                            {
+                                content_links !== undefined && 
+                                currentPage === undefined &&
+                                content_links.map((link, index) => (
+                                    <div className={`link-${index + 1}`} key={index}>
+                                        <Link to={link.url} onClick={() => {window.scrollTo(0, 0); props.onLinkClick(link.url); setCurrentTab(0);}} className="background-parent">
+                                                <img src={title_icon_background} className='background'/>
+                                                <img src={images[link.icon]} className='icon'/>
+                                        </Link>
+                                        <div className='label background-parent'>
+                                            <img src={title_label_background} className='background' />
+                                            <p>{link.title}</p>
+                                        </div>
+                                    </div>
+                                ))
+                            }
+                            {props.children}
+                        </div>
+                    }
+                    {/* <div className='page-2'>
+
+                    </div> */}
+                </div>
             </div>
         </div>
     );

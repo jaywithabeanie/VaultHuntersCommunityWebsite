@@ -1,3 +1,8 @@
+// Stylesheets
+@import '../../../style.scss';
+
+
+
 .gear-pieces {
 
     // Display
@@ -6,6 +11,9 @@
     // Position
     margin-top: 15px;
     margin-left: 50vw;
+
+    // Size
+    width: 90%;
 
     // Flexbox
     justify-content: center;
@@ -44,13 +52,38 @@
 
     display: flex;
 
+    flex-direction: column;
+    gap: 20px;
     justify-content: space-between;
+
+    // Media Query - Medium Screen
+    @media (min-width: $medium-screen-size) {
+
+        flex-direction: row;
+
+    }
 
 }
 
 .content-title .slider-container {
-    
-    align-items: flex-end;
+
+    width: fit-content;
+
+    align-items: flex-start;
+
+    // Media Query - Medium Screen
+    @media (min-width: $medium-screen-size) {
+
+        align-items: flex-end;
+
+    }
+
+
+    & #slider {
+
+        width: 100%;
+
+    }
 
 }
 
