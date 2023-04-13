@@ -30,6 +30,13 @@
     flex-wrap: wrap;
     gap: 10px;
 
+    @media (min-width: $medium-screen-size) {
+
+        // Position
+        padding: 30px;
+
+    }
+
 
     &.no-large {
 

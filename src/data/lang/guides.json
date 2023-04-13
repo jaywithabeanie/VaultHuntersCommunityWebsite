@@ -27,8 +27,23 @@
             
                 {
             
-                    "icon": "chromatic_iron_ingot.png",
-                    "url":  "overworld-mining",
+                    "icon": "old_notes.png",
+                    "url":  "",
+            
+                    "text": [
+
+                        "<BookItemDisplay icon='relic_warrior_frag1.png' title='Vault Difficulty'></BookItemDisplay><p>Before embarking on a journey, every hunter can set their own level of difficulty to the Vault Gods through the following command: <span className='command'>/the_vault local_difficulty &ltplayername&gt &ltdifficulty&gt</span> This difficulty can still be adjusted later on.</p><p>The health and damage of hostile creatures scales with difficulty. At hard difficulty or above, Vault Fighters occasionally throw bricks at the hunter.</p>"
+                        ,
+                        
+                        "<BookItemDisplay icon='modifier_afterlife.png' title='Casual Mode'></BookItemDisplay><p>Another important rule when entering vaults is whether or not vaults are played casually. When enabled, hunters won't ever lose their items upon unaliving in a vault.</p><p>This can be altered by executing the command: <span className='command'>/the_vault vaultCasualMode &lttrue / false&gt</span></p><p> </p><BookItemDisplay icon='relic_miner_frag1.png' title='Waypoints'></BookItemDisplay><p>Lastly, a hunter may choose whether they want to be aided by Waypoints within vaults. This eases the process of finding the way back to the portal. To change this, perform the command <span className='command'>/the_vault vaultAllowWaypoints &lttrue / false&gt</span></p>"
+                    ]
+            
+                },
+            
+                {
+            
+                    "icon": "relic_miner_frag5.png",
+                    "url":  "",
             
                     "text": [
 
@@ -43,7 +58,7 @@
                 {
             
                     "icon": "vault_crystal.png",
-                    "url":  "introductionss",
+                    "url":  "",
             
                     "text": [
 
@@ -58,14 +73,138 @@
                 {
             
                     "icon": "diamond_sword.png",
-                    "url":  "introductionsss",
+                    "url":  "",
             
                     "text": [
 
                         "<BookItemDisplay icon='vault_stone.png' title='Vault Portal' quality='high'></BookItemDisplay><p>Once the Vault Crystal has been forged, it requires a frame to open the gateway to its vault. Only variants of Vault Stone are capable to support its energy. When placing Vault Stone in the formation of a Nether Portal, the entrance to the vault can be opened with a crystal.</p><p>Before entering, make sure to gear up. The first vault is an important task for every hunter, as it's the first step in proving their strengths.</p>"
                         ,
                         
-                        "<BookItemDisplay icon='diamond_sword.png' title='And.. Once Inside?'></BookItemDisplay><p>The moment a challenger enters a vault, the test of strength and resistance begins. Throughout the vault, various obstacles will present themselves before the hunter.</p><p>The most crucial obstacle, though, is that of time. Every vault has a base time of 25 minutes, which initiate the moment the vault is entered. The exit closes the moment the time runs out, and all remaining hunters are unalived.</p><p>There are more special rooms, but the most common rooms contain various points of interest, better known as POIs. These each have a Spawner guarding valuable chests, coins and ores.</p><a href=''>More information on what to expect within vaults will follow.</a>"
+                        "<BookItemDisplay icon='diamond_sword.png' title='And.. Once Inside?'></BookItemDisplay><p>The moment a challenger enters a vault, the test of strength and resistance begins. Throughout the vault, various obstacles will present themselves before the hunter.</p><p>The most crucial obstacle, though, is that of time. Every vault has a base time of 25 minutes, which initiate the moment the vault is entered. The portal, which is the exit, closes the moment time runs out, and all remaining hunters are unalived.</p><p>There are more special rooms, but the most common rooms contain various points of interest, better known as POIs. These each have a Spawner guarding valuable chests, coins and ores.</p><a href=''>More information on what to expect within vaults will follow.</a>"
+                    ]
+            
+                }
+
+            ]
+
+        },
+
+        {
+
+            "icon":   "vault_artisan_station.png",
+            "url":    "vault-stations",
+            "title":  "Vault Stations",
+
+            "pages": [
+        
+                {
+        
+                    "icon": "black_market.png",
+                    "url":  "",
+        
+                    "text": [
+
+                        "<BookItemDisplay icon='black_market.png' title='Black Market'></BookItemDisplay><p>The Black Market is a shop where hunters can spend their Soul Shards in exchange for resources. Most of these are found within vaults, although some are unique to the Black Market.</p><p>Every 24 hours, the market offers 3 new trades, each with their own price range, along with a mystery item. Purchasing one of the 3 offered trades also resets those trades.</p>"
+                        ,
+                
+                        "<BookItemDisplay icon='bounty_table.png' title='Bounty Table'></BookItemDisplay><p>Bounties are a way for hunters to get rewarded with resources and experience for doing tasks in- or outside of vaults.</p><p>Each hunter can have up to 3 available bounties, but only one of those can be active at a time. Available bounties can be rerolled using Bounty Pearls, found in Wooden Chests in vaults. Active bounties have no time limit on them, so it may take multiple vaults to complete them.</p><p>Upon completing the active bounty, the rewards can be claimed, after which a new bounty is given after an hour. Bounties can also be abandoned, causing the bounty to be renewed in 8 hours.</p><p>Legendary Bounties can be activated by right-clicking the Bounty Table with a Lost Bounty.</p>"
+                    
+                    ]
+        
+                },
+            
+                {
+            
+                    "icon": "modifier_workbench.png",
+                    "url":  "",
+            
+                    "text": [
+
+                        "<BookItemDisplay icon='modifier_workbench.png' title='Modifier Workbench'></BookItemDisplay><p>The Modifier Workbench is used to carefully craft a single prefix or suffix onto Vault Gear. Which prefixes and suffixes can be crafted onto what gear piece can be found <Link to='/gear' text='here'></Link>.</p><p>Some modifiers are locked behind discovery within the Modifier Archives. These can be found within dungeons in common rooms of any vault past level 60.</p>"
+                        ,
+                        
+                        "<BookItemDisplay icon='vault_artisan_station.png' title='Vault Artisan Station'></BookItemDisplay><p>Before crafting a modifier onto Vault Gear, hunters usually want to use the Vault Artisan Station to modify their gear first.</p><p>By using focuses, found within chests in vaults, along with Vault Bronze and Vault Plating, gear modifiers can be adjusted however preferred. What each focus does can be found by hovering over the button adjacent to the slot of said focus.</p><p>Every time a focus is applied, the cost of applying the next focus increases. On top of that, the gear piece's crafting potential gradually declines.</p><p>Once the crafting potential of Vault Gear goes below 0, the cost amplifies heavily, so it's recommended not to invest into it any further.</p>"
+                        
+                    ]
+            
+                },
+            
+                {
+            
+                    "icon": "vault_forge.png",
+                    "url":  "",
+            
+                    "text": [
+                        
+                        "<BookItemDisplay icon='tool_station.png' title='Tool Station'></BookItemDisplay><p>The Tool Station is used to craft Vault Tools and Jewels.</p><p>There are 7 tiers of Vault Tools, ranging from Chromatic Iron to Prismatic. Each tier increases the tool's capacity, leaving more space for Jewels.</p><p>The level of a crafted Jewel can be set, however Jewels do <Link to='/gear' text='scale'></Link>. <a href='#'>More information on Vault Tools will follow in another guide</a>.</p>"
+                        ,
+
+                        "<BookItemDisplay icon='vault_forge.png' title='Vault Forge'></BookItemDisplay><p>The Vault Forge offers the ability to create Vault Gear and Vault Trinkets directly, at the cost of some materials.</p><p>Each time the hunter constructs a gear piece, they gain proficiency for that gear. The more your proficiency increases for certain Vault Gear, the higher the chance to roll a better rarity tier than usual.</p><p>Similarly to the Tool Station, gear can be crafted at or below the hunter's current level.</p><p>Vault Trinkets can only be forged if they've previously been discovered and, unlike gear, they have no proficiency. Every constructed Vault Trinket will have 20 uses.</p>"
+                        
+                    ]
+            
+                },
+            
+                {
+            
+                    "icon": "vault_recycler.png",
+                    "url":  "",
+            
+                    "text": [
+
+                        "<BookItemDisplay icon='vault_diffuser.png' title='Vault Soul Diffuser'></BookItemDisplay><p>Every vault resource has its own soul value. This soul value corresponds to the amount of Soul Dust that is gathered from diffusing said item.</p><p>Items can automatically be in- and outputted to the top and bottom of the Vault Soul Diffuser respectively.</p><p>It's recommended to only diffuse items with high unused quantities, for Black Market offers.</p>"
+                        ,
+                        
+                        "<BookItemDisplay icon='vault_recycler.png' title='Vault Recycler'></BookItemDisplay><p>Using the Vault Recycler, hunters can put certain unused or unwanted vault resources to use. By recycling the resource, a small amount of loot used to craft that resource is rewarded. This process can also be automated.</p><p>By smelting Vault Gear, the hunter is rewarded with Vault Scrap, Wild Foci and Faceted Foci. The higher the rarity, the higher the chance at getting more ingredients back. When salvaging Trinkets, one may get: Trinket Scrap, Vault Scrap and POGs. The more wearables have been used, the less resources are given back upon recycling.</p><p>For Jewels, the possibilities are: Gemstones, Silver Scrap and Wutodie Gems.</p><p>For Inscriptions, the output is Inscription Pieces.</p>"
+                        
+                    ]
+            
+                },
+            
+                {
+            
+                    "icon": "catalyst_infusion_table.png",
+                    "url":  "",
+            
+                    "text": [
+
+                        "<BookItemDisplay icon='inscription_table.png' title='Inscription Table'></BookItemDisplay><p>The Inscription Table provides a way for the hunter to create Inscriptions of their choice, each for their own relative cost.</p><p>Crafted Inscriptions have a smaller range in Completion, Time and Instability, which are the 3 key attributes of Inscriptions.</p><p>Inscriptions can only be applied to Architect Crystals, after which it can be further modified.</p>"
+                        ,
+                        
+                        "<BookItemDisplay icon='catalyst_infusion_table.png' title='Catalyst Infusion Table'></BookItemDisplay><p>Vault Catalysts are a way to modify Vault Crystals to ensure certain positive modifiers being applied to the vault. When combining a Vault Catalyst with Mystical Essence in the Catalyst Infusion Table, the Vault Catalyst becomes infused.</p><p>Every Vault Catalyst rolls with a pre-determined positive modifier, along with a 90% chance of rolling a random negative modifier.</p><p>The positive modifier can contain a cascading modifier or Plentiful, Extended or Accustomed.</p><p>The random negative modifier can range from Wild to Trapped, or even Shortened.</p><p><a href='#'>More detailed information on Vault Catalysts will follow.</a></p>"
+                        
+                    ]
+            
+                },
+            
+                {
+            
+                    "icon": "transmog_table.png",
+                    "url":  "",
+            
+                    "text": [
+
+                        "<BookItemDisplay icon='transmog_table.png' title='Transmogrification Table'></BookItemDisplay><p>When rolling Unidentified Vault Gear, it discovers that model for the gear piece.</p><p>Later on, in the Transmogrification Table, the hunter is able to use that model to redesign their Vault Gear to choice. By inputting a gear piece, along with Vault Bronze, the model is applied.</p><p>Some models can also be colored using Dye. This can add to your personal choice of outfit.</p>"
+                        ,
+                        
+                        "<BookItemDisplay icon='wardrobe.png' title='Wardrobe'></BookItemDisplay><p>With different builds come different gear sets and different hotbar layouts. The Wardrobe makes it possible to save these build layouts in a single block, which visibly shows the armor loadout.</p><p>Each Wardrobe can store one gear set, but a hunter can have multiple Wardrobes available. Each gear set may contain armor, a hotbar layout as well as an item in all Curio slots.</p><p>By hovering over the symbol in the center, a hunter can see the difference in modifiers and enhancements between their worn and saved sets.</p><p>By clicking that button, the sets get swapped, also filling empty slots in the current loadout. To swap items regardless of empty slots, the button can be shift-clicked.</p>"
+                        
+                    ]
+            
+                },
+            
+                {
+            
+                    "icon": "vault_anvil.png",
+                    "url":  "",
+            
+                    "text": [
+
+                        "<BookItemDisplay icon='vault_anvil.png' title='Vault Anvil'></BookItemDisplay><p>The Vault Anvil acts exactly the same as a regular Anvil, in which Vault Crystals can be modified and Jewels can be applied to Vault Tools. The Vault Anvil has unlimited uses and is therefore unbreakable.</p><p>It's a high investment, but strongly recommended to craft when not wanting to spend continuous resources on forging new Anvils.</p>"
+                        ,
+                        
+                        "<BookItemDisplay icon='spirit_extractor.png' title='Spirit Extractor'></BookItemDisplay><p>The Spirit Extractor allows the hunter to retrieve their items when unaliving in a vault.</p><p>Without a spirit attached, a hunter can see the cost their spirit would be if they were to unalive in an upcoming vault.</p><p>By putting a spirit on the pedestal, all information on said spirit can be seen within the Spirit Extractor. This includes the items, as well as the cost for recovering the items.</p><p>When the necessary Vault Gold is provided, each item is extracted from the spirit.</p><p>A spirit spawns after unaliving. If a hunter is the last one present in a vault, the spirit spawns alongside their respawn point. Otherwise, it spawns on the spot they unalived on.</p>"
+                        
                     ]
             
                 }

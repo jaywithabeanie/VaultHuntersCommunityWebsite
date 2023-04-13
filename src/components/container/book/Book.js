@@ -43,6 +43,9 @@ function Book (props) {
     const [currentTab, setCurrentTab] = useState(0);
 
     const renderElement = (node, index) => {
+        if (node.name === 'link') {
+            return <Link to={node.attribs.to}>{node.attribs.text}</Link>
+        }
         if (node.name === 'bookitemdisplay') {
           return <BookItemDisplay key={index} {...node.attribs} images={images} />;
         }
@@ -126,16 +129,16 @@ function Book (props) {
                                 content_links !== undefined && 
                                 currentPage === undefined &&
                                 content_links.map((link, index) => (
-                                    <div className={`link-${index + 1}`} key={index}>
-                                        <Link to={link.url} onClick={() => {window.scrollTo(0, 0); props.onLinkClick(link.url); setCurrentTab(0);}} className="background-parent">
+                                    <Link to={link.url} onClick={() => {window.scrollTo(0, 0); props.onLinkClick(link.url); setCurrentTab(0);}} className={`link-${index + 1}`} key={index}>
+                                        <div className="background-parent">
                                                 <img src={title_icon_background} className='background'/>
                                                 <img src={images[link.icon]} className='icon'/>
-                                        </Link>
+                                        </div>
                                         <div className='label background-parent'>
                                             <img src={title_label_background} className='background' />
                                             <p>{link.title}</p>
                                         </div>
-                                    </div>
+                                    </Link>
                                 ))
                             }
                             {props.children}

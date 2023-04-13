@@ -289,6 +289,17 @@
     flex-direction: column;
     gap: 9px;
 
+
+    & .command {
+
+        padding: 1px 5px;
+
+        color: #4d4d4d;
+        background-color: #c5c5c5b4;
+
+    }
+
+
     & a:hover {
 
         filter: brightness(0.7);
