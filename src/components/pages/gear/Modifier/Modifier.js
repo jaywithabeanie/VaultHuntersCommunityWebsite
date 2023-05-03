@@ -26,7 +26,9 @@ function Modifier (props) {
 
   // Find up to 2 legendary tiers above the highest tier in availableTiers
   const availableLegendaryTiers = ["PREFIX", "SUFFIX"].includes(modifierGroup)
-    ? modifier.tiers
+    ? modifier.attribute === "the_vault:effect_immunity"
+      ? []
+      : modifier.tiers
       .filter((tier, index) => index > modifier.tiers.indexOf(highestTier) && index <= modifier.tiers.indexOf(highestTier) + 2)
       .sort((a, b) => a.minLevel - b.minLevel)
     : []

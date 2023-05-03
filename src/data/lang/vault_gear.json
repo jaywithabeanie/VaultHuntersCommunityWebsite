@@ -19,6 +19,12 @@
                 "color": "#C82626"
             },
 
+            "the_vault:attack_range": {
+                "name": "Attack Range",
+                "description": "The attack range against entities",
+                "color": "#84D7FF"
+            },
+
             "the_vault:attack_speed": {
                 "name": "Attack Speed",
                 "description": "The attack speed",
@@ -67,22 +73,34 @@
                 "color": "#FF6B00"
             },
 
+            "the_vault:lucky_hit_chance": {
+                "name": "Lucky Hit Chance",
+                "description": "The odds of performing a Lucky Hit, dealing 20% increased damage and any additional effects by the player's Lucky Hit Talents",
+                "color": "#6DF5A3"
+            },
+
             "the_vault:damage_illagers": {
-                "name": "Spiteful",
+                "name": "Illager Damage",
                 "description": "The additional damage against Illager targets",
                 "color": "#009FB2"
             },
 
             "the_vault:damage_spiders": {
-                "name": "Baneful",
+                "name": "Arthropods Damage",
                 "description": "The additional damage against arthropod targets",
-                "color": "#7E5E5E"
+                "color": "#D7C6AB"
             },
 
             "the_vault:damage_undead": {
-                "name": "Holy",
+                "name": "Undead Damage",
                 "description": "The additional damage against undead targets",
                 "color": "#F9F8B0"
+            },
+
+            "the_vault:damage_nether": {
+                "name": "Nether Damage",
+                "description": "The additional damage against Piglin targets",
+                "color": "#FC915D"
             },
 
             "the_vault:soulbound": {
@@ -100,6 +118,12 @@
             "the_vault:mod_poison_cloud": {
                 "name": "Poison Cloud",
                 "description": "Grants a chance to summon a poison cloud upon hitting a target, hurting nearby enemies",
+                "color": "#E500AC"
+            },
+
+            "the_vault:mod_fear_cloud": {
+                "name": "Fear Cloud",
+                "description": "Grants a chance to summon a fear cloud upon hitting a target, fearing nearby enemies",
                 "color": "#E500AC"
             },
 
@@ -191,6 +215,12 @@
                 "name": "Slowness Avoidance",
                 "description": "The odds to not be affected by the Slowness effect",
                 "color": "#8FE0D6"
+            },
+
+            "the_vault:thorns_damage_flat": {
+                "name": "Thorns Damage",
+                "description": "The amount of Thorns damage dealt upon landing a Thorns Hit",
+                "color": "#FFC0CB"
             },
 
             "the_vault:thorns_chance": {
