@@ -115,13 +115,31 @@
                 "color": "#E500AC"
             },
 
+            "the_vault:crafted_healing_cloud": {
+                "name": "Healing Cloud",
+                "description": "Grants a chance to summon a healing cloud upon hitting a target, healing nearby allies",
+                "color": "#E500AC"
+            },
+
             "the_vault:mod_poison_cloud": {
                 "name": "Poison Cloud",
                 "description": "Grants a chance to summon a poison cloud upon hitting a target, hurting nearby enemies",
                 "color": "#E500AC"
             },
 
+            "the_vault:crafted_poison_cloud": {
+                "name": "Poison Cloud",
+                "description": "Grants a chance to summon a poison cloud upon hitting a target, hurting nearby enemies",
+                "color": "#E500AC"
+            },
+
             "the_vault:mod_fear_cloud": {
+                "name": "Fear Cloud",
+                "description": "Grants a chance to summon a fear cloud upon hitting a target, fearing nearby enemies",
+                "color": "#E500AC"
+            },
+
+            "the_vault:crafted_fear_cloud": {
                 "name": "Fear Cloud",
                 "description": "Grants a chance to summon a fear cloud upon hitting a target, fearing nearby enemies",
                 "color": "#E500AC"
@@ -272,6 +290,12 @@
             },
 
             "the_vault:mod_slowness_cloud": {
+                "name": "Slowness Cloud",
+                "description": "Grants a chance to summon a slowness cloud upon hitting a target, slowing nearby enemies",
+                "color": "#E500AC"
+            },
+
+            "the_vault:crafted_slowness_cloud": {
                 "name": "Slowness Cloud",
                 "description": "Grants a chance to summon a slowness cloud upon hitting a target, slowing nearby enemies",
                 "color": "#E500AC"
