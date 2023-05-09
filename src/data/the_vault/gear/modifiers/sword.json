@@ -1793,7 +1793,7 @@
         "tiers": [
           {
             "minLevel": 22,
-            "maxLevel": 47,
+            "maxLevel": -1,
             "weight": 10,
             "value": {
               "min": 2.0,
@@ -1803,7 +1803,7 @@
           },
           {
             "minLevel": 35,
-            "maxLevel": 50,
+            "maxLevel": -1,
             "weight": 10,
             "value": {
               "min": 7.0,
@@ -1813,7 +1813,7 @@
           },
           {
             "minLevel": 48,
-            "maxLevel": 86,
+            "maxLevel": -1,
             "weight": 10,
             "value": {
               "min": 13.0,
@@ -1901,7 +1901,7 @@
         "tiers": [
           {
             "minLevel": 28,
-            "maxLevel": 70,
+            "maxLevel": -1,
             "weight": 10,
             "value": {
               "min": 0.1,
