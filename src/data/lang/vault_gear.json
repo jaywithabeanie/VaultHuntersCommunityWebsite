@@ -1,8 +1,6 @@
 {
     "vault_gear": {
-
         "gear_pieces": {
-
             "axe": "Vault Axe",
             "boots": "Vault Boots",
             "bottle": "Vault Potion",
@@ -15,465 +13,425 @@
             "shield": "Vault Shield",
             "sword": "Vault Sword",
             "wand": "Wand"
-
         },
-
         "modifier_groups": {
-
-            "IMPLICIT": "Implicit", 
+            "IMPLICIT": "Implicit",
             "PREFIX": "Prefix",
             "SUFFIX": "Suffix",
             "CRAFTED_PREFIX": "Crafted Prefix",
             "CRAFTED_SUFFIX": "Crafted Suffix"
-
         },
-
         "modifiers": {
-
             "the_vault:attack_damage": {
                 "name": "Attack Damage",
                 "description": "The base damage",
                 "color": "#C82626"
             },
-
             "the_vault:attack_range": {
                 "name": "Attack Range",
                 "description": "The attack range against entities",
                 "color": "#84D7FF"
             },
-
             "the_vault:attack_speed": {
                 "name": "Attack Speed",
                 "description": "The attack speed",
                 "color": "#FCD767"
             },
-
             "the_vault:durability": {
                 "name": "Durability",
                 "description": "The durabillity",
                 "color": "#DFD0FE"
             },
-
             "the_vault:fatal_strike_damage": {
                 "name": "Fatal Strike Damage",
                 "description": "The damage increase upon fatal strike hit",
                 "color": "#BF0D00"
             },
-
             "the_vault:on_hit_chain": {
                 "name": "Chaining",
                 "description": "The amount of additional targets hit",
                 "color": "#5D5EB8"
             },
-
             "the_vault:on_hit_stun": {
                 "name": "Stun Attack Chance",
                 "description": "The odds of stunning a target on hit",
                 "color": "#19A6E4"
             },
-
             "the_vault:shocking_hit_chance": {
                 "name": "Shocking Hit Chance",
                 "description": "The odds of knocking back targets in a radius around the original target",
                 "color": "#CFDD5A"
             },
-
             "the_vault:sweeping_hit_chance": {
                 "name": "Sweeping Hit Chance",
                 "description": "The odds of sweeping targets in a small radius around the original target",
                 "color": "#E0BA61"
             },
-
             "the_vault:damage_increase": {
                 "name": "Increased Damage",
                 "description": "The additional damage",
                 "color": "#FF6B00"
             },
-
             "the_vault:lucky_hit_chance": {
                 "name": "Lucky Hit Chance",
                 "description": "The odds of performing a Lucky Hit, dealing 10% increased damage or any effects provided by the player's Lucky Hit Talents",
                 "color": "#6DF5A3"
             },
-
             "the_vault:damage_illagers": {
                 "name": "Illager Damage",
                 "description": "The additional damage against Illager targets",
                 "color": "#009FB2"
             },
-
             "the_vault:damage_spiders": {
                 "name": "Arthropods Damage",
                 "description": "The additional damage against arthropod targets",
                 "color": "#D7C6AB"
             },
-
             "the_vault:damage_undead": {
                 "name": "Undead Damage",
                 "description": "The additional damage against undead targets",
                 "color": "#F9F8B0"
             },
-
             "the_vault:damage_nether": {
                 "name": "Nether Damage",
                 "description": "The additional damage against Piglin targets",
                 "color": "#FC915D"
             },
-
             "the_vault:soulbound": {
                 "name": "Soulbound",
                 "description": "Retains the Vault Gear upon unaliving",
                 "color": "#9664FD"
             },
-
             "the_vault:mod_healing_cloud": {
                 "name": "Healing Cloud",
                 "description": "Grants a chance to summon a healing cloud upon hitting a target, healing nearby allies",
                 "color": "#E500AC"
             },
-
             "the_vault:crafted_healing_cloud": {
                 "name": "Healing Cloud",
                 "description": "Grants a chance to summon a healing cloud upon hitting a target, healing nearby allies",
                 "color": "#E500AC"
             },
-
             "the_vault:mod_poison_cloud": {
                 "name": "Poison Cloud",
                 "description": "Grants a chance to summon a poison cloud upon hitting a target, hurting nearby enemies",
                 "color": "#E500AC"
             },
-
             "the_vault:crafted_poison_cloud": {
                 "name": "Poison Cloud",
                 "description": "Grants a chance to summon a poison cloud upon hitting a target, hurting nearby enemies",
                 "color": "#E500AC"
             },
-
             "the_vault:mod_fear_cloud": {
                 "name": "Fear Cloud",
                 "description": "Grants a chance to summon a fear cloud upon hitting a target, fearing nearby enemies",
                 "color": "#E500AC"
             },
-
             "the_vault:crafted_fear_cloud": {
                 "name": "Fear Cloud",
                 "description": "Grants a chance to summon a fear cloud upon hitting a target, fearing nearby enemies",
                 "color": "#E500AC"
             },
-
             "the_vault:mod_chilling_cloud": {
                 "name": "Chilling Cloud",
                 "description": "Grants a chance to summon a chilling cloud upon hitting a target, slowing nearby enemies",
                 "color": "#E500AC"
             },
-
+            "the_vault:crafted_chilling_cloud": {
+                "name": "Chilling Cloud",
+                "description": "Grants a chance to summon a chilling cloud upon hitting a target, slowing nearby enemies",
+                "color": "#E500AC"
+            },
             "the_vault:fatal_strike_chance": {
                 "name": "Fatal Strike Chance",
                 "description": "The odds of a fatal strike hit upon hitting a target",
                 "color": "#FC2000"
             },
-
             "the_vault:soul_chance": {
                 "name": "Soul Chance",
                 "description": "The additional odds of gaining Soul Shards upon unaliving a target in a Vault",
                 "color": "#4700FC"
             },
-
             "the_vault:attack_speed_percent": {
                 "name": "Attack Speed",
                 "description": "The attack speed",
                 "color": "#FCD767"
             },
-
             "the_vault:on_hit_aoe": {
                 "name": "Cleave Range",
                 "description": "The small radius in which additional targets are hit",
                 "color": "#B86900"
             },
-
             "the_vault:armor": {
                 "name": "Armor",
                 "description": "The base damage reduction",
                 "color": "#48BAF8"
             },
-
             "the_vault:critical_hit_mitigation": {
                 "name": "Crit Hit Resistance",
                 "description": "The additional damage reduction against critical hits",
                 "color": "#718DFF"
             },
-
             "the_vault:ability_power": {
                 "name": "Ability Power",
                 "description": "The base Ability power",
                 "color": "#FF00CB"
             },
-
             "the_vault:ability_power_percent": {
                 "name": "Ability Power",
                 "description": "The additional Ability power",
                 "color": "#FF00CB"
             },
-
             "the_vault:movement_speed": {
                 "name": "Movement Speed",
                 "description": "The additional movement speed",
                 "color": "#CDCF74"
             },
-
             "the_vault:area_of_effect": {
                 "name": "Area of Effect",
                 "description": "The area of effect",
                 "color": "#E9C375"
             },
-
             "the_vault:health": {
                 "name": "Health",
                 "description": "The additional hit points",
                 "color": "#22FF25"
             },
-
             "the_vault:mana_additive": {
                 "name": "Mana",
                 "description": "The additional mana",
                 "color": "#00FFFF"
             },
-
             "the_vault:mana_additive_percentile": {
                 "name": "Mana",
                 "description": "The additional percentage of mana",
                 "color": "#00FFFF"
             },
-
             "the_vault:resistance": {
                 "name": "Resistance",
                 "description": "The additional damage reduction",
                 "color": "#FFC000"
             },
-
             "the_vault:healing_effectiveness": {
                 "name": "Healing Efficiency",
                 "description": "The additional percentage healed from any source",
                 "color": "#8EFF22"
             },
-
             "the_vault:cooldown_reduction": {
                 "name": "Cooldown Reduction",
                 "description": "The reduction in cooldown for abilities",
                 "color": "#00F8B4"
             },
-
             "the_vault:mod_effect_avoidance_poison": {
                 "name": "Poison Avoidance",
                 "description": "The odds to not be affected by the Poison effect",
                 "color": "#8FE0D6"
             },
-
             "the_vault:mod_effect_avoidance_wither": {
                 "name": "Wither Avoidance",
                 "description": "The odds to not be affected by the Wither effect",
                 "color": "#8FE0D6"
             },
-
             "the_vault:mod_effect_avoidance_slowness": {
                 "name": "Slowness Avoidance",
                 "description": "The odds to not be affected by the Slowness effect",
                 "color": "#8FE0D6"
             },
-
             "the_vault:thorns_damage_flat": {
                 "name": "Thorns Damage",
                 "description": "The amount of Thorns damage dealt upon landing a Thorns Hit",
                 "color": "#FFC0CB"
             },
-
             "the_vault:thorns_chance": {
                 "name": "Thorns Chance",
                 "description": "The odds of thorns recoil upon being hit",
                 "color": "#FFC0CB"
             },
-
             "the_vault:item_quantity": {
                 "name": "Item Quantity",
                 "description": "The additional loot quantity in any chest inside a Vault",
                 "color": "#E88A12"
             },
-
             "the_vault:item_rarity": {
                 "name": "Item Rarity",
                 "description": "The additional loot rarity in any chest inside a Vault",
                 "color": "#E5B819"
             },
-
             "the_vault:trap_disarming": {
                 "name": "Trap Disarm Chance",
                 "description": "The odds of disarming trapped chests",
                 "color": "#8143FF"
             },
-
             "the_vault:knockback_resistance": {
                 "name": "Knockback Resist",
                 "description": "The additional knockback reduction",
                 "color": "#FCAE0F"
             },
-
             "the_vault:mana_regen": {
                 "name": "Mana Regen",
                 "description": "The additional percentage of mana regeneration",
                 "color": "#48BAF8"
             },
-
             "the_vault:block": {
                 "name": "Block Chance",
                 "description": "The odds of blocking any damage",
                 "color": "#F5CF8E"
             },
-
             "the_vault:velara_affinity": {
                 "name": "Vault God Affinity",
                 "description": "The odds of getting a favour upon completing a Vault God altar for the respective Vault God",
                 "color": "#FCA800"
             },
-
             "the_vault:mod_slowness_cloud": {
                 "name": "Slowness Cloud",
                 "description": "Grants a chance to summon a slowness cloud upon hitting a target, slowing nearby enemies",
                 "color": "#E500AC"
             },
-
             "the_vault:crafted_slowness_cloud": {
                 "name": "Slowness Cloud",
                 "description": "Grants a chance to summon a slowness cloud upon hitting a target, slowing nearby enemies",
                 "color": "#E500AC"
             },
-
             "the_vault:mod_weakness_cloud": {
                 "name": "Weakness Cloud",
                 "description": "Grants a chance to summon a weakness cloud upon hitting a target, weakening nearby enemies",
                 "color": "#E500AC"
             },
-
             "the_vault:effect_immunity": {
                 "name": "Immunity",
                 "description": "Grants immunity against a potion effect",
                 "color": "#EDE1CC"
             },
-
+            "the_vault:immunity_hunger": {
+                "name": "Hunger Immunity",
+                "description": "Grants immunity against hunger effect",
+                "color": "#EDE1CC"
+            },
+            "the_vault:immunity_weakness": {
+                "name": "Weakness Immunity",
+                "description": "Grants immunity against weakness effect",
+                "color": "#EDE1CC"
+            },
+            "the_vault:immunity_poison": {
+                "name": "Poison Immunity",
+                "description": "Grants immunity against poison effect",
+                "color": "#EDE1CC"
+            },
+            "the_vault:immunity_slowness": {
+                "name": "Slowness Immunity",
+                "description": "Grants immunity against slowness effect",
+                "color": "#EDE1CC"
+            },
+            "the_vault:immunity_mining": {
+                "name": "Mining Fatigue Immunity",
+                "description": "Grants immunity against slowness effect",
+                "color": "#EDE1CC"
+            },
+            "the_vault:immunity_wither": {
+                "name": "Wither Immunity",
+                "description": "Grants immunity against wither effect",
+                "color": "#EDE1CC"
+            },
+            "the_vault:mod_immunity": {
+                "name": "Time Acceleration Immunity",
+                "description": "Grants immunity against time accelaration effect inside the vaults",
+                "color": "#EDE1CC"
+            },
             "the_vault:thorns_damage": {
                 "name": "Thorns Damage",
                 "description": "The percentage of your damage dealt on thorns recoil upon being hit",
                 "color": "#EC9EC0"
             },
-
             "the_vault:mod_wither_cloud": {
                 "name": "Wither Cloud",
                 "description": "has a chance to summon a cloud inflicting wither upon enemies",
                 "color": "#E500AC"
             },
-
             "the_vault:range": {
                 "name": "Range",
                 "description": "The range in which the Magnet pulls items",
                 "color": "#F9B37F"
             },
-
             "the_vault:velocity": {
                 "name": "Velocity",
                 "description": "The speed at which the Magnet pulls items",
                 "color": "#DEE79F"
             },
-
             "the_vault:mining_speed": {
                 "name": "Mining Speed",
                 "description": "The additional speed at which blocks are mined",
                 "color": "#66CCFF"
             },
-
             "the_vault:reach": {
                 "name": "Reach",
                 "description": "The additional block reach",
                 "color": "#84D7FF"
             },
-
             "the_vault:copiously": {
                 "name": "Copiously",
                 "description": "The chance to duplicate the drops from Vault Ore",
                 "color": "#F74780"
             },
-
             "the_vault:jewel_size": {
                 "name": "Size",
                 "description": "The capacity a Jewel takes up on a Vault Tool",
                 "color": "#DADADA"
             },
-
             "the_vault:wooden_affinity": {
                 "name": "Wooden Affinity",
                 "description": "Grants the Vault Tool additional mining speed when mining Wooden Chests",
                 "color": "#B2580B"
             },
-            
             "the_vault:coin_affinity": {
                 "name": "Coin Affinity",
                 "description": "Grants the Vault Tool additional mining speed when mining Coin Piles",
                 "color": "#FCFC00"
             },
-                        
             "the_vault:living_affinity": {
                 "name": "Living Affinity",
                 "description": "Grants the Vault Tool additional mining speed when mining Living Chests",
                 "color": "#71FC40"
             },
-                        
             "the_vault:gilded_affinity": {
                 "name": "Gilded Affinity",
                 "description": "Grants the Vault Tool additional mining speed when mining Gilded Chests",
                 "color": "#CAA112"
             },
-                        
             "the_vault:ornate_affinity": {
                 "name": "Ornate Affinity",
                 "description": "Grants the Vault Tool additional mining speed when mining Ornate Chests",
                 "color": "#E92525"
             },
-            
             "the_vault:picking": {
                 "name": "Picking",
                 "description": "Makes the Vault Tool function as a pickaxe",
                 "color": "#E7E7E7"
             },
-
             "the_vault:axing": {
                 "name": "Axing",
                 "description": "Makes the Vault Tool function as an axe",
                 "color": "#C2AA78"
             },
-
             "the_vault:shovelling": {
                 "name": "Shovelling",
                 "description": "Makes the Vault Tool function as a shovel",
                 "color": "#DFE39D"
             },
-
             "the_vault:pulverizing": {
                 "name": "Pulverizing",
                 "description": "Makes the Vault Tool pulverize mined blocks into other drops",
                 "color": "#72B172"
             },
-
             "the_vault:smelting": {
                 "name": "Smelting",
                 "description": "Makes the Vault Tool smelt mined blocks",
                 "color": "#FC4400"
             },
-
             "the_vault:hammer_size": {
                 "name": "Hammer Size",
                 "description": "The additional radius of the Vault Hammer",
                 "color": "#25D1A3"
             },
-
             "the_vault:immortality": {
                 "name": "Vanilla Immortality",
                 "description": "The decrease in durabillity damage taken outside a Vault",

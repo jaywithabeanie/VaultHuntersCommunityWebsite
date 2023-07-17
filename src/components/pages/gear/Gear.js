@@ -118,6 +118,7 @@ function Home() {
       }
     }
 
+    console.log(modifier);
     // Check if attribute exists
     if (lang.vault_gear.modifiers[modifier.attribute] != null) {
       modifierData = lang.vault_gear.modifiers[modifier.attribute];
@@ -126,6 +127,7 @@ function Home() {
     if (lang.vault_gear.modifiers[modifier.identifier] != null) {
       modifierData = lang.vault_gear.modifiers[modifier.identifier];
     }
+
 
     return modifierData;
 
