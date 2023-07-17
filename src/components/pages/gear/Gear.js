@@ -44,7 +44,7 @@ function Home() {
       // Guard clauses
       if (modifier.tiers.length > 0
         && !(modifierGroup === 'IMPLICIT' && getExcludingModifiers(modifiers, modifier).length === 0)
-        && modifier.tiers.some((tier) => (tier.minLevel <= level && level <= (tier.maxLevel < 0 ? 100 : tier.maxLevel)))) {
+        && modifier.tiers.some((tier) => (tier?.minLevel <= level && level <= (tier.maxLevel < 0 ? 100 : tier.maxLevel)))) {
 
         // Initiate variables
         const availableTiers = modifier.tiers.filter(tier => tier.minLevel <= level && (tier.maxLevel === -1 || tier.maxLevel >= level));
@@ -77,16 +77,15 @@ function Home() {
   }
 
   function getModifierData(modifier) {
-
     // Initiate variables
     var modifierData = {
       "name": "Unknown",
       "color": "#ffffff"
     };
 
-    if (modifier.identifier.includes("base_added_ability_level")) {
+    if (modifier.identifier.includes("added_ability_level")) {
       return modifierData = {
-        "name": "+1 to an ability",
+        "name": "Ability Level",
         "description": "Adds a level to an ability",
         "color": "#c1579d"
       }
@@ -106,13 +105,11 @@ function Home() {
   }
 
   function getModifierGroupDisplayName(modifierGroup) {
-
     var displayName = 'Unknown';
 
     if (lang.vault_gear.modifier_groups[modifierGroup] != null) {
       displayName = lang.vault_gear.modifier_groups[modifierGroup];
     }
-
     return displayName;
 
   }
@@ -136,7 +133,21 @@ function Home() {
       if (e.attribute === 'the_vault:added_ability_level' && arr.filter(e => e.attribute === 'the_vault:added_ability_level').length) return
       arr.push(e)
     })
+
     return arr
+  }
+
+  const getAbilityTotalWeight = (modifiers) => {
+    let abilityLevels = modifiers.filter(e => e.attribute === 'the_vault:added_ability_level')
+    let weight = 0
+    if (abilityLevels.length) {
+      let abilityLevel = abilityLevels[0]
+      abilityLevel.tiers.map((e) => {
+        weight += e?.weight
+      })
+      return (weight * abilityLevels.length)
+    }
+    else return 0
   }
 
   return (
@@ -182,7 +193,7 @@ function Home() {
                   {removeDuplicateLevels(modifiers).map((modifier) => (
                     <>
                       {modifier.tiers.length > 0
-                        && modifier.tiers.some((tier) => (tier.minLevel <= level && level <= (tier.maxLevel < 0 ? 100 : tier.maxLevel) && tier.weight > 0)) && (
+                        && modifier.tiers.some((tier) => (tier?.minLevel <= level && level <= (tier.maxLevel < 0 ? 100 : tier.maxLevel) && tier.weight > 0)) && (
                           <Modifier
                             key={modifier.identifier}
                             gearPiece={selectedGearPiece}
@@ -191,7 +202,7 @@ function Home() {
                             langData={getModifierData(modifier)}
                             level={level}
                             excludingModifiers={getExcludingModifiers(removeDuplicateLevels(modifiers), modifier)}
-                            totalWeight={getTotalWeight(modifierGroup, modifiers)}
+                            totalWeight={modifier.attribute === 'the_vault:added_ability_level' ? getAbilityTotalWeight(modifiers) : getTotalWeight(modifierGroup, modifiers)}
                           />
                         )}
                     </>
