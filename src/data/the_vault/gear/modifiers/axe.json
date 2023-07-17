@@ -587,7 +587,8 @@
         "group": "ModDamageSpiders",
         "identifier": "the_vault:mod_damage_spiders",
         "tags": [
-          "focusDamageSpiders"
+          "focusDamageSpiders",
+          "noLegendary"
         ],
         "tiers": [
           {
@@ -666,7 +667,8 @@
         "group": "ModDamageUndead",
         "identifier": "the_vault:mod_damage_undead",
         "tags": [
-          "focusDamageUndead"
+          "focusDamageUndead",
+          "noLegendary"
         ],
         "tiers": [
           {
@@ -745,7 +747,8 @@
         "group": "ModDamageNether",
         "identifier": "the_vault:mod_damage_nether",
         "tags": [
-          "focusDamageNether"
+          "focusDamageNether",
+          "noLegendary"
         ],
         "tiers": [
           {
@@ -826,7 +829,8 @@
         "group": "ModDurability",
         "identifier": "the_vault:mod_durability",
         "tags": [
-          "focusDurability"
+          "focusDurability",
+          "noLegendary"
         ],
         "tiers": [
           {
@@ -1414,11 +1418,136 @@
           }
         ]
       },
+      { "attribute": "the_vault:effect_cloud",
+        "group": "ModOnHitAddition",
+        "identifier": "the_vault:mod_chilling_cloud",
+        "tags": [
+          "focusChillingCloud"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Chilling",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "the_vault:chilled",
+                  "duration": 140,
+                  "amplifier": 0,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 120,
+              "radius": 4.0,
+              "color": 3138042,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
+          },
+          {
+            "minLevel": 32,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Chilling II",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "the_vault:chilled",
+                  "duration": 140,
+                  "amplifier": 0,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 160,
+              "radius": 4.0,
+              "color": 3138042,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
+          },
+          {
+            "minLevel": 64,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Chilling III",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "the_vault:chilled",
+                  "duration": 140,
+                  "amplifier": 0,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 200,
+              "radius": 4.0,
+              "color": 3138042,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Chilling IV",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "the_vault:chilled",
+                  "duration": 140,
+                  "amplifier": 1,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 240,
+              "radius": 4.0,
+              "color": 3138042,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Chilling V",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "the_vault:chilled",
+                  "duration": 140,
+                  "amplifier": 1,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 300,
+              "radius": 4.0,
+              "color": 3138042,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
+          }
+        ]
+      },
       { "attribute": "the_vault:attack_speed_percent",
         "group": "ModAttackType",
         "identifier": "the_vault:mod_attack_speed_percent",
         "tags": [
-          "focusAttackSpeedPercent"
+          "focusAttackSpeedPercent",
+          "noLegendary"
         ],
         "tiers": [
           {
@@ -1719,7 +1848,7 @@
         "tiers": [
           {
             "minLevel": 25,
-            "maxLevel": -1,
+            "maxLevel": 79,
             "weight": 10,
             "value": {
               "min": 0.03,
@@ -1728,7 +1857,7 @@
             }
           },
           {
-            "minLevel": 50,
+            "minLevel": 40,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -1738,7 +1867,7 @@
             }
           },
           {
-            "minLevel": 75,
+            "minLevel": 60,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -1748,12 +1877,22 @@
             }
           },
           {
-            "minLevel": 101,
+            "minLevel": 80,
             "maxLevel": -1,
             "weight": 10,
             "value": {
               "min": 0.11,
-              "max": 0.12,
+              "max": 0.13,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.15,
+              "max": 0.17,
               "step": 0.01
             }
           },
@@ -1762,8 +1901,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.13,
-              "max": 0.2,
+              "min": 0.18,
+              "max": 0.24,
               "step": 0.01
             }
           }

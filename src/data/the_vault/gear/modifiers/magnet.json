@@ -568,7 +568,7 @@
         "tiers": [
           {
             "minLevel": 6,
-            "maxLevel": -1,
+            "maxLevel": 72,
             "weight": 100,
             "value": {
               "min": 0.05,
@@ -578,7 +578,7 @@
           },
           {
             "minLevel": 21,
-            "maxLevel": -1,
+            "maxLevel": 89,
             "weight": 100,
             "value": {
               "min": 0.1,
@@ -896,23 +896,13 @@
             "maxLevel": -1,
             "weight": 100,
             "value": {
-              "min": 0.11,
-              "max": 0.2,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 66,
-            "maxLevel": -1,
-            "weight": 100,
-            "value": {
               "min": 0.21,
               "max": 0.3,
               "step": 0.01
             }
           },
           {
-            "minLevel": 88,
+            "minLevel": 66,
             "maxLevel": -1,
             "weight": 100,
             "value": {
@@ -1033,7 +1023,7 @@
         "tiers": [
           {
             "minLevel": 10,
-            "maxLevel": -1,
+            "maxLevel": 54,
             "weight": 100,
             "value": {
               "min": 0.05,
@@ -1043,7 +1033,7 @@
           },
           {
             "minLevel": 23,
-            "maxLevel": -1,
+            "maxLevel": 66,
             "weight": 90,
             "value": {
               "min": 0.13,
@@ -1053,7 +1043,7 @@
           },
           {
             "minLevel": 34,
-            "maxLevel": -1,
+            "maxLevel": 80,
             "weight": 80,
             "value": {
               "min": 0.21,

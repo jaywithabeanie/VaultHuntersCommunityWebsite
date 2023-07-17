@@ -34,6 +34,9 @@ function Modifier (props) {
     : []
 
   function getModifierWeight() {
+    if (modifierGroup === 'IMPLICIT' && excludingModifiers.length === 0) {
+      return 0;
+    }
     var modifierWeight = availableTiers.reduce((sum, tier) => sum + tier.weight, 0);
     return modifierWeight.toFixed(2);
   }
@@ -233,7 +236,7 @@ function Modifier (props) {
           </span>
         </span>
         <span className='gear-modifier-header-right'>
-          {(totalWeight === 0
+          {(totalWeight === 0 || getModifierWeight() === 0
             ? ''
             : <span className='gear-modifier-odds'>{`${(getModifierWeight() / totalWeight * 100).toFixed(2)} %`}</span>
           )}

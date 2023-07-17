@@ -13,7 +13,7 @@ import chestplate from '../../../images/assets/the_vault/item/gear/chestplate.pn
 // Import lang file
 import lang from '../../../data/lang/vault_gear.json';
 
-const gearPieces = ['sword', 'axe', 'helmet', 'chestplate', 'leggings', 'boots', 'idol', 'shield', 'magnet', 'jewel'];
+const gearPieces = ['sword', 'axe', 'helmet', 'chestplate', 'leggings', 'boots', 'idol_benevolent', 'shield', 'wand', 'magnet', 'jewel'];
 
 function Home () {
 
@@ -34,7 +34,7 @@ function Home () {
     var totalWeight = 0;
 
     // Guard clause
-    if (!['PREFIX', 'SUFFIX'].includes(modifierGroup)) {
+    if (!['IMPLICIT', 'PREFIX', 'SUFFIX'].includes(modifierGroup)) {
       return totalWeight;
     }
 
@@ -43,6 +43,7 @@ function Home () {
 
       // Guard clauses
       if (modifier.tiers.length > 0
+        && !(modifierGroup === 'IMPLICIT' && getExcludingModifiers(modifiers, modifier).length === 0)
         && modifier.tiers.some((tier) => (tier.minLevel <= level && level <= (tier.maxLevel < 0 ? 100 : tier.maxLevel)))) {
 
           // Initiate variables
@@ -108,6 +109,18 @@ function Home () {
 
   }
 
+  function getGearPieceDisplayName(gearPiece) {
+
+    return lang.vault_gear.gear_pieces[gearPiece] !== null ? lang.vault_gear.gear_pieces[gearPiece] : 'Unknown';
+
+  }
+
+  function getExcludingModifiers(modifiers, modifier) {
+    return modifiers
+      .filter((otherModifier) => otherModifier.group === modifier.group && otherModifier != modifier)
+      .map(otherModifier => getModifierData(otherModifier).name)
+  }
+
   return (
     <>
       <Title icon={chestplate} title='Vault Gear'/>
@@ -131,15 +144,15 @@ function Home () {
 
         <div className="content-title">
           <h2>{`
-            ${!['jewel', 'magnet'].includes(selectedGearPiece) ? 'Vault ' : ''}
-            ${selectedGearPiece.charAt(0).toUpperCase() + selectedGearPiece.slice(1)}
+            ${getGearPieceDisplayName(selectedGearPiece)}
           `}</h2>
           <Slider onChange={handleLevelSliderChange}/>
         </div>
 
         {Object.entries(getGearPieceModifierData().modifierGroup).map(([modifierGroup, modifiers]) => (
           <>
-            {getModifierGroupDisplayName(modifierGroup) !== "Unknown"
+            {
+            getModifierGroupDisplayName(modifierGroup) !== "Unknown"
               && modifiers.length > 0
               && modifiers.some((modifier) => modifier.tiers.some((tier) => tier.minLevel <= level))
               && (
@@ -159,11 +172,7 @@ function Home () {
                       modifier={modifier}
                       langData={getModifierData(modifier)}
                       level={level}
-                      excludingModifiers={
-                        modifiers
-                          .filter((otherModifier) => otherModifier.group === modifier.group && otherModifier != modifier)
-                          .map(otherModifier => getModifierData(otherModifier).name)
-                      }
+                      excludingModifiers={getExcludingModifiers(modifiers, modifier)}
                       totalWeight={getTotalWeight(modifierGroup, modifiers)}
                     />
                   )}

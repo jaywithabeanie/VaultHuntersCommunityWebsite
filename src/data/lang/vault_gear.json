@@ -1,6 +1,23 @@
 {
     "vault_gear": {
 
+        "gear_pieces": {
+
+            "axe": "Vault Axe",
+            "boots": "Vault Boots",
+            "bottle": "Vault Potion",
+            "chestplate": "Vault Chestplate",
+            "helmet": "Vault Helmet",
+            "idol_benevolent": "Vault Idol",
+            "jewel": "Jewel",
+            "leggings": "Vault Leggings",
+            "magnet": "Magnet",
+            "shield": "Vault Shield",
+            "sword": "Vault Sword",
+            "wand": "Wand"
+
+        },
+
         "modifier_groups": {
 
             "IMPLICIT": "Implicit", 
@@ -75,7 +92,7 @@
 
             "the_vault:lucky_hit_chance": {
                 "name": "Lucky Hit Chance",
-                "description": "The odds of performing a Lucky Hit, dealing 20% increased damage and any additional effects by the player's Lucky Hit Talents",
+                "description": "The odds of performing a Lucky Hit, dealing 10% increased damage or any effects provided by the player's Lucky Hit Talents",
                 "color": "#6DF5A3"
             },
 
@@ -145,6 +162,12 @@
                 "color": "#E500AC"
             },
 
+            "the_vault:mod_chilling_cloud": {
+                "name": "Chilling Cloud",
+                "description": "Grants a chance to summon a chilling cloud upon hitting a target, slowing nearby enemies",
+                "color": "#E500AC"
+            },
+
             "the_vault:fatal_strike_chance": {
                 "name": "Fatal Strike Chance",
                 "description": "The odds of a fatal strike hit upon hitting a target",
@@ -179,6 +202,30 @@
                 "name": "Crit Hit Resistance",
                 "description": "The additional damage reduction against critical hits",
                 "color": "#718DFF"
+            },
+
+            "the_vault:ability_power": {
+                "name": "Ability Power",
+                "description": "The base Ability power",
+                "color": "#FF00CB"
+            },
+
+            "the_vault:ability_power_percent": {
+                "name": "Ability Power",
+                "description": "The additional Ability power",
+                "color": "#FF00CB"
+            },
+
+            "the_vault:movement_speed": {
+                "name": "Movement Speed",
+                "description": "The additional movement speed",
+                "color": "#CDCF74"
+            },
+
+            "the_vault:area_of_effect": {
+                "name": "Area of Effect",
+                "description": "The area of effect",
+                "color": "#E9C375"
             },
 
             "the_vault:health": {
