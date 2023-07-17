@@ -15,6 +15,42 @@ import lang from '../../../data/lang/vault_gear.json';
 
 const gearPieces = ['sword', 'axe', 'helmet', 'chestplate', 'leggings', 'boots', 'idol_benevolent', 'shield', 'wand', 'magnet', 'jewel'];
 
+// brrrr
+const removeDuplicateLevels = (modifiers) => {
+  const arr = []
+  const addedMods = []
+  modifiers.map(e => {
+    if (e.attribute === 'the_vault:added_ability_level') {
+      const levelFilter = arr.filter(e => e.attribute === 'the_vault:added_ability_level')
+      if (levelFilter.length) {
+        if (addedMods && addedMods.filter(q => q.identifier === e.identifier).length) return
+        // console.log(addedMods);
+        addedMods.push(e.identifier)
+        levelFilter[0].tiers = levelFilter[0].tiers.map((q, count) => ({ ...q, weight: q.weight + e.tiers[count].weight }))
+        return
+      }
+      return arr.push(e)
+    }
+    arr.push(e)
+  })
+
+  return arr
+}
+
+function getGearPieceModifierData(selectedGearPiece) {
+  if (!selectedGearPiece) return
+
+  // Retrieve data
+  const gearPieceModifierData = require(`../../../data/the_vault/gear/modifiers/${selectedGearPiece}.json`);
+
+  gearPieceModifierData.modifierGroup.PREFIX = removeDuplicateLevels(gearPieceModifierData.modifierGroup.PREFIX)
+  gearPieceModifierData.modifierGroup.IMPLICIT = removeDuplicateLevels(gearPieceModifierData.modifierGroup.IMPLICIT)
+
+  // Return
+  return gearPieceModifierData;
+
+}
+
 function Home() {
 
   const [selectedGearPiece, setSelectedGearPiece] = useState(gearPieces[0]);
@@ -66,15 +102,6 @@ function Home() {
 
   }
 
-  function getGearPieceModifierData() {
-
-    // Retrieve data
-    const gearPieceModifierData = require(`../../../data/the_vault/gear/modifiers/${selectedGearPiece}.json`);
-
-    // Return
-    return gearPieceModifierData;
-
-  }
 
   function getModifierData(modifier) {
     // Initiate variables
@@ -85,7 +112,7 @@ function Home() {
 
     if (modifier.identifier.includes("added_ability_level")) {
       return modifierData = {
-        "name": "Ability Level",
+        "name": "Ability Levels",
         "description": "Adds a level to an ability",
         "color": "#c1579d"
       }
@@ -126,30 +153,6 @@ function Home() {
       .map(otherModifier => getModifierData(otherModifier).name)
   }
 
-  // brrrr
-  const removeDuplicateLevels = (modifiers) => {
-    const arr = []
-    modifiers.map(e => {
-      if (e.attribute === 'the_vault:added_ability_level' && arr.filter(e => e.attribute === 'the_vault:added_ability_level').length) return
-      arr.push(e)
-    })
-
-    return arr
-  }
-
-  const getAbilityTotalWeight = (modifiers) => {
-    let abilityLevels = modifiers.filter(e => e.attribute === 'the_vault:added_ability_level')
-    let weight = 0
-    if (abilityLevels.length) {
-      let abilityLevel = abilityLevels[0]
-      abilityLevel.tiers.map((e) => {
-        weight += e?.weight
-      })
-      return (weight * abilityLevels.length)
-    }
-    else return 0
-  }
-
   return (
     <>
       <Title icon={chestplate} title='Vault Gear' />
@@ -178,7 +181,7 @@ function Home() {
           <Slider onChange={handleLevelSliderChange} />
         </div>
 
-        {Object.entries(getGearPieceModifierData().modifierGroup).map(([modifierGroup, modifiers]) => (
+        {Object.entries(getGearPieceModifierData(selectedGearPiece).modifierGroup).map(([modifierGroup, modifiers]) => (
           <>
             {
               getModifierGroupDisplayName(modifierGroup) !== "Unknown"
@@ -190,7 +193,7 @@ function Home() {
                   {['PREFIX', 'SUFFIX'].includes(modifierGroup) &&
                     <p>A gear piece with an odd amount of modifier slots has a 50% chance at rolling either a prefix or suffix.</p>
                   }
-                  {removeDuplicateLevels(modifiers).map((modifier) => (
+                  {modifiers.map((modifier) => (
                     <>
                       {modifier.tiers.length > 0
                         && modifier.tiers.some((tier) => (tier?.minLevel <= level && level <= (tier.maxLevel < 0 ? 100 : tier.maxLevel) && tier.weight > 0)) && (
@@ -201,8 +204,8 @@ function Home() {
                             modifier={modifier}
                             langData={getModifierData(modifier)}
                             level={level}
-                            excludingModifiers={getExcludingModifiers(removeDuplicateLevels(modifiers), modifier)}
-                            totalWeight={modifier.attribute === 'the_vault:added_ability_level' ? getAbilityTotalWeight(modifiers) : getTotalWeight(modifierGroup, modifiers)}
+                            excludingModifiers={getExcludingModifiers(modifiers, modifier)}
+                            totalWeight={getTotalWeight(modifierGroup, modifiers)}
                           />
                         )}
                     </>

@@ -118,7 +118,10 @@ function Modifier(props) {
 
     // Initiate variables
     var tierDisplay = "";
-    if (modifier.attribute === 'the_vault:added_ability_level') return tierDisplay = '+1'
+    if (modifier.attribute === 'the_vault:added_ability_level') {
+      console.log(modifier, lowestTier, highestTier);
+      return tierDisplay = `+${lowestTier.value.levelChange}${highestTier.value.levelChange > 1 ? ` - ${highestTier.value.levelChange}` : ''}`
+    }
     // Tier doesn't have values
     if (lowestTier.value.min === undefined && lowestTier.value.minChance === undefined) {
 
