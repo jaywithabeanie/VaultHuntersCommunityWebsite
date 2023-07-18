@@ -1,9 +1,6 @@
-import BackgroundImage from "@/components/header/backgroundImage";
+import Home from "./home";
 
-export default function Home() {
-  return (
-    <>
-      <BackgroundImage backgroundType="textured" />
-    </>
-  )
-}
+export default () => (
+  <Home />
+)
+

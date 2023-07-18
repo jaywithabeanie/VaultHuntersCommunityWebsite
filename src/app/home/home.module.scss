@@ -1,0 +1,115 @@
+:local {
+    .container {
+        display: flex;
+    }
+
+    .box {
+        display: flex;
+        position: relative;
+        padding: 20px;
+        margin: 60px 0 0 calc((100vw - 550px)/2 + 200px);
+        padding: 30px;
+        width: 550px;
+        max-width: 550px;
+        background-color: var(--background-color-main-75);
+        flex-direction: column;
+        flex-wrap: wrap;
+        border: 4px groove var(--background-color-main);
+        outline: 2px solid var(--background-color-main-75);
+        filter: drop-shadow(0px 0px 10px black);
+        color: #d8c9bb;
+        font-family: var(--font-secondary);
+        font-size: 18px;
+    }
+
+    .iconBox {
+        min-width: 120px;
+        width: 120px;
+        height: 111px;
+        display: flex;
+        z-index: 1;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .icon {
+        height: 60px;
+        width: 60px;
+        position: relative;
+
+        img {
+            image-rendering: pixelated;
+            filter: sepia(50%);
+        }
+    }
+
+    .label {
+        height: 60px;
+        position: relative;
+        left: -25px;
+        display: flex;
+        align-items: center;
+        padding: 0 40px 0 30px;
+    }
+
+    .title {
+        position: relative;
+        z-index: 1;
+        font-family: var(--font-title);
+        color: #272727;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .header {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .icons {
+        margin-top: 20px;
+        display: flex;
+
+        .iconBox {
+            width: 48px;
+            height: 48px;
+            min-width: 48px;
+            transition: transform .3s;
+
+            &:hover {
+                color: var(--color-secondary);
+                transform: translateY(-2px);
+                filter: brightness(1.15);
+            }
+
+            &:not(:last-of-type) {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .logo {
+        position: relative;
+        z-index: 1;
+    }
+
+    .discord {
+        color: #6060ef;
+        height: 28px;
+        width: auto;
+    }
+
+    .reddit {
+        color: #ff5600;
+        height: 32px;
+        width: auto;
+    }
+
+    .globe {
+        color: #222;
+        height: 28px;
+        width: auto;
+    }
+}
