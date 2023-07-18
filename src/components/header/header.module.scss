@@ -1,0 +1,53 @@
+:local {
+  .container {
+    font-family: var(--font-secondary);
+    position: sticky;
+    top: 0;
+    color: var(--color-main);
+    background-color: var(--background-color-main);
+    padding-inline: 30px;
+    height: 150px;
+    display: flex;
+    font-family: var(--font-secondary);
+    color: var(--color-main);
+    background-color: var(--background-color-main);
+    justify-content: space-between;
+    align-items: center;
+    clip-path: polygon(0% 0%,
+        100% 0%,
+        100% 100px,
+        230px 100px,
+        190px 150px,
+        0% 150px);
+  }
+
+  .logo {
+    width: 150px;
+    height: auto;
+  }
+
+  .links {
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    height: inherit;
+  }
+
+  .link {
+    font-size: 28px;
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform .3s, color .3s;
+
+    &:hover {
+      color: var(--color-secondary);
+      transform: translateY(-2px);
+      filter: brightness(1.15);
+    }
+
+    &:not(:last-of-type) {
+      margin-right: 50px;
+    }
+  }
+}
