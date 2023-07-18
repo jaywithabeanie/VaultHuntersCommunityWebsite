@@ -1,7 +1,6 @@
+import BackgroundImage from "@/components/header/backgroundImage"
 import RootLayout from "./layout"
 
-export default () => {
-    return <RootLayout>
-        404 not found
-    </RootLayout>
-}
+export default () => <RootLayout>
+    <BackgroundImage backgroundType='untextured' />
+</RootLayout>
