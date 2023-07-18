@@ -24,7 +24,6 @@ const removeDuplicateLevels = (modifiers) => {
       const levelFilter = arr.filter(e => e.attribute === 'the_vault:added_ability_level')
       if (levelFilter.length) {
         if (addedMods && addedMods.filter(q => q.identifier === e.identifier).length) return
-        // console.log(addedMods);
         addedMods.push(e.identifier)
         levelFilter[0].tiers = levelFilter[0].tiers.map((q, count) => ({ ...q, weight: q.weight + e.tiers[count].weight }))
         return
@@ -118,7 +117,6 @@ function Home() {
       }
     }
 
-    console.log(modifier);
     // Check if attribute exists
     if (lang.vault_gear.modifiers[modifier.attribute] != null) {
       modifierData = lang.vault_gear.modifiers[modifier.attribute];
