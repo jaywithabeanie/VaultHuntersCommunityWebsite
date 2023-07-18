@@ -259,10 +259,8 @@
 
 .gear-modifier .gear-modifier-excluding p {
 
-    display: flex;
-    
+    display: flex;    
     flex-direction: column;
-    gap: 5px;
 
     @media (min-width: $medium-screen-size) {
 
@@ -276,6 +274,8 @@
 .gear-modifier .gear-modifier-excluding p :first-child {
 
     color: white;
+    text-wrap: nowrap;
+    margin-right: 15px;
 
 }
 

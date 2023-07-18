@@ -3,13 +3,13 @@ import './Footer.scss'
 
 import logo_small from '../../images/logo_small.png';
 
-function Footer () {
+function Footer() {
   return (
     <footer className='footer-container'>
 
       <div className="navigation">
         <div className="logo background-parent">
-          <img src={logo_small} className='background'/>
+          <img src={logo_small} className='background' />
         </div>
         <nav className="menu">
           <a href="https://discord.gg/dr9z3tKjBT" target='_blank' rel='noreferrer'>
@@ -32,7 +32,7 @@ function Footer () {
       </div>
 
       <div className="copyright">
-        <p>&copy; 2023 • Website by jayy#6889 • Additional Art by Breadcrumb5550#5550</p>
+        <p>&copy; 2023 • Website by jaywithabeanie • Additional Art by breadcrumb5550 • Additional Dev by freudplays</p>
       </div>
 
     </footer>

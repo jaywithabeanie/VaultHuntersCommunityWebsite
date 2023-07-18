@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './Modifier.scss';
 
 
-function Modifier (props) {
+function Modifier(props) {
 
   const {
     gearPiece,
@@ -19,7 +19,7 @@ function Modifier (props) {
   const handleToggle = () => {
     setExpanded(!expanded);
   };
-  
+
   const availableTiers = modifier.tiers.filter(tier => tier.minLevel <= level && (tier.maxLevel === -1 || tier.maxLevel >= level));
   const lowestTier = availableTiers.reduce((min, tier) => tier.minLevel < min.minLevel ? tier : min);
   const highestTier = availableTiers.reduce((max, tier) => tier.minLevel > max.minLevel ? tier : max);
@@ -29,16 +29,21 @@ function Modifier (props) {
     ? modifier.attribute === "the_vault:effect_immunity"
       ? []
       : modifier.tiers
-      .filter((tier, index) => index > modifier.tiers.indexOf(highestTier) && index <= modifier.tiers.indexOf(highestTier) + 2)
-      .sort((a, b) => a.minLevel - b.minLevel)
+        .filter((tier, index) => index > modifier.tiers.indexOf(highestTier) && index <= modifier.tiers.indexOf(highestTier) + 2)
+        .sort((a, b) => a.minLevel - b.minLevel)
     : []
 
   function getModifierWeight() {
+    if (modifierGroup === 'IMPLICIT' && excludingModifiers.length === 0) {
+      return 0;
+    }
     var modifierWeight = availableTiers.reduce((sum, tier) => sum + tier.weight, 0);
     return modifierWeight.toFixed(2);
   }
 
   function getTierDisplayForModifier(modifier, tier) {
+    if (modifier.attribute === 'the_vault:added_ability_level')
+      return `+${tier.value.levelChange}`
 
     // Initiate variables
     var tierDisplay = "";
@@ -63,12 +68,12 @@ function Modifier (props) {
         else {
           tierDisplay = `${tier.value.min} - ${tier.value.max}`;
         }
-  
+
       }
-  
+
       // Tier values are floats
       else {
-  
+
         // Modifier is implicit 'Attack Speed'
         if (modifier.identifier === "the_vault:base_attack_speed") {
           tierDisplay = `${(4.0 + tier.value.min).toFixed(1)} - ${(4.0 + tier.value.max).toFixed(1)}`;
@@ -99,7 +104,7 @@ function Modifier (props) {
         else {
           tierDisplay = `${(tier.value.min * 100).toFixed(0) + '%'} - ${(tier.value.max * 100).toFixed(0) + '%'}`;
         }
-  
+
       }
 
     }
@@ -113,7 +118,9 @@ function Modifier (props) {
 
     // Initiate variables
     var tierDisplay = "";
-
+    if (modifier.attribute === 'the_vault:added_ability_level') {
+      return tierDisplay = `+${lowestTier.value.levelChange}${highestTier.value.levelChange > 1 ? ` - ${highestTier.value.levelChange}` : ''}`
+    }
     // Tier doesn't have values
     if (lowestTier.value.min === undefined && lowestTier.value.minChance === undefined) {
 
@@ -134,12 +141,12 @@ function Modifier (props) {
         else {
           tierDisplay = `${lowestTier.value.min} - ${highestTier.value.max}`;
         }
-  
+
       }
-  
+
       // Tier values are floats
       else {
-  
+
         // Modifier is implicit 'Attack Speed'
         if (modifier.identifier === "the_vault:base_attack_speed") {
           tierDisplay = `${(4.0 + lowestTier.value.min).toFixed(1)} - ${(4.0 + highestTier.value.max).toFixed(1)}`;
@@ -170,7 +177,7 @@ function Modifier (props) {
         else {
           tierDisplay = `${(lowestTier.value.min * 100).toFixed(0) + '%'} - ${(highestTier.value.max * 100).toFixed(0) + '%'}`;
         }
-  
+
       }
 
     }
@@ -192,13 +199,12 @@ function Modifier (props) {
 
     // Tier has registry key (Immunity Modifiers)
     else if (tier.value.registryKey != null) {
-      modifierDisplay = `${
-        tier.value.registryKey
-          .replace("minecraft:", "").replace("the_vault:", "").replace("_", " ")
-          .split(" ")
-          .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-          .join(" ")
-      } Immunity`
+      modifierDisplay = `${tier.value.registryKey
+        .replace("minecraft:", "").replace("the_vault:", "").replace("_", " ")
+        .split(" ")
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ")
+        } Immunity`
     }
 
     // Default modifier
@@ -220,7 +226,7 @@ function Modifier (props) {
               {getTierDisplayForModifiers(modifier, lowestTier, highestTier)}
             </span>
           }
-          <span style={{color: langData.color}} className='gear-modifier-header-name tooltip-parent'>
+          <span style={{ color: langData.color }} className='gear-modifier-header-name tooltip-parent'>
             {langData.name}
             {langData.description !== undefined &&
               <span className='tooltip'>{langData.description}</span>
@@ -233,7 +239,7 @@ function Modifier (props) {
           </span>
         </span>
         <span className='gear-modifier-header-right'>
-          {(totalWeight === 0
+          {(totalWeight === 0 || getModifierWeight() === 0
             ? ''
             : <span className='gear-modifier-odds'>{`${(getModifierWeight() / totalWeight * 100).toFixed(2)} %`}</span>
           )}
@@ -248,16 +254,16 @@ function Modifier (props) {
             {
               availableLegendaryTiers.includes(tier)
                 ? <span className='tooltip-parent'>
-                    <span style={{"font-size": "14px","color": "gold"}}>◆</span>
-                    <span className='tooltip'>Legendary Modifier</span>
-                  </span>
+                  <span style={{ "font-size": "14px", "color": "gold" }}>◆</span>
+                  <span className='tooltip'>Legendary Modifier</span>
+                </span>
                 : ''
             }
             {(getTierDisplayForModifier(modifier, tier) === ""
               ? ''
               : <span>{getTierDisplayForModifier(modifier, tier)}</span>
             )}
-            <span className="modifier-display-for-tier" style={{color: langData.color}}>{getModifierDisplayForTier(tier)}</span>
+            <span className="modifier-display-for-tier" style={{ color: langData.color }}>{getModifierDisplayForTier(tier)}</span>
             {level - tier.minLevel <= 3 && tier.minLevel <= level &&
               <span className="gear-modifier-new">(New)</span>
             }
