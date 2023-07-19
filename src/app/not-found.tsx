@@ -1,4 +1,4 @@
-import BackgroundImage from "@/components/header/backgroundImage"
+import BackgroundImage from "@/components/backgroundImage"
 import RootLayout from "./layout"
 
 export default () => <RootLayout>

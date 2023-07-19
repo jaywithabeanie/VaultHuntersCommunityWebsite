@@ -1,0 +1,16 @@
+:local {
+    .gearPiece {
+        image-rendering: pixelated;
+    }
+
+    .gearContainer {
+        width: 48px;
+        height: 48px;
+        position: relative;
+    }
+
+    .active {
+        filter: brightness(1.5);
+        pointer-events: none;
+    }
+}

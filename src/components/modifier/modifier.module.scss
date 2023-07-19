@@ -1,0 +1,100 @@
+:local {
+    .container {
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, .65);
+
+        &.expanded .data {
+            opacity: 1;
+            max-height: 1000px;
+            visibility: visible;
+        }
+    }
+
+    .headerContainer {
+        display: flex;
+        padding: 10px;
+        width: 100%;
+        justify-content: space-between;
+        color: #fff;
+        background-color: rgba(0, 0, 7, .5);
+        cursor: pointer;
+    }
+
+    .headerData {
+        gap: 7px;
+        display: grid;
+        grid-auto-flow: column;
+    }
+
+    .data {
+        transition: 0.3s all ease-in-out;
+        max-height: 0;
+        background-color: rgba(20, 15, 10, .25);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .tooltip {
+        position: absolute;
+        top: -30px;
+        left: 30px;
+        padding: 4px;
+        z-index: 1;
+        font-size: 12px;
+        color: #fff;
+        background-color: var(--background-color-main);
+        border: 1px solid var(--background-color-secondary);
+        transition: visibility 0s;
+        visibility: hidden;
+        white-space: nowrap;
+    }
+
+    .tooltipParent {
+        position: relative;
+        cursor: pointer;
+
+        &:hover .tooltip {
+            visibility: visible;
+            transition: visibility 0s linear 0.5s;
+        }
+    }
+
+    .innerData {
+        padding: 10px;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .new {
+        color: #9664fd;
+        font-weight: bold;
+    }
+
+    .odds {
+        font-weight: normal;
+        font-size: 17px;
+    }
+
+    .icon {
+        width: 10px;
+        text-align: right;
+    }
+
+    .excluding {
+        display: flex;
+        color: white;
+        border-top: 1px solid rgba(0, 0, 0, .65);
+        padding: 10px;
+    }
+
+    .excludingTitle {
+        margin-right: 15px;
+        text-wrap: nowrap;
+    }
+
+    .excludingItems {
+        color: #ff2323;
+        font-weight: bold;
+    }
+}

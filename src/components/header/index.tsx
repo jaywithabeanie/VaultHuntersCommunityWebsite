@@ -6,9 +6,17 @@ export default () => <div className={s.container}>
     <Link href={'/'}>
         <Image src={'/images/logo.png'} alt='Logo' width={800} height={583} className={s.logo} loading='eager' />
     </Link>
-    <div className={s.links}>
-        <Link href={'/'} className={s.link}>Home</Link>
-        <Link href={'/gear'} className={s.link} >Gear</Link>
-        <Link href={'/guides'} className={s.link} >Guides</Link>
-    </div>
+    <nav className={s.nav}>
+        <ul className={s.links}>
+            <li>
+                <Link href={'/'} className={s.link}>Home</Link>
+            </li>
+            <li>
+                <Link href={'/gear'} className={s.link} >Gear</Link>
+            </li>
+            <li>
+                <Link href={'/guides'} className={s.link} >Guides</Link>
+            </li>
+        </ul>
+    </nav>
 </div>

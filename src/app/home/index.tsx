@@ -1,29 +1,18 @@
-import BackgroundImage from "@/components/header/backgroundImage";
+import BackgroundImage from "@/components/backgroundImage";
 import s from './home.module.scss'
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faRedditAlien } from "@fortawesome/free-brands-svg-icons";
 import classNames from "classnames";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import Title from "@/components/title";
+import IconBox from "@/components/iconBox";
 
 export default () => (
     <div className={s.container}>
         <BackgroundImage backgroundType="textured" />
         <div className={s.box}>
-            <div className={s.header}>
-                <div className={s.iconBox}>
-                    <Image src={'/images/scroll_header_icon.png'} fill alt="" quality={100} />
-                    <div className={s.icon}>
-                        <Image src={'/images/vault_rock.png'} fill alt="" quality={100} />
-                    </div>
-                </div>
-                <div className={s.label}>
-                    <Image src={'/images/scroll_header_label.png'} fill alt="" quality={100} />
-                    <div className={s.title}>
-                        Community Website
-                    </div>
-                </div>
-            </div>
+            <Title icon="/images/vault_rock.png" title="Community Website" />
             <div>
                 Welcome to the unofficial website of the Vault Hunters Minecraft modpack!
                 Here, you can find information about the game, that is constantly being kept up-to-date.
@@ -31,18 +20,15 @@ export default () => (
                 For any questions or issues, please contact jaywithabeanie on Discord.
             </div>
             <div className={s.icons}>
-                <a href="https://www.discord.gg/vaulthunters" className={s.iconBox}>
-                    <Image src={'/images/icon_small_variant1_a.png'} fill alt="" quality={100} />
+                <IconBox size={48} as="a" href="https://www.discord.gg/vaulthunters">
                     <FontAwesomeIcon icon={faDiscord} className={classNames(s.logo, s.discord)} />
-                </a>
-                <a href="https://www.reddit.com/r/VaultHuntersMinecraft/" className={s.iconBox}>
-                    <Image src={'/images/icon_small_variant1_b.png'} fill alt="" quality={100} />
+                </IconBox>
+                <IconBox variant="1b" size={48} as='a' href="https://www.reddit.com/r/VaultHuntersMinecraft/">
                     <FontAwesomeIcon icon={faRedditAlien} className={classNames(s.logo, s.reddit)} />
-                </a>
-                <a href="https://vaulthunters.gg/" className={s.iconBox}>
-                    <Image src={'/images/icon_small_variant1_a.png'} fill alt="" quality={100} />
+                </IconBox>
+                <IconBox size={48} as="a" href="https://vaulthunters.gg/">
                     <FontAwesomeIcon icon={faGlobe} className={classNames(s.logo, s.globe)} />
-                </a>
+                </IconBox>
             </div>
         </div>
     </div>

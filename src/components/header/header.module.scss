@@ -3,6 +3,7 @@
     font-family: var(--font-secondary);
     position: sticky;
     top: 0;
+    z-index: 10;
     color: var(--color-main);
     background-color: var(--background-color-main);
     padding-inline: 30px;
@@ -26,9 +27,17 @@
     height: auto;
   }
 
-  .links {
-    margin-top: -50px;
+  .nav {
     display: flex;
+    align-items: center;
+    margin-top: -50px;
+  }
+
+  .links {
+    display: grid;
+    height: 100%;
+    grid-auto-flow: column;
+    gap: 50px;
     align-items: center;
     height: inherit;
   }
@@ -44,10 +53,6 @@
       color: var(--color-secondary);
       transform: translateY(-2px);
       filter: brightness(1.15);
-    }
-
-    &:not(:last-of-type) {
-      margin-right: 50px;
     }
   }
 }
