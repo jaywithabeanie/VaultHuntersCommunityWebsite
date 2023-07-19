@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import s from "./modifier.module.scss";
 import { ModifierType } from "@/app/gear/page";
-import { getTierDisplayForModifiers, getModifierWeight, getTierDisplayForModifier, getModifierDisplayForTier } from "./functions";
+import { getTierDisplayForModifiers, getModifierWeight, getTierDisplayForModifier, getModifierDisplayForTier, getWeight } from "./functions";
 import classNames from "classnames";
 
 type PropsType = {
@@ -28,6 +28,10 @@ export default ({
     totalWeight,
 }: PropsType) => {
     const [expanded, setExpanded] = useState(false);
+
+    useEffect(() => {
+        setExpanded(false)
+    }, [gearPiece])
 
     const availableTiers = modifier.tiers.filter(
         (tier) =>
@@ -90,24 +94,22 @@ export default ({
                                     <span style={{ fontSize: "14px", color: "gold" }}>◆</span>
                                     <span className={s.tooltip}>Legendary Modifier</span>
                                 </span>
-                            ) : (
-                                ""
-                            )}
+                            ) : (<></>)}
                             {getTierDisplayForModifier(modifier, tier, gearPiece) ? (<span>{getTierDisplayForModifier(modifier, tier, gearPiece)}</span>) : <></>}
-                            <span
-                                className="modifier-display-for-tier"
-                                style={{ color: langData.color }}
-                            >
+                            <div style={{ color: langData.color }}>
                                 {getModifierDisplayForTier(tier, langData)}
-                            </span>
+                            </div>
                             {level - tier.minLevel <= 3 && tier.minLevel <= level && (
                                 <span className={s.new}>(New)</span>
                             )}
                         </div>
-                        <p className="gear-modifier-levels">
-                            {tier.minLevel < 100 && `Lvl ${tier.minLevel} `}
-                            {tier.maxLevel === -1 && tier.minLevel < 100 ? '+' : '-'}
-                        </p>
+                        <div className={s.sideData}>
+                            {availableLegendaryTiers.includes(tier) ? <></> : <div className={s.weight}>{getWeight(availableTiers, tier)}%</div>}
+                            <div>
+                                {tier.minLevel < 100 && `Lvl ${tier.minLevel} `}
+                                {tier.maxLevel === -1 && tier.minLevel < 100 ? '+' : '-'}
+                            </div>
+                        </div>
                     </div>
                 ))}
                 {excludingModifiers.length > 0 && (

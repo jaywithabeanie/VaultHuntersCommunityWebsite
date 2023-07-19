@@ -76,6 +76,14 @@
         font-size: 17px;
     }
 
+    .sideData {
+        display: grid;
+        justify-content: flex-end;
+        grid-auto-flow: column;
+        grid-auto-columns: 70px;
+        gap: 20px;
+    }
+
     .icon {
         width: 10px;
         text-align: right;
@@ -91,6 +99,10 @@
     .excludingTitle {
         margin-right: 15px;
         text-wrap: nowrap;
+    }
+
+    .weight {
+        text-align: left;
     }
 
     .excludingItems {

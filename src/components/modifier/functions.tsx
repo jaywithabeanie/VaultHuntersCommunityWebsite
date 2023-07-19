@@ -201,3 +201,8 @@ export const getModifierDisplayForTier = (tier: TierType, langData: {
     // Return displayed data
     return modifierDisplay;
 }
+
+export const getWeight = (modifiers: TierType[], tier: TierType) => {
+    const totalWeight = modifiers.reduce((a, b) => a + b.weight, 0)
+    return Math.round((tier.weight / totalWeight * 100))
+}
