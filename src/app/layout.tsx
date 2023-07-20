@@ -1,5 +1,5 @@
 import Header from '@/components/header'
-import './globals.css'
+import './globals.scss'
 import type { Metadata } from 'next'
 import { Boogaloo, Lato, Permanent_Marker } from 'next/font/google'
 import classNames from 'classnames'

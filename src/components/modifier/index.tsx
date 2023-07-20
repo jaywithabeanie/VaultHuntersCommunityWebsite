@@ -68,13 +68,15 @@ export default ({
             <h3 onClick={() => setExpanded(!expanded)} className={s.headerContainer}>
                 <div className={classNames(s.headerData, s.tooltipParent)}>
                     {Boolean(name.length) && <span className={s.modifiers}>{name}</span>}
-                    <span style={{ color: langData.color }}>{langData.name}</span>
-                    {langData.description !== undefined && (
-                        <span className={s.tooltip}>{langData.description}</span>
-                    )}
-                    {modifier.tiers.some(
-                        (tier) => level - tier.minLevel <= 3 && tier.minLevel <= level
-                    ) && <span className={s.new}>(New)</span>}
+                    <div className={s.gap}>
+                        <span style={{ color: langData.color }}>{langData.name}</span>
+                        {langData.description !== undefined && (
+                            <span className={s.tooltip}>{langData.description}</span>
+                        )}
+                        {modifier.tiers.some(
+                            (tier) => level - tier.minLevel <= 3 && tier.minLevel <= level
+                        ) && <span className={s.new}>(New)</span>}
+                    </div>
                 </div>
                 <div className={s.headerData}>
                     {hasWeight ? (<></>) : (<span className={s.odds}>{`${(
@@ -91,20 +93,28 @@ export default ({
                         <div className={s.headerData}>
                             {availableLegendaryTiers.includes(tier) ? (
                                 <span className={s.tooltipParent}>
-                                    <span style={{ fontSize: "14px", color: "gold" }}>◆</span>
+                                    <span className={s.legendaryDot}>◆</span>
                                     <span className={s.tooltip}>Legendary Modifier</span>
                                 </span>
                             ) : (<></>)}
-                            {getTierDisplayForModifier(modifier, tier, gearPiece) ? (<span>{getTierDisplayForModifier(modifier, tier, gearPiece)}</span>) : <></>}
-                            <div style={{ color: langData.color }}>
-                                {getModifierDisplayForTier(tier, langData)}
+                            {getTierDisplayForModifier(modifier, tier, gearPiece) ? (<span className={s.modifiers}>{getTierDisplayForModifier(modifier, tier, gearPiece)}</span>) : <></>}
+                            <div className={s.gap}>
+                                {availableLegendaryTiers.includes(tier) ? (
+                                    <span className={s.mobileOnly}>
+                                        <span className={s.legendaryDot}>◆</span>
+                                        <span className={s.tooltip}>Legendary Modifier</span>
+                                    </span>
+                                ) : (<></>)}
+                                <div style={{ color: langData.color }}>
+                                    {getModifierDisplayForTier(tier, langData)}
+                                </div>
+                                {level - tier.minLevel <= 3 && tier.minLevel <= level && (
+                                    <span className={s.new}>(New)</span>
+                                )}
                             </div>
-                            {level - tier.minLevel <= 3 && tier.minLevel <= level && (
-                                <span className={s.new}>(New)</span>
-                            )}
                         </div>
                         <div className={s.sideData}>
-                            {availableLegendaryTiers.includes(tier) ? <></> : <div className={s.weight}>{getWeight(availableTiers, tier)}%</div>}
+                            {availableLegendaryTiers.includes(tier) || modifierGroup.includes('CRAFTED') ? <></> : <div className={s.weight}>{getWeight(availableTiers, tier)}%</div>}
                             <div>
                                 {tier.minLevel < 100 && `Lvl ${tier.minLevel} `}
                                 {tier.maxLevel === -1 && tier.minLevel < 100 ? '+' : '-'}
@@ -121,6 +131,6 @@ export default ({
                     </div>
                 )}
             </div>
-        </div>
+        </div >
     );
 };

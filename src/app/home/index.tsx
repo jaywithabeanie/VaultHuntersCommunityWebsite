@@ -1,18 +1,17 @@
 import BackgroundImage from "@/components/backgroundImage";
-import s from './home.module.scss'
-import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faRedditAlien } from "@fortawesome/free-brands-svg-icons";
 import classNames from "classnames";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import Title from "@/components/title";
 import IconBox from "@/components/iconBox";
+import s from './home.module.scss'
 
 export default () => (
     <div className={s.container}>
         <BackgroundImage backgroundType="textured" />
         <div className={s.box}>
-            <Title icon="/images/vault_rock.png" title="Community Website" />
+            <Title icon="/images/vault_rock.png" title="Community Website" titleClass={s.title} iconClass={s.icon} />
             <div>
                 Welcome to the unofficial website of the Vault Hunters Minecraft modpack!
                 Here, you can find information about the game, that is constantly being kept up-to-date.

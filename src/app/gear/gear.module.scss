@@ -1,3 +1,5 @@
+@import '@/app/variables.scss';
+
 :local {
     .container {
         display: flex;
@@ -10,6 +12,20 @@
         display: grid;
         gap: 10px;
         grid-auto-flow: column;
+
+        @media (--tablet-screen) {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 700px;
+            grid-template-columns: unset;
+            justify-content: center;
+            align-items: center;
+            grid-auto-flow: unset;
+        }
+
+        @media (--mobile-screen) {
+            max-width: 350px;
+        }
     }
 
     .content {
@@ -20,6 +36,10 @@
         outline: 3px solid rgba(1, 1, 19, .5);
         gap: 10px;
         padding: 30px;
+
+        @media (--mobile-screen) {
+            padding: 30px 10px;
+        }
     }
 
     .gearTitle {

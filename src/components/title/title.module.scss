@@ -1,7 +1,11 @@
+@import '@/app/variables.scss';
+
 :local {
     .header {
         display: flex;
+        width: 100%;
         margin-bottom: 20px;
+        justify-content: center;
         align-items: center;
     }
 
@@ -14,6 +18,12 @@
         align-items: center;
         justify-content: center;
         position: relative;
+
+        @media (--mobile-screen) {
+            min-width: 98px;
+            width: 98px;
+            height: 98px;
+        }
     }
 
     .label {
@@ -44,6 +54,11 @@
         height: 60px;
         width: 60px;
         position: relative;
+
+        @media (--mobile-screen) {
+            width: 53px;
+            height: 53px;
+        }
 
         img {
             image-rendering: pixelated;

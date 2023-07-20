@@ -1,3 +1,5 @@
+@import '@/app/variables.scss';
+
 :local {
     .container {
         display: flex;
@@ -11,6 +13,13 @@
         background-color: var(--background-color-main-75);
         position: relative;
         box-shadow: -3px -3px 2.5px var(--background-color-main-75);
+
+        @media (--medium-screen) {
+            display: grid;
+            justify-content: center;
+            height: auto;
+            padding: 20px 0;
+        }
     }
 
     .logo {
@@ -19,11 +28,19 @@
         display: block;
         width: 38px;
         margin-right: 20px;
+
+        @media (--medium-screen) {
+            display: none;
+        }
     }
 
     .leftSide {
         display: flex;
         align-items: center;
+
+        @media (--medium-screen) {
+            justify-content: center;
+        }
     }
 
     .link {

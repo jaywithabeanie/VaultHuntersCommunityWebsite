@@ -1,3 +1,5 @@
+@import '@/app/variables.scss';
+
 :local {
     .container {
         display: flex;
@@ -20,6 +22,15 @@
         color: #d8c9bb;
         font-family: var(--font-secondary);
         font-size: 18px;
+
+        @media (--tablet-screen) {
+            margin: 60px auto;
+        }
+
+        @media (--mobile-screen) {
+            width: 90%;
+            padding: 15px;
+        }
     }
 
     .icons {
@@ -51,5 +62,20 @@
         color: #222;
         height: 28px;
         width: auto;
+    }
+
+    .title {
+        @media (--mobile-screen) {
+            font-size: 18px !important;
+            text-wrap: nowrap;
+        }
+    }
+
+    .icon {
+        @media (--mobile-screen) {
+            min-width: 85px !important;
+            width: 85px !important;
+            height: 85px !important;
+        }
     }
 }
