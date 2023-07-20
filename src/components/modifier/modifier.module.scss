@@ -127,7 +127,7 @@
         display: grid;
         justify-content: flex-end;
         grid-auto-flow: column;
-        grid-auto-columns: 70px;
+        grid-auto-columns: 80px;
         gap: 20px;
 
         @media (--mobile-screen) {

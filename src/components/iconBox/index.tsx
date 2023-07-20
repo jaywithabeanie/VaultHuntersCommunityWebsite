@@ -15,7 +15,7 @@ type PropsType = {
 
 export default ({ variant, children, size, as = "div", className, ...rest }: PropsType) => createElement(as,
     { className: classNames(s.container, className), style: { width: size, height: size }, ...rest }, <>
-    <Image alt='' fill src={`/images/${variant === '1a' ? 'icon_small_variant1_a' : 'icon_small_variant1_b'}.png`} />
+    <Image alt='' fill src={`/images/${variant === '1a' ? 'icon_small_variant1_a' : 'icon_small_variant1_b'}.png`} priority />
     {children}
 </>
 )

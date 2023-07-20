@@ -55,12 +55,12 @@ export default ({
     ? modifier.attribute === "the_vault:effect_immunity"
       ? []
       : modifier.tiers
-          .filter(
-            (_, index) =>
-              index > modifier.tiers.indexOf(highestTier) &&
-              index <= modifier.tiers.indexOf(highestTier) + 2
-          )
-          .sort((a, b) => a.minLevel - b.minLevel)
+        .filter(
+          (_, index) =>
+            index > modifier.tiers.indexOf(highestTier) &&
+            index <= modifier.tiers.indexOf(highestTier) + 2
+        )
+        .sort((a, b) => a.minLevel - b.minLevel)
     : [];
 
   const name = getTierDisplayForModifiers(
@@ -146,7 +146,7 @@ export default ({
             </div>
             <div className={s.sideData}>
               {availableLegendaryTiers.includes(tier) ||
-              modifierGroup.includes("CRAFTED") ? (
+                modifierGroup.includes("CRAFTED") ? (
                 <></>
               ) : (
                 <div className={s.weight}>
@@ -154,8 +154,9 @@ export default ({
                 </div>
               )}
               <div>
-                {tier.minLevel < 100 && `Lvl ${tier.minLevel} `}
-                {tier.maxLevel === -1 && tier.minLevel < 100 ? "+" : "-"}
+                {tier.minLevel <= 100
+                  ? `${`Lvl ${tier.minLevel <= 100 ? tier.minLevel : '-'}${tier.maxLevel === -1 ? ' +' : ` - ${tier.maxLevel}`}`}`
+                  : '-'}
               </div>
             </div>
           </div>
