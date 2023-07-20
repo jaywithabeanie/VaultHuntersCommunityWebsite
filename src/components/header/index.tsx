@@ -18,9 +18,9 @@ export default () => {
                 <li>
                     <Link href={'/gear'} className={s.link} >Gear</Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link href={'/guides'} className={s.link} >Guides</Link>
-                </li>
+                </li> */}
             </ul>
         </nav>
     </div>
