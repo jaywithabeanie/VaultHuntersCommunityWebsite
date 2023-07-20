@@ -48,10 +48,12 @@
         font-family: var(--font-secondary);
         transition: transform .3s;
 
-        &:hover {
-            color: var(--color-secondary);
-            transform: translateY(-2px);
-            filter: brightness(1.15);
+        @media (hover:hover) {
+            &:hover {
+                color: var(--color-secondary);
+                transform: translateY(-2px);
+                filter: brightness(1.15);
+            }
         }
 
         &:not(:last-of-type) {

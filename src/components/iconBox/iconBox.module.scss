@@ -9,10 +9,13 @@
         transition: transform .3s, filter .3s;
         cursor: pointer;
 
-        &:hover {
-            color: var(--color-secondary);
-            transform: translateY(-2px);
-            filter: brightness(1.15);
+        @media (hover:hover) {
+
+            &:hover {
+                color: var(--color-secondary);
+                transform: translateY(-2px);
+                filter: brightness(1.15);
+            }
         }
     }
 }

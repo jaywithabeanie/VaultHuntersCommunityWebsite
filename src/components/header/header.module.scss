@@ -74,10 +74,13 @@
       font-size: 24px;
     }
 
-    &:hover {
-      color: var(--color-secondary);
-      transform: translateY(-2px);
-      filter: brightness(1.15);
+    @media (hover:hover) {
+
+      &:hover {
+        color: var(--color-secondary);
+        transform: translateY(-2px);
+        filter: brightness(1.15);
+      }
     }
   }
 }

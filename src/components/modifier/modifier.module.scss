@@ -81,9 +81,11 @@
         position: relative;
         cursor: pointer;
 
-        &:hover .tooltip {
-            visibility: visible;
-            transition: visibility 0s linear 0.5s;
+        @media (hover:hover) {
+            &:hover .tooltip {
+                visibility: visible;
+                transition: visibility 0s linear 0.5s;
+            }
         }
     }
 
