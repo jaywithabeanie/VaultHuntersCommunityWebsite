@@ -8,12 +8,13 @@ type PropsType = {
     title: string,
     titleClass?: string
     iconClass?: string
+    wrapperClass?: string
 }
 
-export default ({ icon, title, titleClass, iconClass }: PropsType) => {
+export default ({ icon, title, titleClass, iconClass, wrapperClass }: PropsType) => {
 
     return (
-        <div className={s.header}>
+        <div className={classNames(s.header, wrapperClass)}>
             <div className={classNames(s.iconBox, iconClass)}>
                 <Image src={'/images/scroll_header_icon.png'} fill alt="" quality={100} />
                 <div className={s.icon}>

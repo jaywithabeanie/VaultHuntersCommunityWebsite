@@ -11,7 +11,7 @@ export default () => (
     <div className={s.container}>
         <BackgroundImage backgroundType="textured" />
         <div className={s.box}>
-            <Title icon="/images/vault_rock.png" title="Community Website" titleClass={s.title} iconClass={s.icon} />
+            <Title icon="/images/vault_rock.png" title="Community Website" titleClass={s.title} iconClass={s.icon} wrapperClass={s.wrapper} />
             <div>
                 Welcome to the unofficial website of the Vault Hunters Minecraft modpack!
                 Here, you can find information about the game, that is constantly being kept up-to-date.

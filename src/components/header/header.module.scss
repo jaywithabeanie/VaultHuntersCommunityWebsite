@@ -30,13 +30,24 @@
     }
   }
 
-  .logo {
+  .logo,
+  .mobileLogo {
     width: 150px;
     height: auto;
 
     @media (--mobile-screen) {
+      display: none;
       height: 50px;
       width: auto;
+    }
+  }
+
+
+  .mobileLogo {
+    display: none;
+
+    @media (--mobile-screen) {
+      display: block;
     }
   }
 

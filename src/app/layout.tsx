@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const lato = Lato({
   subsets: ['latin'],
-  weight: ['400', '300', '900'],
+  weight: ['400', '300', '700'],
   variable: '--font-main',
 })
 const boogaloo = Boogaloo({

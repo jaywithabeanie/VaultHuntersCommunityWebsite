@@ -71,6 +71,14 @@
         }
     }
 
+    .wrapper {
+        justify-content: flex-start !important;
+
+        @media (--mobile-screen) {
+            justify-content: center !important;
+        }
+    }
+
     .icon {
         @media (--mobile-screen) {
             min-width: 85px !important;
