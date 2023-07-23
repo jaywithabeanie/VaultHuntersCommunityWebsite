@@ -14,7 +14,7 @@ import {
   ModifierType,
   gearPieces,
   groupTypes,
-} from "./functions";
+} from "../../hooks/gearHooks";
 import Slider from "@/components/slider";
 
 export default () => {
@@ -123,7 +123,7 @@ export default () => {
                           (tier) =>
                             tier?.minLevel <= level &&
                             level <=
-                              (tier.maxLevel < 0 ? 100 : tier.maxLevel) &&
+                            (tier.maxLevel < 0 ? 100 : tier.maxLevel) &&
                             tier.weight > 0
                         ) && (
                           <Modifier

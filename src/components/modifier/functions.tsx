@@ -1,4 +1,4 @@
-import { ModifierType, TierType } from "@/pages/gear/functions";
+import { ModifierType, TierType } from "@/hooks/gearHooks";
 
 export const getModifierWeight = (
   modifierGroup: string,
@@ -108,8 +108,8 @@ export const getTierDisplayForModifiers = (
   let tierDisplay = "";
   if (modifier.attribute === "the_vault:added_ability_level") {
     return (tierDisplay = `+${lowestTier.value?.levelChange}${highestTier.value?.levelChange && highestTier.value?.levelChange > 1
-        ? ` - ${highestTier.value.levelChange}`
-        : ""
+      ? ` - ${highestTier.value.levelChange}`
+      : ""
       }`);
   }
 
