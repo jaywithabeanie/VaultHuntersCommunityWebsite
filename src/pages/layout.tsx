@@ -1,5 +1,4 @@
 import Header from '@/components/header'
-import type { Metadata } from 'next'
 import { Boogaloo, Lato, Permanent_Marker } from 'next/font/google'
 import classNames from 'classnames'
 import { config } from '@fortawesome/fontawesome-svg-core'
@@ -8,12 +7,6 @@ import Footer from '@/components/footer'
 import s from './layout.module.scss'
 import Head from 'next/head'
 config.autoAddCss = false
-
-export const metadata: Metadata = {
-  title: 'Vault Hunters Community Guide',
-  description: '',
-  icons: []
-}
 
 const lato = Lato({
   subsets: ['latin'],
