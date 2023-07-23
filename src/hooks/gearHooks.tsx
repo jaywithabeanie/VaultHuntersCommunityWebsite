@@ -82,7 +82,7 @@ export const removeDuplicateLevels = (modifiers: ModifierType[]) => {
 
 export const getGearPieceModifierData = (selectedGearPiece: string) => {
   // Retrieve data
-  const gearPieceModifierData: GearType = require(`../../data/modifiers/${selectedGearPiece}.json`);
+  const gearPieceModifierData: GearType = require(`../data/modifiers/${selectedGearPiece}.json`);
 
   gearPieceModifierData.modifierGroup.PREFIX = removeDuplicateLevels(
     gearPieceModifierData.modifierGroup.PREFIX
