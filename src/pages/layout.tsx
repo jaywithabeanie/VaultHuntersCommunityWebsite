@@ -6,11 +6,13 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import Footer from '@/components/footer'
 import s from './layout.module.scss'
+import Head from 'next/head'
 config.autoAddCss = false
 
 export const metadata: Metadata = {
   title: 'Vault Hunters Community Guide',
   description: '',
+  icons: []
 }
 
 const lato = Lato({
@@ -37,12 +39,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className={classNames(lato.variable, boogaloo.variable, marker.variable, s.container)}>
-      <Header />
-      <div className={s.content}>
-        {children}
+    <>
+      <Head>
+        <title>Vault Hunters Community Guide</title>
+      </Head>
+      <div className={classNames(lato.variable, boogaloo.variable, marker.variable, s.container)}>
+        <Header />
+        <div className={s.content}>
+          {children}
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   )
 }

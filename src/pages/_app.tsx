@@ -3,5 +3,6 @@ import RootLayout from './layout'
 import './globals.scss'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-    return <RootLayout><Component {...pageProps} /></RootLayout>
+    return <>
+        <RootLayout><Component {...pageProps} /></RootLayout></>
 }
