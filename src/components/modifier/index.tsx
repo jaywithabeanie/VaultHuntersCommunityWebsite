@@ -8,7 +8,7 @@ import {
   getWeight,
 } from "./functions";
 import classNames from "classnames";
-import { ModifierType } from "@/app/gear/functions";
+import { ModifierType } from "@/pages/gear/functions";
 
 type PropsType = {
   gearPiece: string;

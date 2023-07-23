@@ -1,5 +1,4 @@
 import Header from '@/components/header'
-import './globals.scss'
 import type { Metadata } from 'next'
 import { Boogaloo, Lato, Permanent_Marker } from 'next/font/google'
 import classNames from 'classnames'
@@ -38,14 +37,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={classNames(lato.variable, boogaloo.variable, marker.variable, s.container)}>
-        <Header />
-        <div className={s.content}>
-          {children}
-        </div>
-        <Footer />
-      </body>
-    </html>
+    <div className={classNames(lato.variable, boogaloo.variable, marker.variable, s.container)}>
+      <Header />
+      <div className={s.content}>
+        {children}
+      </div>
+      <Footer />
+    </div>
   )
 }
