@@ -12,10 +12,14 @@ export default ({ backgroundType }: PropsType) => {
         className: s.background, alt: "", fill: true, priority: true, quality: 100
     }
 
-    switch (backgroundType) {
-        case 'textured':
-            return <Image src={BackgroundTextured}{...PROPS} placeholder="blur" />
-        default:
-            return <Image src={BackgroundUntextured} {...PROPS} placeholder="blur" />
+    const getBackground = () => {
+        switch (backgroundType) {
+            case 'textured':
+                return <Image src={BackgroundTextured}{...PROPS} placeholder="blur" />
+            default:
+                return <Image src={BackgroundUntextured} {...PROPS} placeholder="blur" />
+        }
     }
+
+    return <div className={s.backgroundWrapper}>{getBackground()}</div>
 }
