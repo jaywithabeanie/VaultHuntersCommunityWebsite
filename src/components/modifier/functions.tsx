@@ -187,7 +187,7 @@ export const getModifierDisplayForTier = (
   }
 ) => {
   // Initiate variables
-  var modifierDisplay = "";
+  let modifierDisplay = "";
 
   // Tier has tooltip display name (Cloud Modifiers)
   if (tier.value.tooltipDisplayName != null) {
