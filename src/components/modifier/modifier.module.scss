@@ -1,0 +1,188 @@
+@import '@/pages/variables.scss';
+
+:local {
+    .container {
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, .65);
+
+        &.expanded .data {
+            opacity: 1;
+            max-height: 1000px;
+            visibility: visible;
+        }
+    }
+
+    .modifiers {
+        @media (--mobile-screen) {
+            order: 2;
+        }
+    }
+
+    .headerContainer {
+        display: flex;
+        padding: 10px;
+        width: 100%;
+        justify-content: space-between;
+        color: #fff;
+        background-color: rgba(0, 0, 7, .5);
+        cursor: pointer;
+
+        @media (--mobile-screen) {
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    .headerData {
+        gap: 7px;
+        display: grid;
+        grid-auto-flow: column;
+
+        @media (--mobile-screen) {
+            grid-auto-flow: row;
+        }
+    }
+
+    .gap {
+        gap: 7px;
+        display: grid;
+        order: 1;
+        grid-auto-flow: column;
+    }
+
+    .data {
+        transition: 0.3s all ease-in-out;
+        max-height: 0;
+        background-color: rgba(20, 15, 10, .25);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .tooltip {
+        position: absolute;
+        top: -30px;
+        left: 30px;
+        padding: 4px;
+        z-index: 1;
+        font-size: 12px;
+        color: #fff;
+        background-color: var(--background-color-main);
+        border: 1px solid var(--background-color-secondary);
+        transition: visibility 0s;
+        visibility: hidden;
+        white-space: nowrap;
+
+        @media (--mobile-screen) {
+            display: none;
+        }
+    }
+
+    .tooltipParent {
+        position: relative;
+        cursor: pointer;
+
+        @media (hover:hover) {
+            &:hover .tooltip {
+                visibility: visible;
+                transition: visibility 0s linear 0.5s;
+            }
+        }
+    }
+
+    .innerData {
+        padding: 10px;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+
+        @media (--mobile-screen) {
+            flex-wrap: wrap;
+        }
+    }
+
+    .new {
+        color: #9664fd;
+        font-weight: bold;
+    }
+
+    .legendaryDot {
+        font-size: 14px;
+        color: gold;
+
+        @media (--mobile-screen) {
+            display: none;
+        }
+    }
+
+    .odds {
+        font-weight: normal;
+        font-size: 17px;
+
+        @media (--mobile-screen) {
+            display: none;
+        }
+    }
+
+    .sideData {
+        display: grid;
+        justify-content: flex-end;
+        grid-auto-flow: column;
+        grid-auto-columns: 80px;
+        gap: 20px;
+
+        @media (--mobile-screen) {
+            grid-auto-columns: 1fr;
+        }
+    }
+
+    .icon {
+        width: 10px;
+        text-align: right;
+    }
+
+    .excluding {
+        display: flex;
+        color: white;
+        border-top: 1px solid rgba(0, 0, 0, .65);
+        padding: 10px;
+
+        @media (--mobile-screen) {
+            flex-wrap: wrap;
+        }
+    }
+
+    .excludingTitle {
+        margin-right: 15px;
+        text-wrap: nowrap;
+
+        @media (--mobile-screen) {
+            margin-bottom: 10px;
+            margin-right: 0;
+        }
+    }
+
+    .mobileOnly {
+        display: none;
+
+        @media (--mobile-screen) {
+            display: block;
+
+            .legendaryDot {
+                display: block;
+            }
+        }
+    }
+
+    .weight {
+        text-align: left;
+
+        @media (--mobile-screen) {
+            display: none;
+        }
+    }
+
+    .excludingItems {
+        color: #ff2323;
+        font-weight: bold;
+    }
+}

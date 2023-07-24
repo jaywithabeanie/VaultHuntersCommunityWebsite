@@ -1,0 +1,21 @@
+:local {
+    .container {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform .3s, filter .3s;
+        cursor: pointer;
+
+        @media (hover:hover) {
+
+            &:hover {
+                color: var(--color-secondary);
+                transform: translateY(-2px);
+                filter: brightness(1.15);
+            }
+        }
+    }
+}

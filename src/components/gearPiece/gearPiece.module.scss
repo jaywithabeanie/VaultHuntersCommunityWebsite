@@ -1,0 +1,30 @@
+@import '@/pages/variables.scss';
+
+:local {
+    .gearPiece {
+        image-rendering: pixelated;
+    }
+
+    .container {
+        @media (--mobile-screen) {
+            width: 64px;
+            height: 64px;
+        }
+    }
+
+    .gearContainer {
+        width: 48px;
+        height: 48px;
+        position: relative;
+
+        @media (--mobile-screen) {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    .active {
+        filter: brightness(1.5);
+        pointer-events: none;
+    }
+}

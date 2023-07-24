@@ -1,0 +1,69 @@
+@import '@/pages/variables.scss';
+
+:local {
+    .container {
+        display: flex;
+        padding: 0 15px;
+        height: 50px;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 16px;
+        background-color: var(--background-color-main-75);
+        position: relative;
+        box-shadow: -3px -3px 2.5px var(--background-color-main-75);
+
+        @media (--medium-screen) {
+            display: grid;
+            justify-content: center;
+            height: auto;
+            padding: 20px 0;
+        }
+    }
+
+    .logo {
+        position: relative;
+        min-height: 35px;
+        display: block;
+        width: 38px;
+        margin-right: 20px;
+
+        @media (--medium-screen) {
+            display: none;
+        }
+    }
+
+    .leftSide {
+        display: flex;
+        align-items: center;
+
+        @media (--medium-screen) {
+            justify-content: center;
+        }
+    }
+
+    .link {
+        color: var(--color-main);
+        font-family: var(--font-secondary);
+        transition: transform .3s;
+
+        @media (hover:hover) {
+            &:hover {
+                color: var(--color-secondary);
+                transform: translateY(-2px);
+                filter: brightness(1.15);
+            }
+        }
+
+        &:not(:last-of-type) {
+            margin-right: 20px;
+        }
+    }
+
+    .copyright {
+        font-size: 14px;
+        color: var(--color-text-main);
+        text-align: center;
+    }
+}
