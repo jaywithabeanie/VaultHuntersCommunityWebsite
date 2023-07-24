@@ -312,35 +312,20 @@
                 "description": "Grants immunity against hunger effect",
                 "color": "#EDE1CC"
             },
-            "the_vault:immunity_weakness": {
-                "name": "Weakness Immunity",
-                "description": "Grants immunity against weakness effect",
-                "color": "#EDE1CC"
+            "the_vault:mod_effect_avoidance_weakness": {
+                "name": "Weakness Avoidance",
+                "description": "The odds to not be affected by the weakness effect",
+                "color": "#8FE0D6"
             },
-            "the_vault:immunity_poison": {
-                "name": "Poison Immunity",
-                "description": "Grants immunity against poison effect",
-                "color": "#EDE1CC"
+            "the_vault:mod_effect_avoidance_fatigue": {
+                "name": "Mining Fatigue Avoidance",
+                "description": "The odds to not be affected by the mining fatigue effect",
+                "color": "#8FE0D6"
             },
-            "the_vault:immunity_slowness": {
-                "name": "Slowness Immunity",
-                "description": "Grants immunity against slowness effect",
-                "color": "#EDE1CC"
-            },
-            "the_vault:immunity_mining": {
-                "name": "Mining Fatigue Immunity",
-                "description": "Grants immunity against slowness effect",
-                "color": "#EDE1CC"
-            },
-            "the_vault:immunity_wither": {
-                "name": "Wither Immunity",
-                "description": "Grants immunity against wither effect",
-                "color": "#EDE1CC"
-            },
-            "the_vault:mod_immunity": {
-                "name": "Time Acceleration Immunity",
-                "description": "Grants immunity against time accelaration effect inside the vaults",
-                "color": "#EDE1CC"
+            "the_vault:mod_effect_avoidance_time": {
+                "name": "Time Acceleration Avoidance",
+                "description": "The odds to not be affected by the time acceleration effect",
+                "color": "#8FE0D6"
             },
             "the_vault:thorns_damage": {
                 "name": "Thorns Damage",
