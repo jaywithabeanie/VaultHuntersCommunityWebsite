@@ -29,7 +29,7 @@ export default () => {
     modifiers: ModifierType[]
   ) => {
     // Initiate variables
-    var totalWeight = 0;
+    let totalWeight = 0;
 
     // Guard clause
     if (!["IMPLICIT", "PREFIX", "SUFFIX"].includes(modifierGroup)) {
