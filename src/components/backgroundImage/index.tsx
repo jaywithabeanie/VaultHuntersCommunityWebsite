@@ -21,5 +21,5 @@ export default ({ backgroundType }: PropsType) => {
         }
     }
 
-    return <div className={s.backgroundWrapper}>{getBackground()}</div>
+    return <>{getBackground()}</>
 }
