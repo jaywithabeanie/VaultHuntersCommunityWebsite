@@ -74,6 +74,7 @@ export const removeDuplicateLevels = (modifiers: ModifierType[]) => {
       }
       return arr.push(e);
     }
+    if (e.identifier === "the_vault:base_no_soulbound") return;
     arr.push(e);
   });
 

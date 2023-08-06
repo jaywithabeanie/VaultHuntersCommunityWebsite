@@ -264,6 +264,38 @@
             }
           }
         ]
+      },
+      { "attribute": "the_vault:soulbound",
+        "group": "BaseSoulbound",
+        "identifier": "the_vault:base_soulbound",
+        "tags": [
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 20,
+            "value": {
+              "flag": true
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:soulbound",
+        "group": "BaseSoulbound",
+        "identifier": "the_vault:base_no_soulbound",
+        "tags": [
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 80,
+            "value": {
+              "flag": false
+            }
+          }
+        ]
       }
     ],
     "PREFIX": [
@@ -513,21 +545,11 @@
         "tiers": [
           {
             "minLevel": 0,
-            "maxLevel": -1,
+            "maxLevel": 79,
             "weight": 10,
             "value": {
-              "min": 0.05,
-              "max": 0.1,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 18,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.11,
-              "max": 0.15,
+              "min": 0.1,
+              "max": 0.25,
               "step": 0.01
             }
           },
@@ -536,8 +558,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.16,
-              "max": 0.2,
+              "min": 0.26,
+              "max": 0.5,
               "step": 0.01
             }
           },
@@ -546,8 +568,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.21,
-              "max": 0.25,
+              "min": 0.51,
+              "max": 0.75,
               "step": 0.01
             }
           },
@@ -556,8 +578,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.26,
-              "max": 0.29,
+              "min": 0.76,
+              "max": 1.0,
               "step": 0.01
             }
           },
@@ -566,8 +588,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.3,
-              "max": 0.35,
+              "min": 1.01,
+              "max": 1.5,
               "step": 0.01
             }
           },
@@ -576,8 +598,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.36,
-              "max": 0.4,
+              "min": 1.51,
+              "max": 2.0,
               "step": 0.01
             }
           }
@@ -593,21 +615,11 @@
         "tiers": [
           {
             "minLevel": 0,
-            "maxLevel": -1,
+            "maxLevel": 79,
             "weight": 10,
             "value": {
-              "min": 0.05,
-              "max": 0.1,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 18,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.11,
-              "max": 0.15,
+              "min": 0.1,
+              "max": 0.25,
               "step": 0.01
             }
           },
@@ -616,8 +628,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.16,
-              "max": 0.2,
+              "min": 0.26,
+              "max": 0.5,
               "step": 0.01
             }
           },
@@ -626,8 +638,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.21,
-              "max": 0.25,
+              "min": 0.51,
+              "max": 0.75,
               "step": 0.01
             }
           },
@@ -636,8 +648,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.26,
-              "max": 0.29,
+              "min": 0.76,
+              "max": 1.0,
               "step": 0.01
             }
           },
@@ -646,8 +658,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.3,
-              "max": 0.35,
+              "min": 1.01,
+              "max": 1.5,
               "step": 0.01
             }
           },
@@ -656,8 +668,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.36,
-              "max": 0.4,
+              "min": 1.51,
+              "max": 2.0,
               "step": 0.01
             }
           }
@@ -673,21 +685,11 @@
         "tiers": [
           {
             "minLevel": 0,
-            "maxLevel": -1,
+            "maxLevel": 79,
             "weight": 10,
             "value": {
-              "min": 0.05,
-              "max": 0.1,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 18,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.11,
-              "max": 0.15,
+              "min": 0.1,
+              "max": 0.25,
               "step": 0.01
             }
           },
@@ -696,8 +698,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.16,
-              "max": 0.2,
+              "min": 0.26,
+              "max": 0.5,
               "step": 0.01
             }
           },
@@ -706,8 +708,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.21,
-              "max": 0.25,
+              "min": 0.51,
+              "max": 0.75,
               "step": 0.01
             }
           },
@@ -716,8 +718,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.26,
-              "max": 0.29,
+              "min": 0.76,
+              "max": 1.0,
               "step": 0.01
             }
           },
@@ -726,8 +728,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.3,
-              "max": 0.35,
+              "min": 1.01,
+              "max": 1.5,
               "step": 0.01
             }
           },
@@ -736,8 +738,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.36,
-              "max": 0.4,
+              "min": 1.51,
+              "max": 2.0,
               "step": 0.01
             }
           }
@@ -753,21 +755,11 @@
         "tiers": [
           {
             "minLevel": 0,
-            "maxLevel": -1,
+            "maxLevel": 79,
             "weight": 10,
             "value": {
-              "min": 0.05,
-              "max": 0.1,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 18,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.11,
-              "max": 0.15,
+              "min": 0.1,
+              "max": 0.25,
               "step": 0.01
             }
           },
@@ -776,8 +768,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.16,
-              "max": 0.2,
+              "min": 0.26,
+              "max": 0.5,
               "step": 0.01
             }
           },
@@ -786,8 +778,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.21,
-              "max": 0.25,
+              "min": 0.51,
+              "max": 0.75,
               "step": 0.01
             }
           },
@@ -796,8 +788,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.26,
-              "max": 0.29,
+              "min": 0.76,
+              "max": 1.0,
               "step": 0.01
             }
           },
@@ -806,8 +798,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.3,
-              "max": 0.35,
+              "min": 1.01,
+              "max": 1.5,
               "step": 0.01
             }
           },
@@ -816,8 +808,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.36,
-              "max": 0.4,
+              "min": 1.51,
+              "max": 2.0,
               "step": 0.01
             }
           }
@@ -901,23 +893,6 @@
               "min": 3701,
               "max": 5000,
               "step": 1
-            }
-          }
-        ]
-      },
-      { "attribute": "the_vault:soulbound",
-        "group": "ModSoulbound",
-        "identifier": "the_vault:mod_soulbound",
-        "tags": [
-          "focusSoulbound"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "flag": true
             }
           }
         ]
@@ -1918,8 +1893,8 @@
         ],
         "tiers": [
           {
-            "minLevel": 22,
-            "maxLevel": -1,
+            "minLevel": 0,
+            "maxLevel": 47,
             "weight": 10,
             "value": {
               "min": 2.0,
@@ -1928,8 +1903,8 @@
             }
           },
           {
-            "minLevel": 35,
-            "maxLevel": -1,
+            "minLevel": 22,
+            "maxLevel": 50,
             "weight": 10,
             "value": {
               "min": 7.0,
@@ -1938,8 +1913,8 @@
             }
           },
           {
-            "minLevel": 48,
-            "maxLevel": -1,
+            "minLevel": 35,
+            "maxLevel": 86,
             "weight": 10,
             "value": {
               "min": 13.0,
@@ -1948,7 +1923,7 @@
             }
           },
           {
-            "minLevel": 59,
+            "minLevel": 48,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -1958,7 +1933,7 @@
             }
           },
           {
-            "minLevel": 70,
+            "minLevel": 59,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -1968,7 +1943,7 @@
             }
           },
           {
-            "minLevel": 80,
+            "minLevel": 70,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -1978,12 +1953,22 @@
             }
           },
           {
-            "minLevel": 87,
+            "minLevel": 80,
             "maxLevel": -1,
             "weight": 10,
             "value": {
               "min": 43.0,
               "max": 48.0,
+              "step": 0.5
+            }
+          },
+          {
+            "minLevel": 87,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 49.0,
+              "max": 55.0,
               "step": 0.5
             }
           }
@@ -1997,7 +1982,7 @@
         ],
         "tiers": [
           {
-            "minLevel": 40,
+            "minLevel": 5,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2007,12 +1992,22 @@
             }
           },
           {
-            "minLevel": 98,
+            "minLevel": 40,
             "maxLevel": -1,
             "weight": 10,
             "value": {
               "min": 3,
               "max": 4,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 98,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 5,
+              "max": 6,
               "step": 1
             }
           }
@@ -2026,8 +2021,8 @@
         ],
         "tiers": [
           {
-            "minLevel": 28,
-            "maxLevel": -1,
+            "minLevel": 0,
+            "maxLevel": 70,
             "weight": 10,
             "value": {
               "min": 0.1,
@@ -2036,7 +2031,7 @@
             }
           },
           {
-            "minLevel": 45,
+            "minLevel": 28,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2046,12 +2041,22 @@
             }
           },
           {
-            "minLevel": 75,
+            "minLevel": 45,
             "maxLevel": -1,
             "weight": 10,
             "value": {
               "min": 0.31,
               "max": 0.4,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 75,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.41,
+              "max": 0.5,
               "step": 0.01
             }
           }
@@ -2065,12 +2070,12 @@
         ],
         "tiers": [
           {
-            "minLevel": 18,
-            "maxLevel": -1,
+            "minLevel": 0,
+            "maxLevel": 79,
             "weight": 10,
             "value": {
-              "min": 0.05,
-              "max": 0.1,
+              "min": 0.1,
+              "max": 0.25,
               "step": 0.01
             }
           },
@@ -2079,8 +2084,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.11,
-              "max": 0.15,
+              "min": 0.26,
+              "max": 0.5,
               "step": 0.01
             }
           },
@@ -2089,8 +2094,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.16,
-              "max": 0.2,
+              "min": 0.51,
+              "max": 0.75,
               "step": 0.01
             }
           },
@@ -2099,8 +2104,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.21,
-              "max": 0.25,
+              "min": 0.76,
+              "max": 1.0,
               "step": 0.01
             }
           }
@@ -2114,12 +2119,12 @@
         ],
         "tiers": [
           {
-            "minLevel": 18,
-            "maxLevel": -1,
+            "minLevel": 0,
+            "maxLevel": 79,
             "weight": 10,
             "value": {
-              "min": 0.05,
-              "max": 0.1,
+              "min": 0.1,
+              "max": 0.25,
               "step": 0.01
             }
           },
@@ -2128,8 +2133,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.11,
-              "max": 0.15,
+              "min": 0.26,
+              "max": 0.5,
               "step": 0.01
             }
           },
@@ -2138,8 +2143,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.16,
-              "max": 0.2,
+              "min": 0.51,
+              "max": 0.75,
               "step": 0.01
             }
           },
@@ -2148,8 +2153,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.21,
-              "max": 0.25,
+              "min": 0.76,
+              "max": 1.0,
               "step": 0.01
             }
           }
@@ -2163,12 +2168,12 @@
         ],
         "tiers": [
           {
-            "minLevel": 18,
-            "maxLevel": -1,
+            "minLevel": 0,
+            "maxLevel": 79,
             "weight": 10,
             "value": {
-              "min": 0.05,
-              "max": 0.1,
+              "min": 0.1,
+              "max": 0.25,
               "step": 0.01
             }
           },
@@ -2177,8 +2182,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.11,
-              "max": 0.15,
+              "min": 0.26,
+              "max": 0.5,
               "step": 0.01
             }
           },
@@ -2187,8 +2192,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.16,
-              "max": 0.2,
+              "min": 0.51,
+              "max": 0.75,
               "step": 0.01
             }
           },
@@ -2197,8 +2202,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.21,
-              "max": 0.25,
+              "min": 0.76,
+              "max": 1.0,
               "step": 0.01
             }
           }
@@ -2212,12 +2217,12 @@
         ],
         "tiers": [
           {
-            "minLevel": 18,
-            "maxLevel": -1,
+            "minLevel": 0,
+            "maxLevel": 79,
             "weight": 10,
             "value": {
-              "min": 0.05,
-              "max": 0.1,
+              "min": 0.1,
+              "max": 0.25,
               "step": 0.01
             }
           },
@@ -2226,8 +2231,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.11,
-              "max": 0.15,
+              "min": 0.26,
+              "max": 0.5,
               "step": 0.01
             }
           },
@@ -2236,8 +2241,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.16,
-              "max": 0.2,
+              "min": 0.51,
+              "max": 0.75,
               "step": 0.01
             }
           },
@@ -2246,8 +2251,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.21,
-              "max": 0.25,
+              "min": 0.76,
+              "max": 1.0,
               "step": 0.01
             }
           }
@@ -2263,7 +2268,7 @@
         ],
         "tiers": [
           {
-            "minLevel": 28,
+            "minLevel": 11,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2273,7 +2278,7 @@
             }
           },
           {
-            "minLevel": 46,
+            "minLevel": 28,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2283,7 +2288,7 @@
             }
           },
           {
-            "minLevel": 67,
+            "minLevel": 46,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2293,7 +2298,7 @@
             }
           },
           {
-            "minLevel": 89,
+            "minLevel": 67,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2301,22 +2306,15 @@
               "max": 2100,
               "step": 1
             }
-          }
-        ]
-      },
-      { "attribute": "the_vault:soulbound",
-        "group": "ModSoulbound",
-        "identifier": "the_vault:crafted_soulbound",
-        "tags": [
-          "focusSoulbound"
-        ],
-        "tiers": [
+          },
           {
-            "minLevel": 0,
+            "minLevel": 89,
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "flag": true
+              "min": 2101,
+              "max": 2500,
+              "step": 1
             }
           }
         ]
@@ -2329,7 +2327,7 @@
         ],
         "tiers": [
           {
-            "minLevel": 32,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 4,
             "value": {
@@ -2352,7 +2350,7 @@
             }
           },
           {
-            "minLevel": 64,
+            "minLevel": 32,
             "maxLevel": -1,
             "weight": 4,
             "value": {
@@ -2373,6 +2371,29 @@
               "affectsOwner": true,
               "triggerChance": 0.02
             }
+          },
+          {
+            "minLevel": 64,
+            "maxLevel": -1,
+            "weight": 4,
+            "value": {
+              "tooltipDisplayName": "Healing III",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "minecraft:instant_health",
+                  "duration": 20,
+                  "amplifier": 0,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 160,
+              "radius": 5.0,
+              "color": 16150747,
+              "affectsOwner": true,
+              "triggerChance": 0.02
+            }
           }
         ]
       },
@@ -2384,7 +2405,7 @@
         ],
         "tiers": [
           {
-            "minLevel": 32,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2407,7 +2428,7 @@
             }
           },
           {
-            "minLevel": 64,
+            "minLevel": 32,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2428,6 +2449,29 @@
               "affectsOwner": false,
               "triggerChance": 0.05
             }
+          },
+          {
+            "minLevel": 64,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Poison III",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "minecraft:poison",
+                  "duration": 60,
+                  "amplifier": 7,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 200,
+              "radius": 4.0,
+              "color": 4236591,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
           }
         ]
       },
@@ -2439,7 +2483,7 @@
         ],
         "tiers": [
           {
-            "minLevel": 32,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2462,7 +2506,7 @@
             }
           },
           {
-            "minLevel": 64,
+            "minLevel": 32,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2483,6 +2527,29 @@
               "affectsOwner": false,
               "triggerChance": 0.05
             }
+          },
+          {
+            "minLevel": 64,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Slowness III",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "minecraft:slowness",
+                  "duration": 140,
+                  "amplifier": 0,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 200,
+              "radius": 4.0,
+              "color": 7400423,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
           }
         ]
       },
@@ -2494,7 +2561,7 @@
         ],
         "tiers": [
           {
-            "minLevel": 32,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2517,7 +2584,7 @@
             }
           },
           {
-            "minLevel": 64,
+            "minLevel": 32,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2538,9 +2605,112 @@
               "affectsOwner": false,
               "triggerChance": 0.05
             }
+          },
+          {
+            "minLevel": 64,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Fear III",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "the_vault:taunt_repel_mob",
+                  "duration": 60,
+                  "amplifier": 0,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 200,
+              "radius": 4.0,
+              "color": 2818160,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
           }
         ]
       },
+
+      { "attribute": "the_vault:effect_cloud",
+        "group": "ModOnHitAddition",
+        "identifier": "the_vault:crafted_chilling_cloud",
+        "tags": [
+          "focusChillingCloud"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Chilling",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "the_vault:chilled",
+                  "duration": 140,
+                  "amplifier": 0,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 120,
+              "radius": 4.0,
+              "color": 3138042,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
+          },
+          {
+            "minLevel": 32,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Chilling II",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "the_vault:chilled",
+                  "duration": 140,
+                  "amplifier": 0,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 160,
+              "radius": 4.0,
+              "color": 3138042,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
+          },
+          {
+            "minLevel": 64,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Chilling III",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "the_vault:chilled",
+                  "duration": 140,
+                  "amplifier": 0,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 200,
+              "radius": 4.0,
+              "color": 3138042,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
+          }
+        ]
+      },
+
       { "attribute": "the_vault:attack_speed_percent",
         "group": "ModAttackType",
         "identifier": "the_vault:crafted_attack_speed_percent",
@@ -2549,7 +2719,7 @@
         ],
         "tiers": [
           {
-            "minLevel": 36,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2559,7 +2729,7 @@
             }
           },
           {
-            "minLevel": 65,
+            "minLevel": 36,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2569,12 +2739,22 @@
             }
           },
           {
-            "minLevel": 96,
+            "minLevel": 65,
             "maxLevel": -1,
             "weight": 10,
             "value": {
               "min": 0.16,
               "max": 0.2,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 96,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.21,
+              "max": 0.25,
               "step": 0.01
             }
           }
@@ -2588,7 +2768,7 @@
         ],
         "tiers": [
           {
-            "minLevel": 20,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2598,7 +2778,7 @@
             }
           },
           {
-            "minLevel": 45,
+            "minLevel": 20,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2608,12 +2788,22 @@
             }
           },
           {
-            "minLevel": 75,
+            "minLevel": 45,
             "maxLevel": -1,
             "weight": 10,
             "value": {
               "min": 0.31,
               "max": 0.4,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 75,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.41,
+              "max": 0.5,
               "step": 0.01
             }
           }
@@ -2627,7 +2817,7 @@
       ],
       "tiers": [
         {
-          "minLevel": 30,
+          "minLevel": 0,
           "maxLevel": -1,
           "weight": 10,
           "value": {
@@ -2637,7 +2827,7 @@
           }
         },
         {
-          "minLevel": 45,
+          "minLevel": 30,
           "maxLevel": -1,
           "weight": 10,
           "value": {
@@ -2647,7 +2837,7 @@
           }
         },
         {
-          "minLevel": 65,
+          "minLevel": 45,
           "maxLevel": -1,
           "weight": 10,
           "value": {
@@ -2657,12 +2847,22 @@
           }
         },
         {
-          "minLevel": 86,
+          "minLevel": 65,
           "maxLevel": -1,
           "weight": 10,
           "value": {
             "min": 0.17,
             "max": 0.2,
+            "step": 0.01
+          }
+        },
+        {
+          "minLevel": 86,
+          "maxLevel": -1,
+          "weight": 10,
+          "value": {
+            "min": 0.21,
+            "max": 0.24,
             "step": 0.01
           }
         }
@@ -2676,7 +2876,7 @@
         ],
         "tiers": [
           {
-            "minLevel": 30,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2686,7 +2886,7 @@
             }
           },
           {
-            "minLevel": 45,
+            "minLevel": 30,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2696,7 +2896,7 @@
             }
           },
           {
-            "minLevel": 65,
+            "minLevel": 45,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2706,12 +2906,22 @@
             }
           },
           {
-            "minLevel": 86,
+            "minLevel": 65,
             "maxLevel": -1,
             "weight": 10,
             "value": {
               "min": 0.17,
               "max": 0.2,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 86,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.21,
+              "max": 0.24,
               "step": 0.01
             }
           }
@@ -2725,8 +2935,8 @@
         ],
         "tiers": [
           {
-            "minLevel": 50,
-            "maxLevel": -1,
+            "minLevel": 25,
+            "maxLevel": 79,
             "weight": 10,
             "value": {
               "min": 0.03,
@@ -2735,12 +2945,32 @@
             }
           },
           {
-            "minLevel": 75,
+            "minLevel": 40,
             "maxLevel": -1,
             "weight": 10,
             "value": {
               "min": 0.06,
               "max": 0.07,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 60,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.08,
+              "max": 0.1,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 80,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.11,
+              "max": 0.13,
               "step": 0.01
             }
           }

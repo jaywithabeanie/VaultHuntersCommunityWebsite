@@ -180,6 +180,38 @@
             }
           }
         ]
+      },
+      { "attribute": "the_vault:soulbound",
+        "group": "BaseSoulbound",
+        "identifier": "the_vault:base_soulbound",
+        "tags": [
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 20,
+            "value": {
+              "flag": true
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:soulbound",
+        "group": "BaseSoulbound",
+        "identifier": "the_vault:base_no_soulbound",
+        "tags": [
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 80,
+            "value": {
+              "flag": false
+            }
+          }
+        ]
       }
     ],
     "PREFIX": [],
@@ -394,8 +426,8 @@
         "tiers": [
           {
             "minLevel": 11,
-            "maxLevel": -1,
-            "weight": 10,
+            "maxLevel": 66,
+            "weight": 600,
             "value": {
               "min": 400,
               "max": 800,
@@ -405,7 +437,7 @@
           {
             "minLevel": 28,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 600,
             "value": {
               "min": 801,
               "max": 1600,
@@ -415,7 +447,7 @@
           {
             "minLevel": 46,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 600,
             "value": {
               "min": 1601,
               "max": 2400,
@@ -425,7 +457,7 @@
           {
             "minLevel": 67,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 600,
             "value": {
               "min": 2401,
               "max": 3200,
@@ -435,7 +467,7 @@
           {
             "minLevel": 89,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 600,
             "value": {
               "min": 3201,
               "max": 4000,
@@ -445,7 +477,7 @@
           {
             "minLevel": 101,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 100,
             "value": {
               "min": 4001,
               "max": 6000,
@@ -455,7 +487,7 @@
           {
             "minLevel": 102,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 100,
             "value": {
               "min": 6001,
               "max": 8000,
@@ -980,23 +1012,6 @@
             }
           }
         ]
-      },
-      { "attribute": "the_vault:soulbound",
-        "group": "ModSoulbound",
-        "identifier": "the_vault:mod_soulbound",
-        "tags": [
-          "focusSoulbound"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "flag": true
-            }
-          }
-        ]
       }
     ],
     "CRAFTED_SUFFIX": [
@@ -1008,9 +1023,9 @@
         ],
         "tiers": [
           {
-            "minLevel": 23,
-            "maxLevel": 66,
-            "weight": 90,
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 100,
             "value": {
               "min": 0.1,
               "max": 0.2,
@@ -1018,12 +1033,22 @@
             }
           },
           {
-            "minLevel": 34,
-            "maxLevel": 80,
-            "weight": 80,
+            "minLevel": 23,
+            "maxLevel": -1,
+            "weight": 90,
             "value": {
               "min": 0.21,
               "max": 0.3,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 34,
+            "maxLevel": -1,
+            "weight": 80,
+            "value": {
+              "min": 0.31,
+              "max": 0.4,
               "step": 0.01
             }
           },
@@ -1032,23 +1057,13 @@
             "maxLevel": -1,
             "weight": 70,
             "value": {
-              "min": 0.31,
-              "max": 0.4,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 55,
-            "maxLevel": -1,
-            "weight": 60,
-            "value": {
               "min": 0.41,
               "max": 0.5,
               "step": 0.01
             }
           },
           {
-            "minLevel": 67,
+            "minLevel": 55,
             "maxLevel": -1,
             "weight": 60,
             "value": {
@@ -1058,9 +1073,9 @@
             }
           },
           {
-            "minLevel": 81,
+            "minLevel": 67,
             "maxLevel": -1,
-            "weight": 50,
+            "weight": 60,
             "value": {
               "min": 0.61,
               "max": 0.7,
@@ -1068,12 +1083,22 @@
             }
           },
           {
-            "minLevel": 92,
+            "minLevel": 81,
             "maxLevel": -1,
-            "weight": 50,
+            "weight": 60,
             "value": {
               "min": 0.71,
               "max": 0.8,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 92,
+            "maxLevel": -1,
+            "weight": 60,
+            "value": {
+              "min": 0.81,
+              "max": 1.0,
               "step": 0.01
             }
           }
@@ -1087,9 +1112,9 @@
         ],
         "tiers": [
           {
-            "minLevel": 28,
+            "minLevel": 11,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 100,
             "value": {
               "min": 400,
               "max": 800,
@@ -1097,9 +1122,9 @@
             }
           },
           {
-            "minLevel": 46,
+            "minLevel": 28,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 100,
             "value": {
               "min": 801,
               "max": 1600,
@@ -1107,9 +1132,9 @@
             }
           },
           {
-            "minLevel": 67,
+            "minLevel": 46,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 100,
             "value": {
               "min": 1601,
               "max": 2400,
@@ -1117,12 +1142,22 @@
             }
           },
           {
-            "minLevel": 89,
+            "minLevel": 67,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 100,
             "value": {
               "min": 2401,
               "max": 3200,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 89,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 3201,
+              "max": 4000,
               "step": 1
             }
           }
@@ -1136,36 +1171,7 @@
         ],
         "tiers": [
           {
-            "minLevel": 50,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.05,
-              "max": 0.07,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 75,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.08,
-              "max": 0.1,
-              "step": 0.01
-            }
-          }
-        ]
-      },
-      { "attribute": "the_vault:trap_disarming",
-        "group": "ModTrapDisarming",
-        "identifier": "the_vault:crafted_trap_disarming",
-        "tags": [
-          "focusTrapDisarming"
-        ],
-        "tiers": [
-          {
-            "minLevel": 36,
+            "minLevel": 25,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -1180,7 +1186,56 @@
             "weight": 10,
             "value": {
               "min": 0.07,
+              "max": 0.08,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 75,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.09,
+              "max": 0.1,
+              "step": 0.01
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:trap_disarming",
+        "group": "ModTrapDisarming",
+        "identifier": "the_vault:crafted_trap_disarming",
+        "tags": [
+          "focusTrapDisarming"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.04,
+              "max": 0.06,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 36,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.07,
               "max": 0.09,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 50,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.1,
+              "max": 0.12,
               "step": 0.01
             }
           },
@@ -1189,8 +1244,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 0.1,
-              "max": 0.12,
+              "min": 0.13,
+              "max": 0.15,
               "step": 0.01
             }
           }
@@ -1204,9 +1259,9 @@
         ],
         "tiers": [
           {
-            "minLevel": 28,
+            "minLevel": 22,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 100,
             "value": {
               "min": 0.1,
               "max": 0.2,
@@ -1214,9 +1269,9 @@
             }
           },
           {
-            "minLevel": 45,
+            "minLevel": 44,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 100,
             "value": {
               "min": 0.21,
               "max": 0.3,
@@ -1224,12 +1279,22 @@
             }
           },
           {
-            "minLevel": 75,
+            "minLevel": 66,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 100,
             "value": {
               "min": 0.31,
               "max": 0.4,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 87,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.41,
+              "max": 0.5,
               "step": 0.01
             }
           }

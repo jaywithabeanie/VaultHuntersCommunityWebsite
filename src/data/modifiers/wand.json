@@ -153,6 +153,38 @@
             }
           }
         ]
+      },
+      { "attribute": "the_vault:soulbound",
+        "group": "BaseSoulbound",
+        "identifier": "the_vault:base_soulbound",
+        "tags": [
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 20,
+            "value": {
+              "flag": true
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:soulbound",
+        "group": "BaseSoulbound",
+        "identifier": "the_vault:base_no_soulbound",
+        "tags": [
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 80,
+            "value": {
+              "flag": false
+            }
+          }
+        ]
       }
       
     ],
@@ -296,84 +328,84 @@
         ]
       },
       { "attribute": "the_vault:durability",
-      "group": "ModDurability",
-      "identifier": "the_vault:mod_durability",
-      "tags": [
-        "focusDurability",
-        "noLegendary"
-      ],
-      "tiers": [
-        {
-          "minLevel": 11,
-          "maxLevel": -1,
-          "weight": 200,
-          "value": {
-            "min": 400,
-            "max": 800,
-            "step": 1
+        "group": "ModDurability",
+        "identifier": "the_vault:mod_durability",
+        "tags": [
+          "focusDurability",
+          "noLegendary"
+        ],
+        "tiers": [
+          {
+            "minLevel": 11,
+            "maxLevel": 66,
+            "weight": 600,
+            "value": {
+              "min": 400,
+              "max": 800,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 28,
+            "maxLevel": -1,
+            "weight": 600,
+            "value": {
+              "min": 801,
+              "max": 1600,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 46,
+            "maxLevel": -1,
+            "weight": 600,
+            "value": {
+              "min": 1601,
+              "max": 2400,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 67,
+            "maxLevel": -1,
+            "weight": 600,
+            "value": {
+              "min": 2401,
+              "max": 3200,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 89,
+            "maxLevel": -1,
+            "weight": 600,
+            "value": {
+              "min": 3201,
+              "max": 4000,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 4001,
+              "max": 6000,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 6001,
+              "max": 8000,
+              "step": 1
+            }
           }
-        },
-        {
-          "minLevel": 28,
-          "maxLevel": -1,
-          "weight": 200,
-          "value": {
-            "min": 801,
-            "max": 1600,
-            "step": 1
-          }
-        },
-        {
-          "minLevel": 46,
-          "maxLevel": -1,
-          "weight": 200,
-          "value": {
-            "min": 1601,
-            "max": 2400,
-            "step": 1
-          }
-        },
-        {
-          "minLevel": 67,
-          "maxLevel": -1,
-          "weight": 200,
-          "value": {
-            "min": 2401,
-            "max": 3200,
-            "step": 1
-          }
-        },
-        {
-          "minLevel": 89,
-          "maxLevel": -1,
-          "weight": 200,
-          "value": {
-            "min": 3201,
-            "max": 4000,
-            "step": 1
-          }
-        },
-        {
-          "minLevel": 101,
-          "maxLevel": -1,
-          "weight": 200,
-          "value": {
-            "min": 4001,
-            "max": 6000,
-            "step": 1
-          }
-        },
-        {
-          "minLevel": 102,
-          "maxLevel": -1,
-          "weight": 200,
-          "value": {
-            "min": 6001,
-            "max": 8000,
-            "step": 1
-          }
-        }
-      ]
+        ]
       },
       { "attribute": "the_vault:added_ability_level",
         "group": "ModAPLvl",
@@ -1348,24 +1380,6 @@
       }
     ],
     "SUFFIX": [
-
-      { "attribute": "the_vault:soulbound",
-        "group": "ModSoulbound",
-        "identifier": "the_vault:mod_soulbound",
-        "tags": [
-          "focusSoulbound"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 100,
-            "value": {
-              "flag": true
-            }
-          }
-        ]
-      },
       { "attribute": "the_vault:effect_cloud",
         "group": "ModOnHitAddition",
         "identifier": "the_vault:mod_healing_cloud",
@@ -1740,130 +1754,6 @@
       },
       { "attribute": "the_vault:effect_cloud",
         "group": "ModOnHitAddition",
-        "identifier": "the_vault:mod_chilling_cloud",
-        "tags": [
-          "focusChillingCloud"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "tooltipDisplayName": "Chilling",
-              "potion": "minecraft:empty",
-              "additionalEffects": [
-                {
-                  "effect": "the_vault:chilled",
-                  "duration": 140,
-                  "amplifier": 0,
-                  "showParticles": true,
-                  "showIcon": true
-                }
-              ],
-              "duration": 120,
-              "radius": 4.0,
-              "color": 3138042,
-              "affectsOwner": false,
-              "triggerChance": 0.05
-            }
-          },
-          {
-            "minLevel": 32,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "tooltipDisplayName": "Chilling II",
-              "potion": "minecraft:empty",
-              "additionalEffects": [
-                {
-                  "effect": "the_vault:chilled",
-                  "duration": 140,
-                  "amplifier": 0,
-                  "showParticles": true,
-                  "showIcon": true
-                }
-              ],
-              "duration": 160,
-              "radius": 4.0,
-              "color": 3138042,
-              "affectsOwner": false,
-              "triggerChance": 0.05
-            }
-          },
-          {
-            "minLevel": 64,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "tooltipDisplayName": "Chilling III",
-              "potion": "minecraft:empty",
-              "additionalEffects": [
-                {
-                  "effect": "the_vault:chilled",
-                  "duration": 140,
-                  "amplifier": 0,
-                  "showParticles": true,
-                  "showIcon": true
-                }
-              ],
-              "duration": 200,
-              "radius": 4.0,
-              "color": 3138042,
-              "affectsOwner": false,
-              "triggerChance": 0.05
-            }
-          },
-          {
-            "minLevel": 101,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "tooltipDisplayName": "Chilling IV",
-              "potion": "minecraft:empty",
-              "additionalEffects": [
-                {
-                  "effect": "the_vault:chilled",
-                  "duration": 140,
-                  "amplifier": 1,
-                  "showParticles": true,
-                  "showIcon": true
-                }
-              ],
-              "duration": 240,
-              "radius": 4.0,
-              "color": 3138042,
-              "affectsOwner": false,
-              "triggerChance": 0.05
-            }
-          },
-          {
-            "minLevel": 102,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "tooltipDisplayName": "Chilling V",
-              "potion": "minecraft:empty",
-              "additionalEffects": [
-                {
-                  "effect": "the_vault:chilled",
-                  "duration": 140,
-                  "amplifier": 1,
-                  "showParticles": true,
-                  "showIcon": true
-                }
-              ],
-              "duration": 300,
-              "radius": 4.0,
-              "color": 3138042,
-              "affectsOwner": false,
-              "triggerChance": 0.05
-            }
-          }
-        ]
-      },
-      { "attribute": "the_vault:effect_cloud",
-        "group": "ModOnHitAddition",
         "identifier": "the_vault:mod_fear_cloud",
         "tags": [
           "focusFearCloud"
@@ -1980,6 +1870,130 @@
               "duration": 300,
               "radius": 4.0,
               "color": 2818160,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:effect_cloud",
+        "group": "ModOnHitAddition",
+        "identifier": "the_vault:mod_chilling_cloud",
+        "tags": [
+          "focusChillingCloud"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Chilling",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "the_vault:chilled",
+                  "duration": 140,
+                  "amplifier": 0,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 120,
+              "radius": 4.0,
+              "color": 3138042,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
+          },
+          {
+            "minLevel": 32,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Chilling II",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "the_vault:chilled",
+                  "duration": 140,
+                  "amplifier": 0,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 160,
+              "radius": 4.0,
+              "color": 3138042,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
+          },
+          {
+            "minLevel": 64,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Chilling III",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "the_vault:chilled",
+                  "duration": 140,
+                  "amplifier": 0,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 200,
+              "radius": 4.0,
+              "color": 3138042,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Chilling IV",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "the_vault:chilled",
+                  "duration": 140,
+                  "amplifier": 1,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 240,
+              "radius": 4.0,
+              "color": 3138042,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Chilling V",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "the_vault:chilled",
+                  "duration": 140,
+                  "amplifier": 1,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 300,
+              "radius": 4.0,
+              "color": 3138042,
               "affectsOwner": false,
               "triggerChance": 0.05
             }
@@ -2154,7 +2168,7 @@
         {
           "minLevel": 0,
           "maxLevel": 65,
-          "weight": 100,
+          "weight": 10,
           "value": {
             "min": 0.05,
             "max": 0.1,
@@ -2164,7 +2178,7 @@
         {
           "minLevel": 25,
           "maxLevel": 81,
-          "weight": 100,
+          "weight": 10,
           "value": {
             "min": 0.11,
             "max": 0.18,
@@ -2174,7 +2188,7 @@
         {
           "minLevel": 46,
           "maxLevel": -1,
-          "weight": 100,
+          "weight": 10,
           "value": {
             "min": 0.19,
             "max": 0.26,
@@ -2184,7 +2198,7 @@
         {
           "minLevel": 66,
           "maxLevel": -1,
-          "weight": 100,
+          "weight": 10,
           "value": {
             "min": 0.27,
             "max": 0.32,
@@ -2194,7 +2208,7 @@
         {
           "minLevel": 82,
           "maxLevel": -1,
-          "weight": 100,
+          "weight": 10,
           "value": {
             "min": 0.33,
             "max": 0.37,
@@ -2204,7 +2218,7 @@
         {
           "minLevel": 98,
           "maxLevel": -1,
-          "weight": 100,
+          "weight": 10,
           "value": {
             "min": 0.38,
             "max": 0.42,
@@ -2214,7 +2228,7 @@
         {
           "minLevel": 101,
           "maxLevel": -1,
-          "weight": 100,
+          "weight": 10,
           "value": {
             "min": 0.43,
             "max": 0.55,
@@ -2224,7 +2238,7 @@
         {
           "minLevel": 102,
           "maxLevel": -1,
-          "weight": 100,
+          "weight": 10,
           "value": {
             "min": 0.56,
             "max": 0.7,
@@ -2233,8 +2247,9 @@
         }
       ]
       },
+
       { "attribute": "the_vault:lucky_hit_chance",
-        "group": "ModOnHit",
+        "group": "ModOnHitAddition",
         "identifier": "the_vault:mod_lucky_hit_chance",
         "tags": [
           "focusLuckyHitChance"
@@ -2303,9 +2318,9 @@
         ],
         "tiers": [
           {
-            "minLevel": 28,
-            "maxLevel": -1,
-            "weight": 100,
+            "minLevel": 11,
+            "maxLevel": 66,
+            "weight": 600,
             "value": {
               "min": 400,
               "max": 800,
@@ -2313,9 +2328,9 @@
             }
           },
           {
-            "minLevel": 46,
+            "minLevel": 28,
             "maxLevel": -1,
-            "weight": 100,
+            "weight": 600,
             "value": {
               "min": 801,
               "max": 1600,
@@ -2323,9 +2338,9 @@
             }
           },
           {
-            "minLevel": 67,
+            "minLevel": 46,
             "maxLevel": -1,
-            "weight": 100,
+            "weight": 600,
             "value": {
               "min": 1601,
               "max": 2400,
@@ -2333,12 +2348,22 @@
             }
           },
           {
-            "minLevel": 89,
+            "minLevel": 67,
             "maxLevel": -1,
-            "weight": 100,
+            "weight": 600,
             "value": {
               "min": 2401,
               "max": 3200,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 89,
+            "maxLevel": -1,
+            "weight": 600,
+            "value": {
+              "min": 3201,
+              "max": 4000,
               "step": 1
             }
           }
@@ -2352,9 +2377,9 @@
         ],
         "tiers": [
           {
-            "minLevel": 25,
+            "minLevel": 0,
             "maxLevel": -1,
-            "weight": 100,
+            "weight": 200,
             "value": {
               "min": 0.1,
               "max": 0.2,
@@ -2362,28 +2387,48 @@
             }
           },
           {
-            "minLevel": 56,
+            "minLevel": 28,
             "maxLevel": -1,
-            "weight": 100,
+            "weight": 200,
             "value": {
               "min": 0.21,
               "max": 0.3,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 45,
+            "maxLevel": -1,
+            "weight": 200,
+            "value": {
+              "min": 0.31,
+              "max": 0.4,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 75,
+            "maxLevel": -1,
+            "weight": 200,
+            "value": {
+              "min": 0.41,
+              "max": 0.5,
               "step": 0.01
             }
           }
         ]
       },
       { "attribute": "the_vault:ability_power_percent",
-        "group": "ModResistance",
+        "group": "ModAPLvl",
         "identifier": "the_vault:crafted_ability_increase",
         "tags": [
           "focusAbilityDamage"
         ],
         "tiers": [
           {
-            "minLevel": 42,
-            "maxLevel": -1,
-            "weight": 100,
+            "minLevel": 0,
+            "maxLevel": 86,
+            "weight": 200,
             "value": {
               "min": 0.04,
               "max": 0.07,
@@ -2391,9 +2436,9 @@
             }
           },
           {
-            "minLevel": 68,
+            "minLevel": 42,
             "maxLevel": -1,
-            "weight": 100,
+            "weight": 200,
             "value": {
               "min": 0.08,
               "max": 0.11,
@@ -2401,12 +2446,22 @@
             }
           },
           {
-            "minLevel": 87,
+            "minLevel": 68,
             "maxLevel": -1,
-            "weight": 100,
+            "weight": 200,
             "value": {
               "min": 0.12,
               "max": 0.15,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 87,
+            "maxLevel": -1,
+            "weight": 200,
+            "value": {
+              "min": 0.16,
+              "max": 0.2,
               "step": 0.01
             }
           }
@@ -2422,9 +2477,9 @@
         ],
         "tiers": [
           {
-            "minLevel": 25,
-            "maxLevel": -1,
-            "weight": 100,
+            "minLevel": 0,
+            "maxLevel": 65,
+            "weight": 10,
             "value": {
               "min": 0.05,
               "max": 0.1,
@@ -2432,9 +2487,9 @@
             }
           },
           {
-            "minLevel": 46,
-            "maxLevel": -1,
-            "weight": 100,
+            "minLevel": 25,
+            "maxLevel": 81,
+            "weight": 10,
             "value": {
               "min": 0.11,
               "max": 0.18,
@@ -2442,9 +2497,9 @@
             }
           },
           {
-            "minLevel": 66,
+            "minLevel": 46,
             "maxLevel": -1,
-            "weight": 100,
+            "weight": 10,
             "value": {
               "min": 0.19,
               "max": 0.26,
@@ -2452,9 +2507,9 @@
             }
           },
           {
-            "minLevel": 82,
+            "minLevel": 66,
             "maxLevel": -1,
-            "weight": 100,
+            "weight": 10,
             "value": {
               "min": 0.27,
               "max": 0.32,
@@ -2462,30 +2517,43 @@
             }
           },
           {
-            "minLevel": 98,
+            "minLevel": 82,
             "maxLevel": -1,
-            "weight": 100,
+            "weight": 10,
             "value": {
               "min": 0.33,
               "max": 0.37,
               "step": 0.01
             }
-          }
-        ]
-      },
-      { "attribute": "the_vault:soulbound",
-        "group": "ModSoulbound",
-        "identifier": "the_vault:crafted_soulbound",
-        "tags": [
-          "focusSoulbound"
-        ],
-        "tiers": [
+          },
           {
-            "minLevel": 0,
+            "minLevel": 98,
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "flag": true
+              "min": 0.38,
+              "max": 0.42,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.43,
+              "max": 0.55,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.56,
+              "max": 0.7,
+              "step": 0.01
             }
           }
         ]
@@ -2498,7 +2566,7 @@
         ],
         "tiers": [
           {
-            "minLevel": 32,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 4,
             "value": {
@@ -2521,7 +2589,7 @@
             }
           },
           {
-            "minLevel": 64,
+            "minLevel": 32,
             "maxLevel": -1,
             "weight": 4,
             "value": {
@@ -2542,6 +2610,29 @@
               "affectsOwner": true,
               "triggerChance": 0.02
             }
+          },
+          {
+            "minLevel": 64,
+            "maxLevel": -1,
+            "weight": 4,
+            "value": {
+              "tooltipDisplayName": "Healing III",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "minecraft:instant_health",
+                  "duration": 20,
+                  "amplifier": 0,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 160,
+              "radius": 5.0,
+              "color": 16150747,
+              "affectsOwner": true,
+              "triggerChance": 0.02
+            }
           }
         ]
       },
@@ -2553,7 +2644,7 @@
         ],
         "tiers": [
           {
-            "minLevel": 32,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2576,7 +2667,7 @@
             }
           },
           {
-            "minLevel": 64,
+            "minLevel": 32,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2597,6 +2688,29 @@
               "affectsOwner": false,
               "triggerChance": 0.05
             }
+          },
+          {
+            "minLevel": 64,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Poison III",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "minecraft:poison",
+                  "duration": 60,
+                  "amplifier": 7,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 200,
+              "radius": 4.0,
+              "color": 4236591,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
           }
         ]
       },
@@ -2608,7 +2722,7 @@
         ],
         "tiers": [
           {
-            "minLevel": 32,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2631,7 +2745,7 @@
             }
           },
           {
-            "minLevel": 64,
+            "minLevel": 32,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2652,58 +2766,26 @@
               "affectsOwner": false,
               "triggerChance": 0.05
             }
-          }
-        ]
-      },
-      { "attribute": "the_vault:effect_cloud",
-        "group": "ModOnHitAddition",
-        "identifier": "the_vault:crafted_chilling_cloud",
-        "tags": [
-          "focusChillingCloud"
-        ],
-        "tiers": [
-          {
-            "minLevel": 32,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "tooltipDisplayName": "Chilling",
-              "potion": "minecraft:empty",
-              "additionalEffects": [
-                {
-                  "effect": "the_vault:chilled",
-                  "duration": 140,
-                  "amplifier": 0,
-                  "showParticles": true,
-                  "showIcon": true
-                }
-              ],
-              "duration": 120,
-              "radius": 4.0,
-              "color": 3138042,
-              "affectsOwner": false,
-              "triggerChance": 0.05
-            }
           },
           {
             "minLevel": 64,
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "tooltipDisplayName": "Chilling II",
+              "tooltipDisplayName": "Slowness III",
               "potion": "minecraft:empty",
               "additionalEffects": [
                 {
-                  "effect": "the_vault:chilled",
+                  "effect": "minecraft:slowness",
                   "duration": 140,
                   "amplifier": 0,
                   "showParticles": true,
                   "showIcon": true
                 }
               ],
-              "duration": 160,
+              "duration": 200,
               "radius": 4.0,
-              "color": 3138042,
+              "color": 7400423,
               "affectsOwner": false,
               "triggerChance": 0.05
             }
@@ -2718,7 +2800,7 @@
         ],
         "tiers": [
           {
-            "minLevel": 32,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2741,7 +2823,7 @@
             }
           },
           {
-            "minLevel": 64,
+            "minLevel": 32,
             "maxLevel": -1,
             "weight": 10,
             "value": {
@@ -2762,9 +2844,114 @@
               "affectsOwner": false,
               "triggerChance": 0.05
             }
+          },
+          {
+            "minLevel": 64,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Fear III",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "the_vault:taunt_repel_mob",
+                  "duration": 60,
+                  "amplifier": 0,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 200,
+              "radius": 4.0,
+              "color": 2818160,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
           }
         ]
       },
+      { "attribute": "the_vault:effect_cloud",
+        "group": "ModOnHitAddition",
+        "identifier": "the_vault:crafted_chilling_cloud",
+        "tags": [
+          "focusChillingCloud"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Chilling",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "the_vault:chilled",
+                  "duration": 140,
+                  "amplifier": 0,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 120,
+              "radius": 4.0,
+              "color": 3138042,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
+          },
+          {
+            "minLevel": 32,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Chilling II",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "the_vault:chilled",
+                  "duration": 140,
+                  "amplifier": 0,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 160,
+              "radius": 4.0,
+              "color": 3138042,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
+          },
+          {
+            "minLevel": 64,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "tooltipDisplayName": "Chilling III",
+              "potion": "minecraft:empty",
+              "additionalEffects": [
+                {
+                  "effect": "the_vault:chilled",
+                  "duration": 140,
+                  "amplifier": 0,
+                  "showParticles": true,
+                  "showIcon": true
+                }
+              ],
+              "duration": 200,
+              "radius": 4.0,
+              "color": 3138042,
+              "affectsOwner": false,
+              "triggerChance": 0.05
+            }
+          }
+        ]
+      },
+
+
+
+
       { "attribute": "the_vault:area_of_effect",
         "group": "ModEffectRadius",
         "identifier": "the_vault:crafted_area_of_effect",
@@ -2773,8 +2960,8 @@
         ],
         "tiers": [
           {
-            "minLevel": 40,
-            "maxLevel": -1,
+            "minLevel": 0,
+            "maxLevel": 62,
             "weight": 100,
             "value": {
               "min": 0.03,
@@ -2783,7 +2970,7 @@
             }
           },
           {
-            "minLevel": 63,
+            "minLevel": 40,
             "maxLevel": -1,
             "weight": 100,
             "value": {
@@ -2793,7 +2980,7 @@
             }
           },
           {
-            "minLevel": 89,
+            "minLevel": 63,
             "maxLevel": -1,
             "weight": 100,
             "value": {
@@ -2801,9 +2988,20 @@
               "max": 0.16,
               "step": 0.01
             }
+          },
+          {
+            "minLevel": 89,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.17,
+              "max": 0.2,
+              "step": 0.01
+            }
           }
         ]
       },
+
       { "attribute": "the_vault:cooldown_reduction",
         "group": "ModCooldownReduction",
         "identifier": "the_vault:crafted_cooldown_reduction",
@@ -2812,7 +3010,7 @@
         ],
         "tiers": [
           {
-            "minLevel": 39,
+            "minLevel": 0,
             "maxLevel": -1,
             "weight": 100,
             "value": {
@@ -2822,7 +3020,7 @@
             }
           },
           {
-            "minLevel": 59,
+            "minLevel": 22,
             "maxLevel": -1,
             "weight": 100,
             "value": {
@@ -2832,7 +3030,7 @@
             }
           },
           {
-            "minLevel": 70,
+            "minLevel": 43,
             "maxLevel": -1,
             "weight": 100,
             "value": {
@@ -2842,7 +3040,7 @@
             }
           },
           {
-            "minLevel": 85,
+            "minLevel": 70,
             "maxLevel": -1,
             "weight": 100,
             "value": {
@@ -2852,7 +3050,7 @@
             }
           },
           {
-            "minLevel": 92,
+            "minLevel": 85,
             "maxLevel": -1,
             "weight": 100,
             "value": {
@@ -2860,9 +3058,81 @@
               "max": 0.25,
               "step": 0.01
             }
+          },
+          {
+            "minLevel": 92,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.26,
+              "max": 0.28,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.29,
+              "max": 0.32,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.33,
+              "max": 0.36,
+              "step": 0.01
+            }
+          }
+        ]
+      },
+
+      { "attribute": "the_vault:lucky_hit_chance",
+        "group": "ModOnHit",
+        "identifier": "the_vault:crafted_lucky_hit_chance",
+        "tags": [
+          "focusLuckyHitChance"
+        ],
+        "tiers": [
+          {
+            "minLevel": 25,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.04,
+              "max": 0.06,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 50,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.07,
+              "max": 0.08,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 75,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.09,
+              "max": 0.1,
+              "step": 0.01
+            }
           }
         ]
       }
+
+
     ],
     "ABILITY_ENHANCEMENT": []
   }
