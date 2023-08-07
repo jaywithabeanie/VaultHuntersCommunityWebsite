@@ -16,10 +16,14 @@ import {
   groupTypes,
 } from "../../hooks/gearHooks";
 import Slider from "@/components/slider";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default () => {
-  const [activeTab, setActiveTab] =
-    useState<(typeof gearPieces)[number]>("sword");
+  const router = useRouter()
+  const slug = router.query?.index
+
+  const activeTab: any = (typeof slug !== "string" && slug ? slug[0] : slug) || "sword"
   const [level, setLevel] = useState(0);
   const getGearPieceDisplayName = (gearPiece: (typeof gearPieces)[number]) =>
     data.vault_gear.gear_pieces[gearPiece];
@@ -76,13 +80,13 @@ export default () => {
         <Title icon="/images/chestplate.png" title="Vault Gear" />
         <div className={s.gearPieces}>
           {gearPieces.map((gearPiece, index) => (
-            <GearPiece
-              key={index}
-              name={gearPiece}
-              isOddChild={index % 2 === 0}
-              active={activeTab === gearPiece}
-              onClick={() => setActiveTab(gearPiece)}
-            />
+            <Link key={index} href={`/gear/${gearPiece}`}>
+              <GearPiece
+                name={gearPiece}
+                isOddChild={index % 2 === 0}
+                active={activeTab === gearPiece}
+              />
+            </Link>
           ))}
         </div>
         <div className={s.content}>

@@ -9,7 +9,7 @@ type PropsType = {
     name: string
     active?: boolean
     isOddChild?: boolean
-    onClick: () => void
+    onClick?: () => void
 }
 
 export default ({ name, isOddChild, active, onClick }: PropsType) => {
