@@ -422,7 +422,7 @@
         ]
       },
       { "attribute": "the_vault:resistance",
-        "group": "ModResistance",
+        "group": "ModRes",
         "identifier": "the_vault:mod_resistance",
         "tags": [
           "focusResistance"
@@ -1675,7 +1675,7 @@
         ]
       },
       { "attribute": "the_vault:thorns_damage_flat",
-        "group": "ModThornsDamage",
+        "group": "ModBlockThorns",
         "identifier": "the_vault:crafted_thorns_damage",
         "tags": [
           "focusThornsDamage"
@@ -1764,7 +1764,7 @@
         ]
       },
       { "attribute": "the_vault:resistance",
-        "group": "ModResistance",
+        "group": "ModRes",
         "identifier": "the_vault:crafted_resistance",
         "tags": [
           "focusResistance"
@@ -1813,7 +1813,7 @@
         ]
       },
       { "attribute": "the_vault:block",
-        "group": "ModResistance",
+        "group": "ModBlockThorns",
         "identifier": "the_vault:crafted_block",
         "tags": [
           "focusBlock"

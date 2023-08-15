@@ -3093,7 +3093,7 @@
       },
 
       { "attribute": "the_vault:lucky_hit_chance",
-        "group": "ModOnHit",
+        "group": "ModOnHitAddition",
         "identifier": "the_vault:crafted_lucky_hit_chance",
         "tags": [
           "focusLuckyHitChance"
