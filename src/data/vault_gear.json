@@ -424,7 +424,12 @@
             },
             "the_vault:immortality": {
                 "name": "Vanilla Immortality",
-                "description": "The decrease in durabillity damage taken outside a Vault",
+                "description": "The decrease in durability damage taken outside a Vault",
+                "color": "#AD8BC1"
+            },
+            "the_vault:hydrovoid": {
+                "name": "Hydrovoid",
+                "description": "Allows your tool to be able to break liquids and completely void them",
                 "color": "#AD8BC1"
             }
         }

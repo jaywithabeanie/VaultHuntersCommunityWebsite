@@ -82,7 +82,7 @@
         "tiers": [
           {
             "minLevel": 0,
-            "maxLevel": -1,
+            "maxLevel": 49,
             "weight": 60,
             "value": {
               "flag": true
@@ -108,7 +108,7 @@
         "tiers": [
           {
             "minLevel": 0,
-            "maxLevel": -1,
+            "maxLevel": 49,
             "weight": 60,
             "value": {
               "flag": true
@@ -134,7 +134,7 @@
         "tiers": [
           {
             "minLevel": 0,
-            "maxLevel": -1,
+            "maxLevel": 49,
             "weight": 100,
             "value": {
               "flag": true
@@ -160,7 +160,7 @@
         "tiers": [
           {
             "minLevel": 0,
-            "maxLevel": -1,
+            "maxLevel": 49,
             "weight": 100,
             "value": {
               "flag": true
@@ -186,7 +186,7 @@
         "tiers": [
           {
             "minLevel": 0,
-            "maxLevel": -1,
+            "maxLevel": 49,
             "weight": 100,
             "value": {
               "flag": true
@@ -212,7 +212,7 @@
         "tiers": [
           {
             "minLevel": 0,
-            "maxLevel": -1,
+            "maxLevel": 49,
             "weight": 60,
             "value": {
               "flag": true
@@ -230,7 +230,7 @@
       },
       {
         "attribute": "the_vault:smelting",
-        "group": "ModCoinAffinity",
+        "group": "ModSmeltingAffinity",
         "identifier": "the_vault:smelting",
         "tags": [
           "noLegendary"
@@ -238,7 +238,7 @@
         "tiers": [
           {
             "minLevel": 0,
-            "maxLevel": -1,
+            "maxLevel": 49,
             "weight": 40,
             "value": {
               "flag": true
@@ -256,7 +256,7 @@
       },
       {
         "attribute": "the_vault:pulverizing",
-        "group": "ModCoinAffinity",
+        "group": "ModPulverizingAffinity",
         "identifier": "the_vault:pulverizing",
         "tags": [
           "noLegendary"
@@ -264,7 +264,7 @@
         "tiers": [
           {
             "minLevel": 0,
-            "maxLevel": -1,
+            "maxLevel": 49,
             "weight": 40,
             "value": {
               "flag": true
@@ -274,6 +274,32 @@
             "minLevel": 50,
             "maxLevel": -1,
             "weight": 20,
+            "value": {
+              "flag": true
+            }
+          }
+        ]
+      },
+      {
+        "attribute": "the_vault:hydrovoid",
+        "group": "ModHydrovoidAffinity",
+        "identifier": "the_vault:hydrovoid",
+        "tags": [
+          "noLegendary"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": 49,
+            "weight": 5,
+            "value": {
+              "flag": true
+            }
+          },
+          {
+            "minLevel": 50,
+            "maxLevel": -1,
+            "weight": 5,
             "value": {
               "flag": true
             }

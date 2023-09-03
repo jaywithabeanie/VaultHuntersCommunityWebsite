@@ -4019,7 +4019,7 @@
     ],
     "CRAFTED_PREFIX": [
       { "attribute": "the_vault:armor",
-        "group": "ModAbility",
+        "group": "ModArmor",
         "identifier": "the_vault:crafted_armor",
         "tags": [
           "focusArmor"
