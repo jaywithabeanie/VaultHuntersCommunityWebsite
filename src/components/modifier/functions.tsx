@@ -23,6 +23,10 @@ export const getTierDisplayForModifier = (
   if (modifier.attribute === "the_vault:added_ability_level")
     return `+${tier.value.levelChange}`;
 
+  if (modifier.identifier.includes('effect_falling') || modifier.identifier.includes('effect_regeneration')) {
+    return ''
+  }
+
   // Initiate variables
   let tierDisplay = "";
 
@@ -82,9 +86,8 @@ export const getTierDisplayForModifier = (
         modifier.attribute === "the_vault:item_rarity") &&
         gearPiece === "jewel")
     ) {
-      tierDisplay = `${(tier.value.min * 100).toFixed(1) + "%"} - ${
-        (tier.value.max * 100).toFixed(0) + "%"
-      }`;
+      tierDisplay = `${(tier.value.min * 100).toFixed(1) + "%"} - ${(tier.value.max * 100).toFixed(0) + "%"
+        }`;
     }
 
     // Modifier is "x Avoidance"
@@ -93,17 +96,20 @@ export const getTierDisplayForModifier = (
       tier.value.minChance &&
       tier.value.maxChance
     ) {
-      tierDisplay = `${(tier.value.minChance * 100).toFixed(0) + "%"} - ${
-        (tier.value.maxChance * 100).toFixed(0) + "%"
-      }`;
+      tierDisplay = `${(tier.value.minChance * 100).toFixed(0) + "%"} - ${(tier.value.maxChance * 100).toFixed(0) + "%"
+        }`;
     }
 
     // Default modifier
     else {
-      tierDisplay = `${(tier.value.min * 100).toFixed(0) + "%"} - ${
-        (tier.value.max * 100).toFixed(0) + "%"
-      }`;
+      tierDisplay = `${(tier.value.min * 100).toFixed(0) + "%"} - ${(tier.value.max * 100).toFixed(0) + "%"
+        }`;
     }
+  }
+
+  // Tier has amplifiers
+  if (tier.value.amplifier) {
+    tierDisplay = tier.value.amplifier.toString()
   }
 
   // Return displayed data
@@ -119,11 +125,14 @@ export const getTierDisplayForModifiers = (
   // Initiate variables
   let tierDisplay = "";
   if (modifier.attribute === "the_vault:added_ability_level") {
-    return (tierDisplay = `+${lowestTier.value?.levelChange}${
-      highestTier.value?.levelChange && highestTier.value?.levelChange > 1
-        ? ` - ${highestTier.value.levelChange}`
-        : ""
-    }`);
+    return (tierDisplay = `+${lowestTier.value?.levelChange}${highestTier.value?.levelChange && highestTier.value?.levelChange > 1
+      ? ` - ${highestTier.value.levelChange}`
+      : ""
+      }`);
+  }
+
+  if (modifier.identifier.includes('effect_falling') || modifier.identifier.includes('effect_regeneration')) {
+    return tierDisplay = ''
   }
 
   // Tier doesn't have values
@@ -171,23 +180,28 @@ export const getTierDisplayForModifiers = (
         modifier.attribute === "the_vault:item_rarity") &&
         gearPiece === "jewel")
     )
-      tierDisplay = `${(lowestTier.value.min * 100).toFixed(1) + "%"} - ${
-        (highestTier.value.max * 100).toFixed(0) + "%"
-      }`;
+      tierDisplay = `${(lowestTier.value.min * 100).toFixed(1) + "%"} - ${(highestTier.value.max * 100).toFixed(0) + "%"
+        }`;
     // Modifier is "x Avoidance"
     else if (
       modifier.attribute.endsWith("avoidance") &&
       lowestTier.value.minChance &&
       highestTier.value.maxChance
     )
-      tierDisplay = `${(lowestTier.value.minChance * 100).toFixed(0) + "%"} - ${
-        (highestTier.value.maxChance * 100).toFixed(0) + "%"
-      }`;
+      tierDisplay = `${(lowestTier.value.minChance * 100).toFixed(0) + "%"} - ${(highestTier.value.maxChance * 100).toFixed(0) + "%"
+        }`;
     // Default modifier
     else
-      tierDisplay = `${(lowestTier.value.min * 100).toFixed(0) + "%"} - ${
-        (highestTier.value.max * 100).toFixed(0) + "%"
-      }`;
+      tierDisplay = `${(lowestTier.value.min * 100).toFixed(0) + "%"} - ${(highestTier.value.max * 100).toFixed(0) + "%"
+        }`;
+  }
+
+  // Tier has amplifiers
+  if (lowestTier.value.amplifier) {
+    if (lowestTier.value.amplifier === highestTier.value.amplifier)
+      tierDisplay = `${lowestTier.value.amplifier}`;
+    else
+      tierDisplay = `${lowestTier.value.amplifier} - ${highestTier.value.amplifier}`
   }
 
   // Return displayed data

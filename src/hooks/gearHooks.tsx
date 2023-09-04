@@ -12,6 +12,7 @@ export const gearPieces = [
   "wand",
   "magnet",
   "jewel",
+  'bottle'
 ] as const;
 export const groupTypes = [
   "PREFIX",
@@ -29,6 +30,7 @@ export type TierType = {
     min: number;
     max: number;
     step: number;
+    amplifier?: number;
     levelChange?: number;
     minChance?: number;
     maxChance?: number;
@@ -122,9 +124,9 @@ export const getExcludingModifiers = (
 export const getModifierData = (modifier: ModifierType) => {
   // Initiate variables
   let modifierData = {
-    name: "Unknown",
+    name: modifier.identifier,
     description: "",
-    color: "#ffffff",
+    color: "red",
   };
 
   const lang = data.vault_gear.modifiers;

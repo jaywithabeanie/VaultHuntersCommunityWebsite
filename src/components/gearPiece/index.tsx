@@ -3,7 +3,6 @@ import s from './gearPiece.module.scss';
 import Image from 'next/image';
 import IconBox from '../iconBox';
 import classNames from 'classnames';
-import { Dimensions } from '@/hooks';
 
 type PropsType = {
     name: string

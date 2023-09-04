@@ -8,7 +8,7 @@ import {
   getWeight,
 } from "./functions";
 import classNames from "classnames";
-import { ModifierType } from "@/hooks/gearHooks";
+import { ModifierType, TierType } from "@/hooks/gearHooks";
 
 type PropsType = {
   gearPiece: string;
@@ -55,13 +55,25 @@ export default ({
     ? modifier.attribute === "the_vault:effect_immunity"
       ? []
       : modifier.tiers
-          .filter(
-            (_, index) =>
-              index > modifier.tiers.indexOf(highestTier) &&
-              index <= modifier.tiers.indexOf(highestTier) + 2
-          )
-          .sort((a, b) => a.minLevel - b.minLevel)
+        .filter(
+          (_, index) =>
+            index > modifier.tiers.indexOf(highestTier) &&
+            index <= modifier.tiers.indexOf(highestTier) + 2
+        )
+        .sort((a, b) => a.minLevel - b.minLevel)
     : [];
+
+  const removeDuplicateModifiers = (modifiers: TierType[]) => {
+    const arr: TierType[] = []
+    for (let i = 0; i < modifiers.length; i++) {
+      const mod = modifiers[i];
+
+      if (arr.filter(e => e.value === mod.value).length) continue
+      arr.push(mod)
+    }
+
+    return arr
+  }
 
   const name = getTierDisplayForModifiers(
     modifier,
@@ -72,6 +84,7 @@ export default ({
   const hasWeight =
     totalWeight === 0 ||
     getModifierWeight(modifierGroup, excludingModifiers, availableTiers) === 0;
+
 
   return (
     <div
@@ -109,7 +122,7 @@ export default ({
         </div>
       </h3>
       <div className={s.data}>
-        {[...availableTiers, ...availableLegendaryTiers].map((tier) => (
+        {removeDuplicateModifiers([...availableTiers, ...availableLegendaryTiers]).map((tier) => (
           <div key={tier.minLevel} className={s.innerData}>
             <div className={s.headerData}>
               {availableLegendaryTiers.includes(tier) ? (
@@ -146,7 +159,7 @@ export default ({
             </div>
             <div className={s.sideData}>
               {availableLegendaryTiers.includes(tier) ||
-              modifierGroup.includes("CRAFTED") ? (
+                modifierGroup.includes("CRAFTED") ? (
                 <></>
               ) : (
                 <div className={s.weight}>
@@ -158,9 +171,8 @@ export default ({
               )}
               <div>
                 {tier.minLevel <= 100
-                  ? `${`Lvl ${tier.minLevel <= 100 ? tier.minLevel : "-"}${
-                      tier.maxLevel === -1 ? " +" : ` - ${tier.maxLevel}`
-                    }`}`
+                  ? `${`Lvl ${tier.minLevel <= 100 ? tier.minLevel : "-"}${tier.maxLevel === -1 ? " +" : ` - ${tier.maxLevel}`
+                  }`}`
                   : "-"}
               </div>
             </div>

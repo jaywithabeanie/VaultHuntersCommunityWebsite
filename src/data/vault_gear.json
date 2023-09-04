@@ -192,6 +192,46 @@
                 "description": "The additional movement speed",
                 "color": "#CDCF74"
             },
+            "the_vault:mod_effect_speed": {
+                "name": "Speed",
+                "description": "Gives you speed",
+                "color": "#CDCF74"
+            },
+            "the_vault:mod_effect_falling": {
+                "name": "Slow Falling",
+                "description": "Gives you slow falling",
+                "color": "#CDCF74"
+            },
+            "the_vault:mod_effect_regeneration": {
+                "name": "Regeneration",
+                "description": "Gives you regeneration",
+                "color": "#CDCF74"
+            },
+            "the_vault:crafted_fire_immunity": {
+                "name": "Fire Immunity",
+                "description": "Gives you fire immunity",
+                "color": "#CDCF74"
+            },
+            "the_vault:crafted_effect_speed": {
+                "name": "Speed",
+                "description": "Gives you speed",
+                "color": "#CDCF74"
+            },
+            "the_vault:crafted_effect_falling": {
+                "name": "Slow Falling",
+                "description": "Gives you slow falling",
+                "color": "#CDCF74"
+            },
+            "the_vault:crafted_effect_regeneration": {
+                "name": "Regeneration",
+                "description": "Gives you regeneration",
+                "color": "#CDCF74"
+            },
+            "the_vault:mod_fire_immunity": {
+                "name": "Fire Immunity",
+                "description": "Gives you fire immunity",
+                "color": "#CDCF74"
+            },
             "the_vault:area_of_effect": {
                 "name": "Area of Effect",
                 "description": "The area of effect",

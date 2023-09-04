@@ -14,7 +14,7 @@
         gap: 10px;
         grid-auto-flow: column;
 
-        @media (--tablet-screen) {
+        @media (--medium-screen) {
             display: flex;
             flex-wrap: wrap;
             max-width: 700px;
