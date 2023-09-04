@@ -11,9 +11,7 @@ export const gearPieces = [
   "shield",
   "wand",
   "magnet",
-  "jewel",
-  'bottle'
-] as const;
+  "jewel"] as const;
 export const groupTypes = [
   "PREFIX",
   "SUFFIX",
