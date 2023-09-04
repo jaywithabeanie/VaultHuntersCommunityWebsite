@@ -13,7 +13,7 @@ export default () => (
         </div>
 
         <div className={s.copyright}>
-            &copy; 2023 • Website by jaywithabeanie • Additional Art by breadcrumb5550 • Additional Dev by freudplays
+            &copy; 2023 • Website by jaywithabeanie • Additional Art by breadcrumb5550 • Additional Dev by freudplays • Update 3.11.3
         </div>
     </div>
 )
