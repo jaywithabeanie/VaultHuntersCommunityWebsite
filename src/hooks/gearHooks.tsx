@@ -7,11 +7,12 @@ export const gearPieces = [
   "chestplate",
   "leggings",
   "boots",
-  "idol_benevolent",
+  "focus",
   "shield",
   "wand",
   "magnet",
-  "jewel"] as const;
+  "jewel",
+] as const;
 export const groupTypes = [
   "PREFIX",
   "SUFFIX",

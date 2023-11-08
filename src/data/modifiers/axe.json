@@ -10,8 +10,8 @@
             "maxLevel": 15,
             "weight": 10,
             "value": {
-              "min": 8.0,
-              "max": 10.0,
+              "min": 9.0,
+              "max": 12.0,
               "step": 0.5
             }
           },
@@ -20,8 +20,8 @@
             "maxLevel": 47,
             "weight": 10,
             "value": {
-              "min": 11.0,
-              "max": 12.0,
+              "min": 13.0,
+              "max": 15.0,
               "step": 0.5
             }
           },
@@ -30,8 +30,8 @@
             "maxLevel": 57,
             "weight": 10,
             "value": {
-              "min": 13.0,
-              "max": 14.0,
+              "min": 16.0,
+              "max": 18.0,
               "step": 0.5
             }
           },
@@ -40,8 +40,8 @@
             "maxLevel": 63,
             "weight": 10,
             "value": {
-              "min": 16.0,
-              "max": 18.0,
+              "min": 19.0,
+              "max": 21.0,
               "step": 0.5
             }
           },
@@ -50,8 +50,8 @@
             "maxLevel": 71,
             "weight": 10,
             "value": {
-              "min": 19.0,
-              "max": 21.0,
+              "min": 22.0,
+              "max": 24.0,
               "step": 0.5
             }
           },
@@ -60,8 +60,8 @@
             "maxLevel": 82,
             "weight": 10,
             "value": {
-              "min": 22.0,
-              "max": 24.0,
+              "min": 25.0,
+              "max": 28.0,
               "step": 0.5
             }
           },
@@ -70,8 +70,8 @@
             "maxLevel": 89,
             "weight": 10,
             "value": {
-              "min": 25.0,
-              "max": 27.0,
+              "min": 29.0,
+              "max": 32.0,
               "step": 0.5
             }
           },
@@ -80,8 +80,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 28.0,
-              "max": 30.0,
+              "min": 33.0,
+              "max": 36.0,
               "step": 0.5
             }
           },
@@ -90,8 +90,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 31.0,
-              "max": 33.0,
+              "min": 37.0,
+              "max": 40.0,
               "step": 0.5
             }
           },
@@ -100,8 +100,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 34.0,
-              "max": 36.0,
+              "min": 41.0,
+              "max": 44.0,
               "step": 0.5
             }
           },
@@ -110,8 +110,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 37.0,
-              "max": 39.0,
+              "min": 45.0,
+              "max": 48.0,
               "step": 0.5
             }
           },
@@ -120,8 +120,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 40.0,
-              "max": 42.0,
+              "min": 49.0,
+              "max": 52.0,
               "step": 0.5
             }
           },
@@ -130,55 +130,9 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 43.0,
-              "max": 50.0,
+              "min": 53.0,
+              "max": 60.0,
               "step": 0.5
-            }
-          }
-        ]
-      },
-      { "attribute": "the_vault:attack_range",
-        "group": "BaseAttackRange",
-        "identifier": "the_vault:base_attack_range",
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.5,
-              "max": 0.7,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 20,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.71,
-              "max": 0.8,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 45,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.81,
-              "max": 0.9,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 75,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.91,
-              "max": 1.0,
-              "step": 0.01
             }
           }
         ]
