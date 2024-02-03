@@ -87,6 +87,66 @@
                 "description": "The additional damage against Illager targets",
                 "color": "#009FB2"
             },
+            "the_vault:damage_champion": {
+                "name": "Champion Damage",
+                "description": "The additional damage against champion targets",
+                "color": "#06d584"
+            },
+            "the_vault:damage_dungeon": {
+                "name": "Dungeon Damage",
+                "description": "The additional damage against dungeon targets",
+                "color": "#19A6E4"
+            },
+            "the_vault:damage_assassin": {
+                "name": "Assassin Damage",
+                "description": "The additional damage against assassin targets",
+                "color": "#881191"
+            },
+            "the_vault:damage_horde": {
+                "name": "Horde Damage",
+                "description": "The additional damage against horde targets",
+                "color": "#FF6B00"
+            },
+            "the_vault:damage_tank": {
+                "name": "Tank Damage",
+                "description": "The additional damage against tank targets",
+                "color": "#C82626"
+            },
+            "the_vault:damage_dweller": {
+                "name": "Dweller Damage",
+                "description": "The additional damage against dweller targets",
+                "color": "#895195"
+            },
+            "the_vault:crafted_damage_dweller": {
+                "name": "Dweller Damage",
+                "description": "The additional damage against dweller targets",
+                "color": "#895195"
+            },
+            "the_vault:crafted_damage_champion": {
+                "name": "Champion Damage",
+                "description": "The additional damage against champion targets",
+                "color": "#06d584"
+            },
+            "the_vault:crafted_damage_dungeon": {
+                "name": "Dungeon Damage",
+                "description": "The additional damage against dungeon targets",
+                "color": "#19A6E4"
+            },
+            "the_vault:crafted_damage_assassin": {
+                "name": "Assassin Damage",
+                "description": "The additional damage against assassin targets",
+                "color": "#881191"
+            },
+            "the_vault:crafted_damage_horde": {
+                "name": "Horde Damage",
+                "description": "The additional damage against horde targets",
+                "color": "#FF6B00"
+            },
+            "the_vault:crafted_damage_tank": {
+                "name": "Tank Damage",
+                "description": "The additional damage against tank targets",
+                "color": "#C82626"
+            },
             "the_vault:damage_spiders": {
                 "name": "Arthropods Damage",
                 "description": "The additional damage against arthropod targets",
