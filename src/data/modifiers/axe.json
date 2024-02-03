@@ -1,7 +1,8 @@
 {
   "modifierGroup": {
     "IMPLICIT": [
-      { "attribute": "the_vault:attack_damage",
+      {
+        "attribute": "the_vault:attack_damage",
         "group": "BaseAttackDamage",
         "identifier": "the_vault:base_attack_damage",
         "tiers": [
@@ -137,7 +138,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:attack_speed",
+      {
+        "attribute": "the_vault:attack_speed",
         "group": "BaseAttackSpeed",
         "identifier": "the_vault:base_attack_speed",
         "tiers": [
@@ -163,7 +165,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:durability",
+      {
+        "attribute": "the_vault:durability",
         "group": "BaseDurability",
         "identifier": "the_vault:base_durability",
         "tiers": [
@@ -219,7 +222,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:soulbound",
+      {
+        "attribute": "the_vault:soulbound",
         "group": "BaseSoulbound",
         "identifier": "the_vault:base_soulbound",
         "tags": [
@@ -235,7 +239,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:soulbound",
+      {
+        "attribute": "the_vault:soulbound",
         "group": "BaseSoulbound",
         "identifier": "the_vault:base_no_soulbound",
         "tags": [
@@ -253,7 +258,8 @@
       }
     ],
     "PREFIX": [
-      { "attribute": "the_vault:attack_damage",
+      {
+        "attribute": "the_vault:attack_damage",
         "group": "ModOnHitType",
         "identifier": "the_vault:mod_attack_damage",
         "tags": [
@@ -362,7 +368,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:on_hit_chain",
+      {
+        "attribute": "the_vault:on_hit_chain",
         "group": "ModOnHitType",
         "identifier": "the_vault:mod_on_hit_chain",
         "tags": [
@@ -421,7 +428,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:soul_chance",
+      {
+        "attribute": "the_vault:soul_chance",
         "group": "ModSoulChance",
         "identifier": "the_vault:mod_soul_chance",
         "tags": [
@@ -500,7 +508,7 @@
           {
             "minLevel": 0,
             "maxLevel": 79,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 0.1,
               "max": 0.25,
@@ -510,7 +518,7 @@
           {
             "minLevel": 36,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 0.26,
               "max": 0.5,
@@ -520,7 +528,7 @@
           {
             "minLevel": 62,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 0.51,
               "max": 0.75,
@@ -530,7 +538,7 @@
           {
             "minLevel": 80,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 0.76,
               "max": 1.0,
@@ -540,7 +548,7 @@
           {
             "minLevel": 101,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 1.01,
               "max": 1.5,
@@ -550,7 +558,7 @@
           {
             "minLevel": 102,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 1.51,
               "max": 2.0,
@@ -570,7 +578,7 @@
           {
             "minLevel": 0,
             "maxLevel": 79,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 0.1,
               "max": 0.25,
@@ -580,7 +588,7 @@
           {
             "minLevel": 36,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 0.26,
               "max": 0.5,
@@ -590,7 +598,7 @@
           {
             "minLevel": 62,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 0.51,
               "max": 0.75,
@@ -600,7 +608,7 @@
           {
             "minLevel": 80,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 0.76,
               "max": 1.0,
@@ -610,7 +618,7 @@
           {
             "minLevel": 101,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 1.01,
               "max": 1.5,
@@ -620,7 +628,7 @@
           {
             "minLevel": 102,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 1.51,
               "max": 2.0,
@@ -640,7 +648,7 @@
           {
             "minLevel": 0,
             "maxLevel": 79,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 0.1,
               "max": 0.25,
@@ -650,7 +658,7 @@
           {
             "minLevel": 36,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 0.26,
               "max": 0.5,
@@ -660,7 +668,7 @@
           {
             "minLevel": 62,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 0.51,
               "max": 0.75,
@@ -670,7 +678,7 @@
           {
             "minLevel": 80,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 0.76,
               "max": 1.0,
@@ -680,7 +688,7 @@
           {
             "minLevel": 101,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 1.01,
               "max": 1.5,
@@ -690,7 +698,7 @@
           {
             "minLevel": 102,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 1.51,
               "max": 2.0,
@@ -710,7 +718,7 @@
           {
             "minLevel": 0,
             "maxLevel": 79,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 0.1,
               "max": 0.25,
@@ -720,7 +728,7 @@
           {
             "minLevel": 36,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 0.26,
               "max": 0.5,
@@ -730,7 +738,7 @@
           {
             "minLevel": 62,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 0.51,
               "max": 0.75,
@@ -740,7 +748,7 @@
           {
             "minLevel": 80,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 0.76,
               "max": 1.0,
@@ -750,7 +758,7 @@
           {
             "minLevel": 101,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 1.01,
               "max": 1.5,
@@ -760,7 +768,7 @@
           {
             "minLevel": 102,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 0,
             "value": {
               "min": 1.51,
               "max": 2.0,
@@ -768,10 +776,425 @@
             }
           }
         ]
+      },
+      { "attribute": "the_vault:damage_champion",
+        "group": "modDamageChampion",
+        "identifier": "the_vault:mod_damage_champion",
+        "tags": [
+          "focusDamageChampion"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": 79,
+            "weight": 10,
+            "value": {
+              "min": 0.05,
+              "max": 0.1,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 36,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.11,
+              "max": 0.2,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 62,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.21,
+              "max": 0.25,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 80,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.26,
+              "max": 0.30,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.31,
+              "max": 0.4,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.41,
+              "max": 0.5,
+              "step": 0.01
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:damage_dungeon",
+        "group": "modDamageDungeon",
+        "identifier": "the_vault:mod_damage_dungeon",
+        "tags": [
+          "focusDamageDungeon"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": 79,
+            "weight": 10,
+            "value": {
+              "min": 0.05,
+              "max": 0.1,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 36,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.11,
+              "max": 0.2,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 62,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.21,
+              "max": 0.25,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 80,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.26,
+              "max": 0.30,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.31,
+              "max": 0.4,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.41,
+              "max": 0.5,
+              "step": 0.01
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:damage_assassin",
+        "group": "modDamageDungeon",
+        "identifier": "the_vault:mod_damage_assassin",
+        "tags": [
+          "focusDamageAssassin"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": 79,
+            "weight": 10,
+            "value": {
+              "min": 0.05,
+              "max": 0.1,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 36,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.11,
+              "max": 0.2,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 62,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.21,
+              "max": 0.25,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 80,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.26,
+              "max": 0.30,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.31,
+              "max": 0.4,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.41,
+              "max": 0.5,
+              "step": 0.01
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:damage_horde",
+        "group": "modDamageHorde",
+        "identifier": "the_vault:mod_damage_horde",
+        "tags": [
+          "focusDamageHorde"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": 79,
+            "weight": 10,
+            "value": {
+              "min": 0.05,
+              "max": 0.1,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 36,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.11,
+              "max": 0.2,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 62,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.21,
+              "max": 0.25,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 80,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.26,
+              "max": 0.30,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.31,
+              "max": 0.4,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.41,
+              "max": 0.5,
+              "step": 0.01
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:damage_tank",
+        "group": "modDamageTank",
+        "identifier": "the_vault:mod_damage_tank",
+        "tags": [
+          "focusDamageTank"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": 79,
+            "weight": 10,
+            "value": {
+              "min": 0.05,
+              "max": 0.1,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 36,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.11,
+              "max": 0.2,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 62,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.21,
+              "max": 0.25,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 80,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.26,
+              "max": 0.30,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.31,
+              "max": 0.4,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.41,
+              "max": 0.5,
+              "step": 0.01
+            }
+          }
+        ]
+      },
+      { "attribute": "the_vault:damage_dweller",
+        "group": "modDamageDweller",
+        "identifier": "the_vault:mod_damage_dweller",
+        "tags": [
+          "focusDamageDweller"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": 79,
+            "weight": 10,
+            "value": {
+              "min": 0.05,
+              "max": 0.1,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 36,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.11,
+              "max": 0.2,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 62,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.21,
+              "max": 0.25,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 80,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.26,
+              "max": 0.30,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.31,
+              "max": 0.4,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.41,
+              "max": 0.5,
+              "step": 0.01
+            }
+          }
+        ]
       }
     ],
     "SUFFIX": [
-      { "attribute": "the_vault:durability",
+      {
+        "attribute": "the_vault:durability",
         "group": "ModDurability",
         "identifier": "the_vault:mod_durability",
         "tags": [
@@ -851,7 +1274,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:effect_cloud",
+      {
+        "attribute": "the_vault:effect_cloud",
         "group": "ModOnHitAddition",
         "identifier": "the_vault:mod_healing_cloud",
         "tags": [
@@ -975,7 +1399,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:effect_cloud",
+      {
+        "attribute": "the_vault:effect_cloud",
         "group": "ModOnHitAddition",
         "identifier": "the_vault:mod_poison_cloud",
         "tags": [
@@ -1099,7 +1524,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:effect_cloud",
+      {
+        "attribute": "the_vault:effect_cloud",
         "group": "ModOnHitAddition",
         "identifier": "the_vault:mod_slowness_cloud",
         "tags": [
@@ -1223,7 +1649,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:effect_cloud",
+      {
+        "attribute": "the_vault:effect_cloud",
         "group": "ModOnHitAddition",
         "identifier": "the_vault:mod_fear_cloud",
         "tags": [
@@ -1347,7 +1774,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:effect_cloud",
+      {
+        "attribute": "the_vault:effect_cloud",
         "group": "ModOnHitAddition",
         "identifier": "the_vault:mod_chilling_cloud",
         "tags": [
@@ -1471,7 +1899,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:attack_speed_percent",
+      {
+        "attribute": "the_vault:attack_speed_percent",
         "group": "ModAttackType",
         "identifier": "the_vault:mod_attack_speed_percent",
         "tags": [
@@ -1541,7 +1970,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:attack_range",
+      {
+        "attribute": "the_vault:attack_range",
         "group": "ModAttackType",
         "identifier": "the_vault:mod_attack_range",
         "tags": [
@@ -1610,7 +2040,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:on_hit_stun",
+      {
+        "attribute": "the_vault:on_hit_stun",
         "group": "ModOnHitAddition",
         "identifier": "the_vault:mod_on_hit_stun",
         "tags": [
@@ -1689,7 +2120,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:shocking_hit_chance",
+      {
+        "attribute": "the_vault:shocking_hit_chance",
         "group": "ModOnHitAddition",
         "identifier": "the_vault:mod_on_hit_shock",
         "tags": [
@@ -1768,7 +2200,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:lucky_hit_chance",
+      {
+        "attribute": "the_vault:lucky_hit_chance",
         "group": "ModOnHitAddition",
         "identifier": "the_vault:mod_lucky_hit_chance",
         "tags": [
@@ -1839,7 +2272,8 @@
       }
     ],
     "CRAFTED_PREFIX": [
-      { "attribute": "the_vault:attack_damage",
+      {
+        "attribute": "the_vault:attack_damage",
         "group": "ModOnHitType",
         "identifier": "the_vault:crafted_attack_damage",
         "tags": [
@@ -1928,7 +2362,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:on_hit_chain",
+      {
+        "attribute": "the_vault:on_hit_chain",
         "group": "ModOnHitType",
         "identifier": "the_vault:crafted_on_hit_chain",
         "tags": [
@@ -1967,7 +2402,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:soul_chance",
+      {
+        "attribute": "the_vault:soul_chance",
         "group": "ModSoulChance",
         "identifier": "the_vault:crafted_soul_chance",
         "tags": [
@@ -2016,7 +2452,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:damage_illagers",
+      {
+        "attribute": "the_vault:damage_illagers",
         "group": "ModDamageIllagers",
         "identifier": "the_vault:crafted_damage_illagers",
         "tags": [
@@ -2065,7 +2502,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:damage_spiders",
+      {
+        "attribute": "the_vault:damage_spiders",
         "group": "ModDamageSpiders",
         "identifier": "the_vault:crafted_damage_spiders",
         "tags": [
@@ -2114,7 +2552,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:damage_undead",
+      {
+        "attribute": "the_vault:damage_undead",
         "group": "ModDamageUndead",
         "identifier": "the_vault:crafted_damage_undead",
         "tags": [
@@ -2163,7 +2602,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:damage_nether",
+      {
+        "attribute": "the_vault:damage_nether",
         "group": "ModDamageNether",
         "identifier": "the_vault:crafted_damage_nether",
         "tags": [
@@ -2214,7 +2654,8 @@
       }
     ],
     "CRAFTED_SUFFIX": [
-      { "attribute": "the_vault:durability",
+      {
+        "attribute": "the_vault:durability",
         "group": "ModDurability",
         "identifier": "the_vault:crafted_durability",
         "tags": [
@@ -2273,7 +2714,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:effect_cloud",
+      {
+        "attribute": "the_vault:effect_cloud",
         "group": "ModOnHitAddition",
         "identifier": "the_vault:crafted_healing_cloud",
         "tags": [
@@ -2351,7 +2793,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:effect_cloud",
+      {
+        "attribute": "the_vault:effect_cloud",
         "group": "ModOnHitAddition",
         "identifier": "the_vault:crafted_poison_cloud",
         "tags": [
@@ -2429,7 +2872,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:effect_cloud",
+      {
+        "attribute": "the_vault:effect_cloud",
         "group": "ModOnHitAddition",
         "identifier": "the_vault:crafted_slowness_cloud",
         "tags": [
@@ -2507,7 +2951,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:effect_cloud",
+      {
+        "attribute": "the_vault:effect_cloud",
         "group": "ModOnHitAddition",
         "identifier": "the_vault:crafted_fear_cloud",
         "tags": [
@@ -2585,8 +3030,8 @@
           }
         ]
       },
-
-      { "attribute": "the_vault:effect_cloud",
+      {
+        "attribute": "the_vault:effect_cloud",
         "group": "ModOnHitAddition",
         "identifier": "the_vault:crafted_chilling_cloud",
         "tags": [
@@ -2664,8 +3109,8 @@
           }
         ]
       },
-
-      { "attribute": "the_vault:attack_speed_percent",
+      {
+        "attribute": "the_vault:attack_speed_percent",
         "group": "ModAttackType",
         "identifier": "the_vault:crafted_attack_speed_percent",
         "tags": [
@@ -2714,7 +3159,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:attack_range",
+      {
+        "attribute": "the_vault:attack_range",
         "group": "ModAttackType",
         "identifier": "the_vault:crafted_attack_range",
         "tags": [
@@ -2763,66 +3209,68 @@
           }
         ]
       },
-      { "attribute": "the_vault:on_hit_stun",
-      "group": "ModOnHitAddition",
-      "identifier": "the_vault:crafted_on_hit_stun",
-      "tags": [
-        "focusStun"
-      ],
-      "tiers": [
-        {
-          "minLevel": 0,
-          "maxLevel": -1,
-          "weight": 10,
-          "value": {
-            "min": 0.04,
-            "max": 0.08,
-            "step": 0.01
+      {
+        "attribute": "the_vault:on_hit_stun",
+        "group": "ModOnHitAddition",
+        "identifier": "the_vault:crafted_on_hit_stun",
+        "tags": [
+          "focusStun"
+        ],
+        "tiers": [
+          {
+            "minLevel": 0,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.04,
+              "max": 0.08,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 30,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.09,
+              "max": 0.12,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 45,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.13,
+              "max": 0.16,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 65,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.17,
+              "max": 0.2,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 86,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 0.21,
+              "max": 0.24,
+              "step": 0.01
+            }
           }
-        },
-        {
-          "minLevel": 30,
-          "maxLevel": -1,
-          "weight": 10,
-          "value": {
-            "min": 0.09,
-            "max": 0.12,
-            "step": 0.01
-          }
-        },
-        {
-          "minLevel": 45,
-          "maxLevel": -1,
-          "weight": 10,
-          "value": {
-            "min": 0.13,
-            "max": 0.16,
-            "step": 0.01
-          }
-        },
-        {
-          "minLevel": 65,
-          "maxLevel": -1,
-          "weight": 10,
-          "value": {
-            "min": 0.17,
-            "max": 0.2,
-            "step": 0.01
-          }
-        },
-        {
-          "minLevel": 86,
-          "maxLevel": -1,
-          "weight": 10,
-          "value": {
-            "min": 0.21,
-            "max": 0.24,
-            "step": 0.01
-          }
-        }
-      ]
+        ]
       },
-      { "attribute": "the_vault:shocking_hit_chance",
+      {
+        "attribute": "the_vault:shocking_hit_chance",
         "group": "ModOnHitAddition",
         "identifier": "the_vault:crafted_on_hit_shock",
         "tags": [
@@ -2881,7 +3329,8 @@
           }
         ]
       },
-      { "attribute": "the_vault:lucky_hit_chance",
+      {
+        "attribute": "the_vault:lucky_hit_chance",
         "group": "ModOnHitAddition",
         "identifier": "the_vault:crafted_lucky_hit_chance",
         "tags": [
