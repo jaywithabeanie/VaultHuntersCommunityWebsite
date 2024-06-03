@@ -4,9 +4,17 @@ export default () => (
   <div className={s.container}>
     <div className={s.leftSide}>
       <div className={s.logo}>
-        <Image fill quality={100} src={"/images/logo_small.png"} alt="" />
+        <Image
+          fill
+          quality={100}
+          src={"/images/logo_small.png"}
+          alt=""
+        />
       </div>
-      <a href="https://www.discord.gg/vaulthunters" className={s.link}>
+      <a
+        href="https://www.discord.gg/vaulthunters"
+        className={s.link}
+      >
         Discord
       </a>
       <a
@@ -15,7 +23,10 @@ export default () => (
       >
         Reddit
       </a>
-      <a href="https://vaulthunters.gg/" className={s.link}>
+      <a
+        href="https://vaulthunters.gg/"
+        className={s.link}
+      >
         Official Website
       </a>
       <a
@@ -28,7 +39,7 @@ export default () => (
 
     <div className={s.copyright}>
       &copy; 2024 • Website by jaywithabeanie • Additional Art by breadcrumb5550
-      • Additional Dev by freudplays • Update 3.13
+      • Additional Dev by freudplays • Update 3.14
     </div>
   </div>
 );
