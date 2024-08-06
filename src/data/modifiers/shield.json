@@ -82,8 +82,8 @@
             }
           },
           {
-            "minLevel": 36,
-            "maxLevel": 77,
+            "minLevel": 42,
+            "maxLevel": -1,
             "weight": 10,
             "value": {
               "min": 0.16,
@@ -102,32 +102,12 @@
             }
           },
           {
-            "minLevel": 78,
+            "minLevel": 85,
             "maxLevel": -1,
             "weight": 10,
             "value": {
               "min": 0.26,
               "max": 0.3,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 90,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.31,
-              "max": 0.35,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 99,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.36,
-              "max": 0.4,
               "step": 0.01
             }
           }
@@ -251,22 +231,22 @@
             }
           },
           {
-            "minLevel": 27,
+            "minLevel": 25,
             "maxLevel": -1,
             "weight": 10,
             "value": {
               "min": 4,
-              "max": 5,
+              "max": 4,
               "step": 1
             }
           },
           {
-            "minLevel": 53,
+            "minLevel": 50,
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 6,
-              "max": 7,
+              "min": 5,
+              "max": 5,
               "step": 1
             }
           },
@@ -275,38 +255,28 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
+              "min": 6,
+              "max": 6,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 101,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
+              "min": 7,
+              "max": 7,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 102,
+            "maxLevel": -1,
+            "weight": 10,
+            "value": {
               "min": 8,
-              "max": 9,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 92,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 10,
-              "max": 11,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 101,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 12,
-              "max": 12,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 101,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 13,
-              "max": 13,
+              "max": 8,
               "step": 1
             }
           }
@@ -490,85 +460,6 @@
           }
         ]
       },
-      { "attribute": "the_vault:block",
-        "group": "ModBlockThorns",
-        "identifier": "the_vault:mod_block",
-        "tags": [
-          "focusBlock"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.03,
-              "max": 0.05,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 24,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.06,
-              "max": 0.08,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 49,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.09,
-              "max": 0.11,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 66,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.12,
-              "max": 0.14,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 90,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.15,
-              "max": 0.17,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 101,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.18,
-              "max": 0.21,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 102,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.22,
-              "max": 0.25,
-              "step": 0.01
-            }
-          }
-        ]
-      },
       { "attribute": "the_vault:soul_chance",
         "group": "ModSoulChance",
         "identifier": "the_vault:mod_soul_chance",
@@ -728,7 +619,7 @@
         ],
         "tiers": [
           {
-            "minLevel": 11,
+            "minLevel": 0,
             "maxLevel": 66,
             "weight": 600,
             "value": {
@@ -1633,22 +1524,22 @@
             }
           },
           {
-            "minLevel": 27,
+            "minLevel": 25,
             "maxLevel": -1,
             "weight": 10,
             "value": {
               "min": 4,
-              "max": 5,
+              "max": 4,
               "step": 1
             }
           },
           {
-            "minLevel": 53,
+            "minLevel": 50,
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 6,
-              "max": 7,
+              "min": 5,
+              "max": 5,
               "step": 1
             }
           },
@@ -1657,18 +1548,8 @@
             "maxLevel": -1,
             "weight": 10,
             "value": {
-              "min": 8,
-              "max": 9,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 92,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 10,
-              "max": 11,
+              "min": 6,
+              "max": 6,
               "step": 1
             }
           }
@@ -1807,65 +1688,6 @@
             "value": {
               "min": 0.13,
               "max": 0.16,
-              "step": 0.01
-            }
-          }
-        ]
-      },
-      { "attribute": "the_vault:block",
-        "group": "ModBlockThorns",
-        "identifier": "the_vault:crafted_block",
-        "tags": [
-          "focusBlock"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.03,
-              "max": 0.05,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 24,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.06,
-              "max": 0.08,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 49,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.09,
-              "max": 0.11,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 66,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.12,
-              "max": 0.14,
-              "step": 0.01
-            }
-          },
-          {
-            "minLevel": 90,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "min": 0.15,
-              "max": 0.17,
               "step": 0.01
             }
           }

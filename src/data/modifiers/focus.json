@@ -1083,7 +1083,8 @@
         "group": "ModManaRegen",
         "identifier": "the_vault:mod_mana_regen",
         "tags": [
-          "focusManaRegen"
+          "focusManaRegen",
+          "antiqueAnyMana"
         ],
         "tiers": [
           {

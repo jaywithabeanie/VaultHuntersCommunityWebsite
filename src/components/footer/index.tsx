@@ -38,8 +38,8 @@ export default () => (
     </div>
 
     <div className={s.copyright}>
-      &copy; 2024 • Website by jaywithabeanie • Additional Art by breadcrumb5550
-      • Additional Dev by freudplays • Update 3.14
+      &copy; 2024 • Website by jaywithabeanie • Additional Art by breadcrumb5550 • Additional Dev by freudplays • Update
+      3.15.1
     </div>
   </div>
 );

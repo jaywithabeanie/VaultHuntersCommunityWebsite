@@ -518,7 +518,7 @@
         "tiers": [
           {
             "minLevel": 0,
-            "maxLevel": 68,
+            "maxLevel": -1,
             "weight": 500,
             "value": {
               "min": 2,
@@ -527,52 +527,32 @@
             }
           },
           {
-            "minLevel": 16,
-            "maxLevel": 87,
+            "minLevel": 25,
+            "maxLevel": -1,
             "weight": 500,
             "value": {
               "min": 4,
+              "max": 4,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 50,
+            "maxLevel": -1,
+            "weight": 500,
+            "value": {
+              "min": 5,
               "max": 5,
               "step": 1
             }
           },
           {
-            "minLevel": 29,
+            "minLevel": 65,
             "maxLevel": -1,
             "weight": 500,
             "value": {
               "min": 6,
-              "max": 7,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 47,
-            "maxLevel": -1,
-            "weight": 500,
-            "value": {
-              "min": 8,
-              "max": 9,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 69,
-            "maxLevel": -1,
-            "weight": 500,
-            "value": {
-              "min": 10,
-              "max": 11,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 88,
-            "maxLevel": -1,
-            "weight": 500,
-            "value": {
-              "min": 12,
-              "max": 12,
+              "max": 6,
               "step": 1
             }
           },
@@ -581,8 +561,8 @@
             "maxLevel": -1,
             "weight": 100,
             "value": {
-              "min": 13,
-              "max": 15,
+              "min": 7,
+              "max": 7,
               "step": 1
             }
           },
@@ -591,8 +571,8 @@
             "maxLevel": -1,
             "weight": 100,
             "value": {
-              "min": 16,
-              "max": 18,
+              "min": 8,
+              "max": 8,
               "step": 1
             }
           }
@@ -602,7 +582,8 @@
         "group": "ModHealthMana",
         "identifier": "the_vault:mod_mana_additive_percentile",
         "tags": [
-          "focusManaPercentile"
+          "focusManaPercentile",
+          "antiqueAnyMana"
         ],
         "tiers": [
           {
@@ -1043,6 +1024,98 @@
           }
         ]
       },
+      { "attribute": "the_vault:added_ability_level",
+      "group": "ModAbility",
+      "identifier": "the_vault:mod_added_ability_level_icebolt",
+      "tags": [
+        "focusAbilityPower",
+        "focusAbilityPowerNova"
+      ],
+      "tiers": [
+        {
+          "minLevel": 25,
+          "maxLevel": -1,
+          "weight": 20,
+          "value": {
+            "abilityKey": "Ice_Bolt_Base",
+            "levelChange": 1
+          }
+        },
+        {
+          "minLevel": 50,
+          "maxLevel": -1,
+          "weight": 8,
+          "value": {
+            "abilityKey": "Ice_Bolt_Base",
+            "levelChange": 2
+          }
+        },
+        {
+          "minLevel": 101,
+          "maxLevel": -1,
+          "weight": 40,
+          "value": {
+            "abilityKey": "Ice_Bolt_Base",
+            "levelChange": 3
+          }
+        },
+        {
+          "minLevel": 101,
+          "maxLevel": -1,
+          "weight": 40,
+          "value": {
+            "abilityKey": "Ice_Bolt_Base",
+            "levelChange": 4
+          }
+        }
+      ]
+    },
+    { "attribute": "the_vault:added_ability_level",
+      "group": "ModAbility",
+      "identifier": "the_vault:mod_added_ability_level_glacialblast",
+      "tags": [
+        "focusAbilityPower",
+        "focusAbilityPowerNova"
+      ],
+      "tiers": [
+        {
+          "minLevel": 25,
+          "maxLevel": -1,
+          "weight": 20,
+          "value": {
+            "abilityKey": "Ice_Bolt_Blast",
+            "levelChange": 1
+          }
+        },
+        {
+          "minLevel": 50,
+          "maxLevel": -1,
+          "weight": 8,
+          "value": {
+            "abilityKey": "Ice_Bolt_Blast",
+            "levelChange": 2
+          }
+        },
+        {
+          "minLevel": 101,
+          "maxLevel": -1,
+          "weight": 40,
+          "value": {
+            "abilityKey": "Ice_Bolt_Blast",
+            "levelChange": 3
+          }
+        },
+        {
+          "minLevel": 101,
+          "maxLevel": -1,
+          "weight": 40,
+          "value": {
+            "abilityKey": "Ice_Bolt_Blast",
+            "levelChange": 4
+          }
+        }
+      ]
+    },
       { "attribute": "the_vault:added_ability_level",
         "group": "ModAbility",
         "identifier": "the_vault:mod_added_ability_level_nova",
@@ -3840,7 +3913,8 @@
         "group": "ModManaRegen",
         "identifier": "the_vault:mod_mana_regen",
         "tags": [
-          "focusManaRegen"
+          "focusManaRegen",
+          "antiqueAnyMana"
         ],
         "tiers": [
           {
@@ -4095,52 +4169,32 @@
             }
           },
           {
-            "minLevel": 16,
+            "minLevel": 25,
             "maxLevel": -1,
             "weight": 85,
             "value": {
               "min": 4,
+              "max": 4,
+              "step": 1
+            }
+          },
+          {
+            "minLevel": 50,
+            "maxLevel": -1,
+            "weight": 60,
+            "value": {
+              "min": 5,
               "max": 5,
               "step": 1
             }
           },
           {
-            "minLevel": 29,
-            "maxLevel": -1,
-            "weight": 60,
-            "value": {
-              "min": 6,
-              "max": 7,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 47,
+            "minLevel": 65,
             "maxLevel": -1,
             "weight": 30,
             "value": {
-              "min": 8,
-              "max": 9,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 69,
-            "maxLevel": -1,
-            "weight": 20,
-            "value": {
-              "min": 10,
-              "max": 11,
-              "step": 1
-            }
-          },
-          {
-            "minLevel": 88,
-            "maxLevel": -1,
-            "weight": 20,
-            "value": {
-              "min": 12,
-              "max": 12,
+              "min": 6,
+              "max": 6,
               "step": 1
             }
           }

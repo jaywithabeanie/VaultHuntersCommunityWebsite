@@ -262,7 +262,8 @@
         "group": "ModAPLvl",
         "identifier": "the_vault:mod_ability_increase",
         "tags": [
-          "focusAbilityDamage"
+          "focusAbilityDamage",
+          "antiqueAnyAbilityPower"
         ],
         "tiers": [
           {
