@@ -62,6 +62,16 @@
                 "description": "The attack speed",
                 "color": "#FCD767"
             },
+            "the_vault:mod_sweeping_hit_damage": {
+                "name": "Sweeping Hit Extra Damage",
+                "description": "",
+                "color": "#FCD767"
+            },
+            "the_vault:crafted_sweeping_hit_damage": {
+                "name": "Sweeping Hit Extra Damage",
+                "description": "",
+                "color": "#FCD767"
+            },
             "the_vault:durability": {
                 "name": "Durability",
                 "description": "The durabillity",
