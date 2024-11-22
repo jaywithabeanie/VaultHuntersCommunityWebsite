@@ -1,303 +1,11 @@
 {
   "modifierGroup": {
+    "BASE_ATTRIBUTES": [],
     "IMPLICIT": [
-      {
-        "attribute": "the_vault:jewel_size",
-        "group": "BaseJewelSize",
-        "identifier": "the_vault:jewel_size",
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": -1,
-            "weight": 100,
-            "value": {
-              "min": 10,
-              "max": 35,
-              "step": 1
-            }
-          }
-        ]
-      }
     ],
     "PREFIX": [
-      
     ],
     "SUFFIX": [
-      { "attribute": "the_vault:wooden_affinity",
-        "group": "ModAffinity",
-        "identifier": "the_vault:wooden_affinity",
-        "tags": [
-          "noLegendary"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": 49,
-            "weight": 100,
-            "value": {
-              "flag": true
-            }
-          },
-          {
-            "minLevel": 50,
-            "maxLevel": -1,
-            "weight": 50,
-            "value": {
-              "flag": true
-            }
-          }
-        ]
-      },
-      { "attribute": "the_vault:ornate_affinity",
-        "group": "ModAffinity",
-        "identifier": "the_vault:ornate_affinity",
-        "tags": [
-          "noLegendary"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": 49,
-            "weight": 60,
-            "value": {
-              "flag": true
-            }
-          },
-          {
-            "minLevel": 50,
-            "maxLevel": -1,
-            "weight": 30,
-            "value": {
-              "flag": true
-            }
-          }
-        ]
-      },
-      { "attribute": "the_vault:gilded_affinity",
-        "group": "ModAffinity",
-        "identifier": "the_vault:gilded_affinity",
-        "tags": [
-          "noLegendary"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": 49,
-            "weight": 60,
-            "value": {
-              "flag": true
-            }
-          },
-          {
-            "minLevel": 50,
-            "maxLevel": -1,
-            "weight": 30,
-            "value": {
-              "flag": true
-            }
-          }
-        ]
-      },
-      { "attribute": "the_vault:living_affinity",
-        "group": "ModAffinity",
-        "identifier": "the_vault:living_affinity",
-        "tags": [
-          "noLegendary"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": 49,
-            "weight": 60,
-            "value": {
-              "flag": true
-            }
-          },
-          {
-            "minLevel": 50,
-            "maxLevel": -1,
-            "weight": 30,
-            "value": {
-              "flag": true
-            }
-          }
-        ]
-      },
-      { "attribute": "the_vault:picking",
-        "group": "ModPicking",
-        "identifier": "the_vault:picking",
-        "tags": [
-          "noLegendary"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": 49,
-            "weight": 100,
-            "value": {
-              "flag": true
-            }
-          },
-          {
-            "minLevel": 50,
-            "maxLevel": -1,
-            "weight": 50,
-            "value": {
-              "flag": true
-            }
-          }
-        ]
-      },
-      { "attribute": "the_vault:axing",
-        "group": "ModAxing",
-        "identifier": "the_vault:axing",
-        "tags": [
-          "noLegendary"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": 49,
-            "weight": 100,
-            "value": {
-              "flag": true
-            }
-          },
-          {
-            "minLevel": 50,
-            "maxLevel": -1,
-            "weight": 50,
-            "value": {
-              "flag": true
-            }
-          }
-        ]
-      },
-      { "attribute": "the_vault:shovelling",
-        "group": "ModShovelling",
-        "identifier": "the_vault:shovelling",
-        "tags": [
-          "noLegendary"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": 49,
-            "weight": 100,
-            "value": {
-              "flag": true
-            }
-          },
-          {
-            "minLevel": 50,
-            "maxLevel": -1,
-            "weight": 50,
-            "value": {
-              "flag": true
-            }
-          }
-        ]
-      },
-      { "attribute": "the_vault:coin_affinity",
-        "group": "ModCoinAffinity",
-        "identifier": "the_vault:coin_affinity",
-        "tags": [
-          "noLegendary"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": 49,
-            "weight": 60,
-            "value": {
-              "flag": true
-            }
-          },
-          {
-            "minLevel": 50,
-            "maxLevel": -1,
-            "weight": 30,
-            "value": {
-              "flag": true
-            }
-          }
-        ]
-      },
-      { "attribute": "the_vault:smelting",
-        "group": "ModSmeltingAffinity",
-        "identifier": "the_vault:smelting",
-        "tags": [
-          "noLegendary"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": 49,
-            "weight": 40,
-            "value": {
-              "flag": true
-            }
-          },
-          {
-            "minLevel": 50,
-            "maxLevel": -1,
-            "weight": 20,
-            "value": {
-              "flag": true
-            }
-          }
-        ]
-      },
-      { "attribute": "the_vault:pulverizing",
-        "group": "ModPulverizingAffinity",
-        "identifier": "the_vault:pulverizing",
-        "tags": [
-          "noLegendary"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": 49,
-            "weight": 40,
-            "value": {
-              "flag": true
-            }
-          },
-          {
-            "minLevel": 50,
-            "maxLevel": -1,
-            "weight": 20,
-            "value": {
-              "flag": true
-            }
-          }
-        ]
-      },
-      { "attribute": "the_vault:hydrovoid",
-        "group": "ModHydrovoidAffinity",
-        "identifier": "the_vault:hydrovoid",
-        "tags": [
-          "noLegendary"
-        ],
-        "tiers": [
-          {
-            "minLevel": 0,
-            "maxLevel": 49,
-            "weight": 10,
-            "value": {
-              "flag": true
-            }
-          },
-          {
-            "minLevel": 50,
-            "maxLevel": -1,
-            "weight": 10,
-            "value": {
-              "flag": true
-            }
-          }
-        ]
-      },
       { "attribute": "the_vault:mining_speed",
         "group": "ModMiningSpeed",
         "identifier": "the_vault:mining_speed",
@@ -493,7 +201,7 @@
           {
             "minLevel": 0,
             "maxLevel": 64,
-            "weight": 80,
+            "weight": 100,
             "value": {
               "min": 0.01,
               "max": 0.015,
@@ -503,7 +211,7 @@
           {
             "minLevel": 30,
             "maxLevel": -1,
-            "weight": 80,
+            "weight": 100,
             "value": {
               "min": 0.016,
               "max": 0.02,
@@ -513,7 +221,7 @@
           {
             "minLevel": 65,
             "maxLevel": -1,
-            "weight": 80,
+            "weight": 100,
             "value": {
               "min": 0.021,
               "max": 0.03,
@@ -549,7 +257,7 @@
           {
             "minLevel": 0,
             "maxLevel": 64,
-            "weight": 80,
+            "weight": 100,
             "value": {
               "min": 0.01,
               "max": 0.015,
@@ -559,7 +267,7 @@
           {
             "minLevel": 30,
             "maxLevel": -1,
-            "weight": 80,
+            "weight": 100,
             "value": {
               "min": 0.016,
               "max": 0.02,
@@ -569,7 +277,7 @@
           {
             "minLevel": 65,
             "maxLevel": -1,
-            "weight": 80,
+            "weight": 100,
             "value": {
               "min": 0.021,
               "max": 0.03,
@@ -607,16 +315,8 @@
         "tiers": [
           {
             "minLevel": 0,
-            "maxLevel": 49,
-            "weight": 10,
-            "value": {
-              "flag": true
-            }
-          },
-          {
-            "minLevel": 50,
             "maxLevel": -1,
-            "weight": 10,
+            "weight": 20,
             "value": {
               "flag": true
             }
@@ -688,13 +388,23 @@
             "maxLevel": 50,
             "weight": 100,
             "value": {
-              "min": 0.1,
-              "max": 0.15,
+              "min": 0.05,
+              "max": 0.1,
               "step": 0.01
             }
           },
           {
             "minLevel": 27,
+            "maxLevel": -1,
+            "weight": 100,
+            "value": {
+              "min": 0.11,
+              "max": 0.15,
+              "step": 0.01
+            }
+          },
+          {
+            "minLevel": 51,
             "maxLevel": -1,
             "weight": 100,
             "value": {
@@ -704,7 +414,7 @@
             }
           },
           {
-            "minLevel": 51,
+            "minLevel": 76,
             "maxLevel": -1,
             "weight": 100,
             "value": {
@@ -714,22 +424,12 @@
             }
           },
           {
-            "minLevel": 76,
-            "maxLevel": -1,
-            "weight": 100,
-            "value": {
-              "min": 0.26,
-              "max": 0.3,
-              "step": 0.01
-            }
-          },
-          {
             "minLevel": 101,
             "maxLevel": -1,
             "weight": 100,
             "value": {
-              "min": 0.31,
-              "max": 0.5,
+              "min": 0.26,
+              "max": 0.4,
               "step": 0.01
             }
           },
@@ -738,8 +438,8 @@
             "maxLevel": -1,
             "weight": 100,
             "value": {
-              "min": 0.51,
-              "max": 0.75,
+              "min": 0.41,
+              "max": 0.6,
               "step": 0.01
             }
           }
@@ -811,7 +511,7 @@
           {
             "minLevel": 0,
             "maxLevel": 29,
-            "weight": 10,
+            "weight": 8,
             "value": {
               "min": 1,
               "max": 1,
@@ -821,7 +521,7 @@
           {
             "minLevel": 30,
             "maxLevel": 44,
-            "weight": 16,
+            "weight": 14,
             "value": {
               "min": 1,
               "max": 1,
@@ -831,7 +531,7 @@
           {
             "minLevel": 45,
             "maxLevel": 69,
-            "weight": 18,
+            "weight": 16,
             "value": {
               "min": 1,
               "max": 1,
@@ -841,7 +541,7 @@
           {
             "minLevel": 70,
             "maxLevel": 76,
-            "weight": 20,
+            "weight": 18,
             "value": {
               "min": 1,
               "max": 1,
@@ -851,7 +551,7 @@
           {
             "minLevel": 76,
             "maxLevel": -1,
-            "weight": 23,
+            "weight": 20,
             "value": {
               "min": 1,
               "max": 1,
@@ -860,6 +560,7 @@
           }
         ]
       }
-    ]
+    ],
+    "CORRUPTED_IMPLICIT": []
   }
 }

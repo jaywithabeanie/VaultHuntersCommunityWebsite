@@ -22,6 +22,26 @@
             "CRAFTED_SUFFIX": "Crafted Suffix"
         },
         "modifiers": {
+            "the_vault:mod_effect_avoidance": {
+                "name": "Effect Avoidance",
+                "description": "",
+                "color": "#25D1A3"
+            },
+            "the_vault:crafted_effect_avoidance": {
+                "name": "Effect Avoidance",
+                "description": "",
+                "color": "#25D1A3"
+            },
+            "the_vault:mod_effect_duration": {
+                "name": "Increased Effect Duration",
+                "description": "",
+                "color": "#84D7FF"
+            },
+            "the_vault:crafted_effect_duration": {
+                "name": "Increased Effect Duration",
+                "description": "",
+                "color": "#84D7FF"
+            },
             "the_vault:attack_damage": {
                 "name": "Attack Damage",
                 "description": "The base damage",

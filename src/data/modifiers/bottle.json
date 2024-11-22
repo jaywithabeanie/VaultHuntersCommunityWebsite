@@ -1,8 +1,7 @@
 {
   "modifierGroup": {
-    "IMPLICIT": [
-      
-    ],
+    "BASE_ATTRIBUTES": [],
+    "IMPLICIT": [],
     "PREFIX": [],
     "SUFFIX": [
       { "attribute": "the_vault:soul_chance",
@@ -733,6 +732,7 @@
       }
 
       
-    ]
+    ],
+    "CORRUPTED_IMPLICIT": []
   }
 }
